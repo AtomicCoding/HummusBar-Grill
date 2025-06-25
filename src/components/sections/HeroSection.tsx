@@ -56,7 +56,7 @@ const HeroSection = () => {
               asChild
               variant="outline"
               size="lg"
-              className="px-8 py-4 text-lg font-medium bg-white/90 backdrop-blur-sm hover:bg-white border-warm-300 hover:border-sage-300 shadow-soft"
+              className="px-8 py-4 text-lg font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
             >
               <Link to="/menu">View Menu</Link>
             </Button>
@@ -64,7 +64,7 @@ const HeroSection = () => {
             <Button
               variant="ghost"
               size="lg"
-              className="px-8 py-4 text-lg font-medium text-foreground/80 hover:text-foreground bg-white/60 backdrop-blur-sm hover:bg-white/80 group"
+              className="px-8 py-4 text-lg font-medium text-white hover:text-yellow-400 bg-white/20 backdrop-blur-sm hover:bg-white/30 border border-white/30 hover:border-white/50 group"
             >
               <Users className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
               Make Reservation
