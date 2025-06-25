@@ -74,24 +74,22 @@ const HeroSection = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-6 max-w-lg animate-fade-in">
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-sage-700 mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">
                 15+
               </div>
-              <div className="text-sm text-foreground/70">
-                Years of Excellence
-              </div>
+              <div className="text-sm text-white/80">Years of Excellence</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-sage-700 mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">
                 10K+
               </div>
-              <div className="text-sm text-foreground/70">Happy Customers</div>
+              <div className="text-sm text-white/80">Happy Customers</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-sage-700 mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">
                 ⭐
               </div>
-              <div className="text-sm text-foreground/70">Tarzana Favorite</div>
+              <div className="text-sm text-white/80">Tarzana Favorite</div>
             </div>
           </div>
         </div>
