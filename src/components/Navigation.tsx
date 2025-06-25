@@ -140,12 +140,15 @@ const Navigation = () => {
               ))}
               <div className="pt-4 border-t border-warm-200 space-y-3">
                 <Button
+                  asChild
                   variant="outline"
                   size="sm"
                   className="w-full justify-start"
                 >
-                  <Phone className="w-4 h-4 mr-2" />
-                  Call Now
+                  <a href="tel:8183446606">
+                    <Phone className="w-4 h-4 mr-2" />
+                    (818) 344-6606
+                  </a>
                 </Button>
                 <Button
                   asChild
