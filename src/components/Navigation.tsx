@@ -81,12 +81,15 @@ const Navigation = () => {
           {/* Desktop CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
             <Button
+              asChild
               variant="ghost"
               size="sm"
               className="text-foreground/80 hover:text-foreground"
             >
-              <Phone className="w-4 h-4 mr-2" />
-              Call Now
+              <a href="tel:8183446606">
+                <Phone className="w-4 h-4 mr-2" />
+                (818) 344-6606
+              </a>
             </Button>
             <Button
               asChild
