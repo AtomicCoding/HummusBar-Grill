@@ -7,18 +7,12 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <div className="w-full h-full bg-gradient-to-br from-warm-100 via-warm-50 to-sage-50">
-          {/* Placeholder for hero image - replace with actual image */}
-          <div className="w-full h-full bg-gradient-to-r from-sage-600/10 to-warm-600/10 flex items-center justify-center">
-            <div className="text-center text-muted-foreground">
-              <div className="w-32 h-32 mx-auto mb-4 bg-sage-200 rounded-2xl flex items-center justify-center">
-                <Award className="w-16 h-16 text-sage-600" />
-              </div>
-              <p className="text-sm">Hero Background Image</p>
-            </div>
-          </div>
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-black/10" />
+        <img
+          src="https://i.ibb.co/zVZY8fvH/image.png"
+          alt="Hummus Bar & Grill Restaurant Interior"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/20" />
       </div>
 
       {/* Content */}
