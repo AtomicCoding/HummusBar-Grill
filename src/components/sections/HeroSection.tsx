@@ -19,21 +19,21 @@ const HeroSection = () => {
       <div className="relative z-10 container-custom section-padding">
         <div className="max-w-4xl">
           {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full shadow-soft mb-6 animate-fade-in">
+          <div className="inline-flex items-center px-4 py-2 bg-white/95 backdrop-blur-sm rounded-full shadow-soft mb-6 animate-fade-in">
             <Star className="w-4 h-4 text-yellow-500 mr-2" />
-            <span className="text-sm font-medium text-foreground">
+            <span className="text-sm font-medium text-gray-900">
               Rated #1 Mediterranean Restaurant
             </span>
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-foreground mb-6 animate-slide-up text-balance">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-white mb-6 animate-slide-up text-balance">
             Authentic Mediterranean
-            <span className="block text-sage-700">Flavors & Tradition</span>
+            <span className="block text-yellow-400">Flavors & Tradition</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-2xl leading-relaxed animate-slide-up text-balance">
+          <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl leading-relaxed animate-slide-up text-balance">
             Experience the finest Mediterranean cuisine crafted with traditional
             recipes, fresh ingredients, and passionate attention to detail. From
             our signature hummus to perfectly grilled specialties.
