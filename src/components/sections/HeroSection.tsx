@@ -75,7 +75,7 @@ const HeroSection = () => {
           <div className="grid grid-cols-3 gap-6 max-w-lg animate-fade-in">
             <div className="text-center">
               <div className="text-2xl md:text-3xl font-bold text-sage-700 mb-1">
-                25+
+                15+
               </div>
               <div className="text-sm text-foreground/70">
                 Years of Excellence
@@ -83,15 +83,15 @@ const HeroSection = () => {
             </div>
             <div className="text-center">
               <div className="text-2xl md:text-3xl font-bold text-sage-700 mb-1">
-                50K+
+                10K+
               </div>
               <div className="text-sm text-foreground/70">Happy Customers</div>
             </div>
             <div className="text-center">
               <div className="text-2xl md:text-3xl font-bold text-sage-700 mb-1">
-                15
+                ⭐
               </div>
-              <div className="text-sm text-foreground/70">Locations</div>
+              <div className="text-sm text-foreground/70">Tarzana Favorite</div>
             </div>
           </div>
         </div>
