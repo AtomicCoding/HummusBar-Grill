@@ -17,22 +17,10 @@ import {
 const Footer = () => {
   const locations = [
     {
-      name: "Downtown",
-      address: "123 Main Street",
-      city: "New York, NY 10001",
-      phone: "(555) 123-4567",
-    },
-    {
-      name: "Midtown",
-      address: "456 Broadway",
-      city: "New York, NY 10018",
-      phone: "(555) 234-5678",
-    },
-    {
-      name: "Brooklyn",
-      address: "789 Atlantic Ave",
-      city: "Brooklyn, NY 11238",
-      phone: "(555) 345-6789",
+      name: "Tarzana Location",
+      address: "18743 Ventura Blvd",
+      city: "Tarzana, CA 91356",
+      phone: "(818) 344-6606",
     },
   ];
 
