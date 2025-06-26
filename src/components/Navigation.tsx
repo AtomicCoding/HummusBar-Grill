@@ -133,8 +133,8 @@ const Navigation = () => {
                   className={cn(
                     "block px-4 py-2 text-base font-medium rounded-lg transition-colors",
                     isActive(item.href)
-                      ? "text-sage-700 bg-sage-50"
-                      : "text-foreground/80 hover:text-sage-600 hover:bg-warm-50",
+                      ? "text-red-700 bg-red-50"
+                      : "text-foreground/80 hover:text-red-600 hover:bg-red-50",
                   )}
                 >
                   {item.name}
