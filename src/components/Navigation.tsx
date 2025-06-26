@@ -74,7 +74,7 @@ const Navigation = () => {
               >
                 <span className="text-white">{item.name}</span>
                 {isActive(item.href) && (
-                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-sage-600 rounded-full" />
+                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-600 rounded-full" />
                 )}
               </Link>
             ))}
