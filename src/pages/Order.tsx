@@ -40,8 +40,8 @@ const Order = () => {
             <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               {/* Phone Order */}
               <div className="text-center p-8 bg-white rounded-2xl shadow-soft border border-warm-200">
-                <div className="w-16 h-16 bg-sage-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                  <Phone className="w-8 h-8 text-sage-600" />
+                <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <Phone className="w-8 h-8 text-red-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-4">
                   Call to Order
@@ -50,71 +50,80 @@ const Order = () => {
                   Speak directly with our team to place your order and get
                   personalized recommendations.
                 </p>
-                <Button className="w-full bg-sage-600 hover:bg-sage-700">
-                  (555) 123-4567
+                <Button asChild className="w-full bg-red-600 hover:bg-red-700">
+                  <a href="tel:8183446606">(818) 344-6606</a>
                 </Button>
               </div>
 
               {/* Online Ordering */}
               <div className="text-center p-8 bg-white rounded-2xl shadow-soft border border-warm-200">
-                <div className="w-16 h-16 bg-sage-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                  <ShoppingBag className="w-8 h-8 text-sage-600" />
+                <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <ShoppingBag className="w-8 h-8 text-red-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-4">
-                  Online Platform
+                  Order Online Now
                 </h3>
                 <p className="text-foreground/70 mb-6">
-                  Our full online ordering system is coming soon with real-time
-                  order tracking.
+                  Place your order online through our Toast ordering system for
+                  pickup or delivery.
                 </p>
-                <Button variant="outline" className="w-full" disabled>
-                  Coming Soon
+                <Button asChild className="w-full bg-red-600 hover:bg-red-700">
+                  <a
+                    href="https://www.toasttab.com/local/order/hummusbargrill/r-7fc07f7e-2b14-4999-8bd9-8c05a07d8e59"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Order Now
+                  </a>
                 </Button>
               </div>
 
               {/* Visit Us */}
               <div className="text-center p-8 bg-white rounded-2xl shadow-soft border border-warm-200">
-                <div className="w-16 h-16 bg-sage-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                  <MapPin className="w-8 h-8 text-sage-600" />
+                <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <MapPin className="w-8 h-8 text-red-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-4">
                   Visit Our Restaurant
                 </h3>
                 <p className="text-foreground/70 mb-6">
                   Dine in for the full Mediterranean experience with our warm
-                  hospitality.
+                  hospitality in Tarzana.
                 </p>
-                <Button asChild variant="outline" className="w-full">
-                  <Link to="/locations">Find Locations</Link>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="w-full border-red-300 text-red-700 hover:bg-red-50"
+                >
+                  <Link to="/contact">Get Directions</Link>
                 </Button>
               </div>
             </div>
 
-            {/* Temporary Order Info */}
-            <div className="max-w-2xl mx-auto mt-12 p-8 bg-warm-50 rounded-2xl border border-warm-200">
+            {/* Order Info */}
+            <div className="max-w-2xl mx-auto mt-12 p-8 bg-red-50 rounded-2xl border border-red-200">
               <h3 className="text-xl font-semibold text-foreground mb-4 text-center">
-                How to Order Right Now
+                How to Order
               </h3>
               <div className="space-y-4 text-foreground/80">
                 <p>
-                  <strong>For Delivery:</strong> Call us at (555) 123-4567 and
-                  we'll take your order over the phone. Delivery available
-                  within a 5-mile radius.
+                  <strong>Online Ordering:</strong> Use our Toast ordering
+                  system above for the fastest and most convenient way to place
+                  your order.
                 </p>
                 <p>
-                  <strong>For Pickup:</strong> Call ahead and your order will be
-                  ready when you arrive. Average pickup time is 15-20 minutes.
+                  <strong>Phone Orders:</strong> Call us at (818) 344-6606 for
+                  orders, questions, or special requests.
                 </p>
                 <p>
-                  <strong>Walk-ins:</strong> Always welcome! See our current
-                  wait times and make reservations by calling any of our
-                  locations.
+                  <strong>Walk-ins:</strong> Always welcome! Located in Tarzana
+                  Village Shopping Center with plentiful parking.
                 </p>
               </div>
 
               <div className="mt-6 text-center">
-                <Button asChild className="bg-sage-600 hover:bg-sage-700">
-                  <Link to="/locations">View All Locations & Hours</Link>
+                <Button asChild className="bg-red-600 hover:bg-red-700">
+                  <Link to="/contact">Visit Our Restaurant</Link>
                 </Button>
               </div>
             </div>
