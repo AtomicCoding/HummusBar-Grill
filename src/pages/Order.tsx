@@ -9,24 +9,33 @@ const Order = () => {
     <div className="min-h-screen">
       <Navigation />
       <main className="pt-16 lg:pt-20">
-        {/* Header */}
-        <section className="section-spacing bg-gradient-sage">
-          <div className="container-custom section-padding">
-            <div className="max-w-3xl mx-auto text-center">
+        {/* Header with Hero Image */}
+        <section className="relative min-h-[60vh] flex items-center">
+          <div className="absolute inset-0">
+            <img
+              src="https://i.ibb.co/PvszB3f7/image.png"
+              alt="Order from Hummus Bar & Grill"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40" />
+          </div>
+
+          <div className="relative z-10 container-custom section-padding">
+            <div className="max-w-3xl">
               <Link
                 to="/"
-                className="inline-flex items-center text-sage-600 hover:text-sage-700 font-medium mb-6 group"
+                className="inline-flex items-center text-white/80 hover:text-white font-medium mb-6 group"
               >
                 <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
                 Back to Home
               </Link>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 text-balance">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
                 Order
-                <span className="block text-sage-700">Online</span>
+                <span className="block text-red-400">Online</span>
               </h1>
 
-              <p className="text-lg text-foreground/80 leading-relaxed mb-8 text-balance">
+              <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-8">
                 Enjoy our delicious Mediterranean cuisine from the comfort of
                 your home. Fast delivery and pickup options available.
               </p>
