@@ -131,7 +131,11 @@ const Navigation = () => {
               variant="ghost"
               size="sm"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-foreground/80 hover:text-foreground"
+              className={cn(
+                isScrolled
+                  ? "text-gray-600 hover:text-gray-900"
+                  : "text-white/80 hover:text-white",
+              )}
             >
               {isOpen ? (
                 <X className="w-5 h-5" />
