@@ -11,24 +11,33 @@ const Contact = () => {
     <div className="min-h-screen">
       <Navigation />
       <main className="pt-16 lg:pt-20">
-        {/* Header */}
-        <section className="section-spacing bg-gradient-warm">
-          <div className="container-custom section-padding">
-            <div className="max-w-3xl mx-auto text-center">
+        {/* Header with Hero Image */}
+        <section className="relative min-h-[60vh] flex items-center">
+          <div className="absolute inset-0">
+            <img
+              src="https://i.ibb.co/chkxB0LF/image.png"
+              alt="Contact Hummus Bar & Grill"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40" />
+          </div>
+
+          <div className="relative z-10 container-custom section-padding">
+            <div className="max-w-3xl">
               <Link
                 to="/"
-                className="inline-flex items-center text-sage-600 hover:text-sage-700 font-medium mb-6 group"
+                className="inline-flex items-center text-white/80 hover:text-white font-medium mb-6 group"
               >
                 <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
                 Back to Home
               </Link>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 text-balance">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
                 Get in
-                <span className="block text-sage-700">Touch</span>
+                <span className="block text-red-400">Touch</span>
               </h1>
 
-              <p className="text-lg text-foreground/80 leading-relaxed mb-8 text-balance">
+              <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-8">
                 We'd love to hear from you! Whether you have questions about our
                 menu, want to make a reservation, or are interested in catering,
                 we're here to help.
@@ -99,7 +108,7 @@ const Contact = () => {
 
                   <Button
                     size="lg"
-                    className="w-full bg-sage-600 hover:bg-sage-700 group"
+                    className="w-full bg-red-600 hover:bg-red-700 group"
                   >
                     Send Message
                     <Send className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -114,66 +123,61 @@ const Contact = () => {
                 </h2>
 
                 <div className="space-y-6 mb-8">
-                  <div className="flex items-start">
-                    <Phone className="w-5 h-5 text-sage-600 mt-1 mr-4 flex-shrink-0" />
+                  <div className="flex items-start p-6 bg-red-50 rounded-2xl border border-red-200">
+                    <Phone className="w-6 h-6 text-red-600 mt-1 mr-4 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold text-foreground mb-1">
+                      <h3 className="font-semibold text-foreground mb-2">
                         Phone
                       </h3>
-                      <p className="text-foreground/70">
-                        General: (555) 123-4567
-                      </p>
-                      <p className="text-foreground/70">
-                        Catering: (555) 123-4568
-                      </p>
+                      <a
+                        href="tel:8183446606"
+                        className="text-red-600 hover:text-red-700 font-medium text-lg"
+                      >
+                        (818) 344-6606
+                      </a>
                     </div>
                   </div>
 
-                  <div className="flex items-start">
-                    <Mail className="w-5 h-5 text-sage-600 mt-1 mr-4 flex-shrink-0" />
+                  <div className="flex items-start p-6 bg-red-50 rounded-2xl border border-red-200">
+                    <Mail className="w-6 h-6 text-red-600 mt-1 mr-4 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold text-foreground mb-1">
+                      <h3 className="font-semibold text-foreground mb-2">
                         Email
                       </h3>
-                      <p className="text-foreground/70">info@hummusbar.com</p>
-                      <p className="text-foreground/70">
-                        catering@hummusbar.com
-                      </p>
+                      <a
+                        href="mailto:manager@hummusbargrill.com"
+                        className="text-red-600 hover:text-red-700 font-medium"
+                      >
+                        manager@hummusbargrill.com
+                      </a>
                     </div>
                   </div>
 
-                  <div className="flex items-start">
-                    <MapPin className="w-5 h-5 text-sage-600 mt-1 mr-4 flex-shrink-0" />
+                  <div className="flex items-start p-6 bg-red-50 rounded-2xl border border-red-200">
+                    <MapPin className="w-6 h-6 text-red-600 mt-1 mr-4 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold text-foreground mb-1">
-                        Locations
+                      <h3 className="font-semibold text-foreground mb-2">
+                        Location
                       </h3>
-                      <p className="text-foreground/70">
-                        Downtown: 123 Main Street, NY
-                      </p>
-                      <p className="text-foreground/70">
-                        Midtown: 456 Broadway, NY
-                      </p>
-                      <p className="text-foreground/70">
-                        Brooklyn: 789 Atlantic Ave, NY
+                      <p className="text-foreground/80">18743 Ventura Blvd</p>
+                      <p className="text-foreground/80">Tarzana, CA 91356</p>
+                      <p className="text-sm text-foreground/60 mt-1">
+                        Tarzana Village Shopping Center
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex items-start">
-                    <Clock className="w-5 h-5 text-sage-600 mt-1 mr-4 flex-shrink-0" />
+                  <div className="flex items-start p-6 bg-red-50 rounded-2xl border border-red-200">
+                    <Clock className="w-6 h-6 text-red-600 mt-1 mr-4 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold text-foreground mb-1">
+                      <h3 className="font-semibold text-foreground mb-2">
                         Hours
                       </h3>
-                      <p className="text-foreground/70">
-                        Mon-Thu: 11:00 AM - 10:00 PM
+                      <p className="text-foreground/80">
+                        Daily: 11:00 AM - 12:00 AM
                       </p>
-                      <p className="text-foreground/70">
-                        Fri-Sat: 11:00 AM - 11:00 PM
-                      </p>
-                      <p className="text-foreground/70">
-                        Sunday: 10:00 AM - 9:00 PM
+                      <p className="text-sm text-foreground/60">
+                        Delivery: 11:00 AM - 11:00 PM
                       </p>
                     </div>
                   </div>
@@ -189,34 +193,42 @@ const Contact = () => {
                     <Button
                       asChild
                       variant="outline"
-                      className="w-full justify-start"
+                      className="w-full justify-start border-red-300 text-red-700 hover:bg-red-50"
                     >
-                      <Link to="/locations">
+                      <a
+                        href="https://www.google.com/maps/dir//18743+Ventura+Blvd,+Tarzana,+CA+91356"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <MapPin className="w-4 h-4 mr-2" />
-                        Find a Location
-                      </Link>
+                        Get Directions
+                      </a>
                     </Button>
 
                     <Button
                       asChild
                       variant="outline"
-                      className="w-full justify-start"
+                      className="w-full justify-start border-red-300 text-red-700 hover:bg-red-50"
                     >
-                      <Link to="/menu">
+                      <a href="tel:8183446606">
                         <Phone className="w-4 h-4 mr-2" />
-                        Make a Reservation
-                      </Link>
+                        Call for Reservations
+                      </a>
                     </Button>
 
                     <Button
                       asChild
                       variant="outline"
-                      className="w-full justify-start"
+                      className="w-full justify-start border-red-300 text-red-700 hover:bg-red-50"
                     >
-                      <Link to="/order">
+                      <a
+                        href="https://www.toasttab.com/local/order/hummusbargrill/r-7fc07f7e-2b14-4999-8bd9-8c05a07d8e59"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Mail className="w-4 h-4 mr-2" />
-                        Catering Inquiry
-                      </Link>
+                        Order Online
+                      </a>
                     </Button>
                   </div>
                 </div>
