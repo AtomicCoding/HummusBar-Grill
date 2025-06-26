@@ -88,7 +88,7 @@ const Navigation = () => {
             >
               <a href="tel:8183446606">
                 <Phone className="w-4 h-4 mr-2" />
-                (818) 344-6606
+                <span className="text-white">(818) 344-6606</span>
               </a>
             </Button>
             <Button
