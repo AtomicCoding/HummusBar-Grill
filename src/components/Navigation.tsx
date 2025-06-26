@@ -185,10 +185,15 @@ const Navigation = () => {
                   asChild
                   className="w-full bg-red-600 hover:bg-red-700 text-white"
                 >
-                  <Link to="/order" onClick={() => setIsOpen(false)}>
+                  <a
+                    href="https://www.toasttab.com/local/order/hummusbargrill/r-7fc07f7e-2b14-4999-8bd9-8c05a07d8e59"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsOpen(false)}
+                  >
                     <ShoppingBag className="w-4 h-4 mr-2" />
                     Order Online
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </div>
