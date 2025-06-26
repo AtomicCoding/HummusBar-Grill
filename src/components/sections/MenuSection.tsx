@@ -114,8 +114,8 @@ const MenuSection = () => {
               className={cn(
                 "flex items-center px-6 py-3 rounded-full font-medium transition-all duration-300",
                 activeCategory === category.id
-                  ? "bg-sage-600 text-white shadow-soft"
-                  : "bg-warm-50 text-foreground/70 hover:bg-warm-100 hover:text-foreground",
+                  ? "bg-red-600 text-white shadow-soft"
+                  : "bg-red-50 text-foreground/70 hover:bg-red-100 hover:text-foreground",
               )}
             >
               <category.icon className="w-4 h-4 mr-2" />
