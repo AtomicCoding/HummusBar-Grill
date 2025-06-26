@@ -2,31 +2,48 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Heart, Users, Award, Clock } from "lucide-react";
+import {
+  ArrowLeft,
+  Heart,
+  Users,
+  Award,
+  Clock,
+  ChefHat,
+  Utensils,
+} from "lucide-react";
 
 const About = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
       <main className="pt-16 lg:pt-20">
-        {/* Header */}
-        <section className="section-spacing bg-gradient-sage">
-          <div className="container-custom section-padding">
-            <div className="max-w-3xl mx-auto text-center">
+        {/* Header with Hero Image */}
+        <section className="relative min-h-[60vh] flex items-center">
+          <div className="absolute inset-0">
+            <img
+              src="https://i.ibb.co/kv1mqsG/image.png"
+              alt="About Hummus Bar & Grill"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40" />
+          </div>
+
+          <div className="relative z-10 container-custom section-padding">
+            <div className="max-w-3xl">
               <Link
                 to="/"
-                className="inline-flex items-center text-sage-600 hover:text-sage-700 font-medium mb-6 group"
+                className="inline-flex items-center text-white/80 hover:text-white font-medium mb-6 group"
               >
                 <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
                 Back to Home
               </Link>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 text-balance">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
                 Our
-                <span className="block text-sage-700">Story</span>
+                <span className="block text-red-400">Story</span>
               </h1>
 
-              <p className="text-lg text-foreground/80 leading-relaxed mb-8 text-balance">
+              <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-8">
                 From humble beginnings to a beloved Mediterranean destination,
                 discover the passion and tradition behind every dish we serve.
               </p>
@@ -38,123 +55,167 @@ const About = () => {
         <section className="section-spacing">
           <div className="container-custom section-padding">
             <div className="max-w-4xl mx-auto">
-              {/* Intro */}
-              <div className="text-center mb-16">
-                <div className="w-24 h-24 bg-sage-100 rounded-2xl flex items-center justify-center mx-auto mb-8">
-                  <Heart className="w-12 h-12 text-sage-600" />
-                </div>
-
-                <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-6">
-                  A Family Legacy of Mediterranean Excellence
+              {/* Main Story */}
+              <div className="mb-16">
+                <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 text-center">
+                  Authentic Mediterranean Experience Since 2008
                 </h2>
 
-                <p className="text-lg text-foreground/70 leading-relaxed text-balance">
-                  Founded in 1998 by the Khalil family, Hummus Bar & Grill began
-                  as a small neighborhood restaurant with a simple mission: to
-                  share the authentic flavors of the Mediterranean with our
-                  community. Today, we continue this tradition across multiple
-                  locations, always staying true to our roots.
-                </p>
+                <div className="prose prose-lg max-w-none space-y-6">
+                  <p className="text-lg text-foreground/80 leading-relaxed">
+                    The first Hummus Bar and Grill Restaurant is conveniently
+                    located in Tarzana Village Shopping Center on Ventura
+                    Boulevard in Tarzana, and boasts plentiful parking. The
+                    simple unpretentious environs of the restaurant create the
+                    experience of a Tel-Aviv outing, transporting you to the
+                    heart of the Mediterranean with every visit.
+                  </p>
+
+                  <p className="text-lg text-foreground/80 leading-relaxed">
+                    The restaurant offers a wide range of quality salads
+                    prepared daily on the premises, and served with hot pitas
+                    baked upon request on location. The food is prepared with
+                    great care using only high quality products, and focusing on
+                    the simplicity of preparation - thus allowing affordable
+                    pricing. Hummus Bar has introduced a new concept in Los
+                    Angeles, combining high quality meats with ambiance and a
+                    concept.
+                  </p>
+
+                  <p className="text-lg text-foreground/80 leading-relaxed">
+                    Hummus Bar is open daily from 11:00am to 12:00am and 7 days
+                    a week. We also offer a delivery system provided daily from
+                    11:00 a.m. to 11:00 p.m. 7 days a week.
+                  </p>
+
+                  <p className="text-lg text-foreground/80 leading-relaxed">
+                    The character of the restaurant changes throughout the day.
+                    At lunchtime you will see people coming for a quick meal in
+                    the midst of their busy workday, while in the evening the
+                    premises fill up with young people and families to enjoy our
+                    diverse menu, as well as the great atmosphere that the place
+                    offers.
+                  </p>
+
+                  <p className="text-lg text-foreground/80 leading-relaxed">
+                    The Hummus Bar does not forget about its youngest customers,
+                    the children, offering them a children's menu containing
+                    mini-schnitzel, mini-hamburger and chips with hot dogs, just
+                    what every kid loves.
+                  </p>
+                </div>
               </div>
 
-              {/* Timeline */}
-              <div className="space-y-12">
-                <div className="grid md:grid-cols-2 gap-8 items-center">
-                  <div className="order-2 md:order-1">
-                    <div className="aspect-[4/3] bg-sage-200 rounded-2xl flex items-center justify-center">
-                      <div className="text-center text-sage-700">
-                        <Clock className="w-16 h-16 mx-auto mb-2" />
-                        <p className="text-sm font-medium">
-                          1998 - The Beginning
-                        </p>
-                      </div>
-                    </div>
+              {/* Features Grid */}
+              <div className="grid md:grid-cols-3 gap-8 mb-16">
+                <div className="text-center p-6 bg-red-50 rounded-2xl border border-red-200">
+                  <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <ChefHat className="w-8 h-8 text-red-600" />
                   </div>
-                  <div className="order-1 md:order-2">
-                    <h3 className="text-xl font-semibold text-foreground mb-4">
-                      The Beginning (1998)
+                  <h3 className="text-lg font-semibold text-foreground mb-3">
+                    Daily Fresh Preparation
+                  </h3>
+                  <p className="text-foreground/70 text-sm">
+                    Quality salads prepared daily on premises, with hot pitas
+                    baked upon request for the freshest experience.
+                  </p>
+                </div>
+
+                <div className="text-center p-6 bg-red-50 rounded-2xl border border-red-200">
+                  <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <Heart className="w-8 h-8 text-red-600" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground mb-3">
+                    Tel-Aviv Experience
+                  </h3>
+                  <p className="text-foreground/70 text-sm">
+                    Simple unpretentious environs create the authentic
+                    experience of a Tel-Aviv outing right here in Tarzana.
+                  </p>
+                </div>
+
+                <div className="text-center p-6 bg-red-50 rounded-2xl border border-red-200">
+                  <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <Users className="w-8 h-8 text-red-600" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground mb-3">
+                    Family Atmosphere
+                  </h3>
+                  <p className="text-foreground/70 text-sm">
+                    Welcoming everyone from quick lunch diners to families and
+                    young people enjoying our diverse menu.
+                  </p>
+                </div>
+              </div>
+
+              {/* Hours & Service */}
+              <div className="grid md:grid-cols-2 gap-8 mb-16">
+                <div className="p-8 bg-white rounded-2xl shadow-soft border border-red-200">
+                  <div className="flex items-center mb-4">
+                    <Clock className="w-6 h-6 text-red-600 mr-3" />
+                    <h3 className="text-xl font-semibold text-foreground">
+                      Hours
                     </h3>
-                    <p className="text-foreground/70 leading-relaxed">
-                      Ahmad and Fatima Khalil opened the first Hummus Bar &
-                      Grill in a small storefront in downtown Manhattan. With
-                      family recipes passed down through generations and a
-                      commitment to fresh, quality ingredients, they quickly
-                      gained a loyal following.
+                  </div>
+                  <div className="space-y-2">
+                    <p className="text-foreground/80">
+                      <strong>Restaurant:</strong> Daily 11:00 AM - 12:00 AM
+                    </p>
+                    <p className="text-foreground/80">
+                      <strong>Delivery:</strong> Daily 11:00 AM - 11:00 PM
                     </p>
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-8 items-center">
-                  <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-4">
-                      Growth & Recognition (2005-2010)
+                <div className="p-8 bg-white rounded-2xl shadow-soft border border-red-200">
+                  <div className="flex items-center mb-4">
+                    <Utensils className="w-6 h-6 text-red-600 mr-3" />
+                    <h3 className="text-xl font-semibold text-foreground">
+                      Special Features
                     </h3>
-                    <p className="text-foreground/70 leading-relaxed">
-                      Word spread about our authentic Mediterranean cuisine, and
-                      we expanded to our second location in Midtown. Food
-                      critics and customers alike praised our commitment to
-                      traditional cooking methods and the warm, family-friendly
-                      atmosphere.
+                  </div>
+                  <div className="space-y-2">
+                    <p className="text-foreground/80">
+                      • Children's menu available
                     </p>
-                  </div>
-                  <div>
-                    <div className="aspect-[4/3] bg-warm-200 rounded-2xl flex items-center justify-center">
-                      <div className="text-center text-warm-700">
-                        <Award className="w-16 h-16 mx-auto mb-2" />
-                        <p className="text-sm font-medium">
-                          2005-2010 - Growth
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-8 items-center">
-                  <div className="order-2 md:order-1">
-                    <div className="aspect-[4/3] bg-sage-200 rounded-2xl flex items-center justify-center">
-                      <div className="text-center text-sage-700">
-                        <Users className="w-16 h-16 mx-auto mb-2" />
-                        <p className="text-sm font-medium">
-                          2011-Present - Community
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="order-1 md:order-2">
-                    <h3 className="text-xl font-semibold text-foreground mb-4">
-                      Community & Innovation (2011-Present)
-                    </h3>
-                    <p className="text-foreground/70 leading-relaxed">
-                      Today, our family business has grown to include multiple
-                      locations, catering services, and even our own line of
-                      specialty products. We've embraced modern technology while
-                      never losing sight of our core values: quality,
-                      authenticity, and family.
-                    </p>
+                    <p className="text-foreground/80">• Plentiful parking</p>
+                    <p className="text-foreground/80">• Tel-Aviv atmosphere</p>
+                    <p className="text-foreground/80">• Affordable pricing</p>
                   </div>
                 </div>
               </div>
 
               {/* Call to Action */}
-              <div className="mt-16 text-center p-8 bg-gradient-warm rounded-2xl">
+              <div className="text-center p-8 bg-gradient-to-br from-red-50 to-red-100 rounded-2xl border border-red-200">
                 <h3 className="text-2xl font-display font-bold text-foreground mb-4">
-                  Become Part of Our Story
+                  Experience Mediterranean Tradition
                 </h3>
                 <p className="text-foreground/80 mb-6 text-balance">
-                  We invite you to experience the warmth of Mediterranean
-                  hospitality and taste the dishes that have brought families
-                  together for over 25 years.
+                  Visit us in Tarzana Village Shopping Center and taste the
+                  authentic flavors that have made us a Los Angeles favorite
+                  since 2008.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button
                     asChild
                     size="lg"
-                    className="bg-sage-600 hover:bg-sage-700"
+                    className="bg-red-600 hover:bg-red-700"
                   >
-                    <Link to="/locations">Visit Us Today</Link>
+                    <Link to="/contact">Visit Us Today</Link>
                   </Button>
-                  <Button asChild variant="outline" size="lg">
-                    <Link to="/menu">Explore Our Menu</Link>
+                  <Button
+                    asChild
+                    variant="outline"
+                    size="lg"
+                    className="border-red-300 text-red-700 hover:bg-red-50"
+                  >
+                    <a
+                      href="https://www.toasttab.com/local/order/hummusbargrill/r-7fc07f7e-2b14-4999-8bd9-8c05a07d8e59"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Order Online
+                    </a>
                   </Button>
                 </div>
               </div>
