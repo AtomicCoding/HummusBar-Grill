@@ -44,7 +44,7 @@ const HeroSection = () => {
             <Button
               asChild
               size="lg"
-              className="bg-sage-600 hover:bg-sage-700 text-white px-8 py-4 text-lg font-medium shadow-soft hover:shadow-md transition-all group"
+              className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-medium shadow-soft hover:shadow-md transition-all group"
             >
               <Link to="/order">
                 Order Online
