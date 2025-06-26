@@ -46,33 +46,6 @@ const Footer = () => {
 
   return (
     <footer className="bg-warm-900 text-warm-100">
-      {/* Newsletter Section */}
-      <div className="border-b border-warm-800">
-        <div className="container-custom section-padding py-12">
-          <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">
-              Stay Connected with Us
-            </h3>
-            <p className="text-warm-300 mb-8 text-balance">
-              Get the latest updates on new menu items, special offers, and
-              events. Plus, receive a 10% discount on your next order when you
-              sign up!
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <Input
-                placeholder="Enter your email address"
-                className="bg-warm-800 border-warm-700 text-white placeholder:text-warm-400 flex-1"
-              />
-              <Button className="bg-sage-600 hover:bg-sage-700 text-white px-6 group">
-                Subscribe
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Main Footer */}
       <div className="container-custom section-padding py-16">
         <div className="grid lg:grid-cols-4 gap-12">
