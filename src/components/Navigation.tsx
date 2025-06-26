@@ -154,7 +154,7 @@ const Navigation = () => {
                 </Button>
                 <Button
                   asChild
-                  className="w-full bg-sage-600 hover:bg-sage-700 text-white"
+                  className="w-full bg-red-600 hover:bg-red-700 text-white"
                 >
                   <Link to="/order" onClick={() => setIsOpen(false)}>
                     <ShoppingBag className="w-4 h-4 mr-2" />
