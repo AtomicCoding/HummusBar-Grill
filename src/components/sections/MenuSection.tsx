@@ -58,7 +58,7 @@ const MenuSection = () => {
         name: "Pita Arrayes",
         description:
           "Grilled pita stuffed with seasoned ground meat, onions, and Mediterranean spices",
-        price: "$24.95",
+        price: "$29.00",
         image: "https://i.ibb.co/G3QL9Fb6/image.png",
         badges: ["Traditional"],
         spicy: false,
