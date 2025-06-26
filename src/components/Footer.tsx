@@ -80,9 +80,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-sage-600 to-sage-700 rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-xl">H</span>
-              </div>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fef5c5c4add29486f8f779aaf4b6e1457?format=webp&width=800"
+                alt="Hummus Bar & Grill Logo"
+                className="w-12 h-12 rounded-xl object-cover"
+              />
               <div>
                 <h3 className="text-xl font-display font-semibold text-white">
                   Hummus Bar & Grill
@@ -93,7 +95,8 @@ const Footer = () => {
 
             <p className="text-warm-300 leading-relaxed mb-6">
               Bringing you the finest Mediterranean cuisine with traditional
-              recipes and fresh ingredients since 1998.
+              recipes and fresh ingredients since 2008. Located in Tarzana
+              Village Shopping Center.
             </p>
 
             {/* Social Links */}
