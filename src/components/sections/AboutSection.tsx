@@ -86,17 +86,23 @@ const AboutSection = () => {
               <Button
                 asChild
                 size="lg"
-                className="bg-sage-600 hover:bg-sage-700 text-white px-8"
+                className="bg-red-600 hover:bg-red-700 text-white px-8"
               >
-                <Link to="/about">Learn More About Us</Link>
+                <a
+                  href="https://www.toasttab.com/local/order/hummusbargrill/r-7fc07f7e-2b14-4999-8bd9-8c05a07d8e59"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Order Online
+                </a>
               </Button>
               <Button
                 asChild
                 variant="outline"
                 size="lg"
-                className="px-8 border-sage-300 text-sage-700 hover:bg-sage-50"
+                className="px-8 border-red-300 text-red-700 hover:bg-red-50"
               >
-                <Link to="/locations">Visit Our Locations</Link>
+                <Link to="/contact">Visit Our Restaurant</Link>
               </Button>
             </div>
           </div>
