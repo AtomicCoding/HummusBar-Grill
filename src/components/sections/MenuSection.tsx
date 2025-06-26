@@ -91,12 +91,12 @@ const MenuSection = () => {
       <div className="container-custom section-padding">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center px-3 py-1 bg-sage-100 text-sage-700 rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium mb-4">
             Our Menu
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6 text-balance">
             Discover Authentic
-            <span className="block text-sage-700">Mediterranean Flavors</span>
+            <span className="block text-red-700">Mediterranean Flavors</span>
           </h2>
           <p className="text-lg text-foreground/80 leading-relaxed text-balance">
             Each dish is carefully crafted using traditional recipes and the
