@@ -51,7 +51,7 @@ const Navigation = () => {
             </div>
             <div className="hidden sm:block">
               <h1 className="text-xl font-display font-semibold text-foreground">
-                Hummus Bar & Grill
+                <span className="text-white">Hummus Bar & Grill</span>
               </h1>
               <p className="text-xs text-muted-foreground -mt-0.5">
                 Authentic Mediterranean
