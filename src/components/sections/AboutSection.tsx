@@ -6,27 +6,27 @@ const AboutSection = () => {
   const features = [
     {
       icon: ChefHat,
-      title: "Master Chefs",
+      title: "Daily Fresh Preparation",
       description:
-        "Our experienced chefs bring authentic Mediterranean flavors using traditional techniques passed down through generations.",
+        "Quality salads prepared daily on the premises, with hot pitas baked upon request on location for the freshest experience.",
     },
     {
       icon: Leaf,
-      title: "Fresh Ingredients",
+      title: "High Quality Products",
       description:
-        "We source the finest, freshest ingredients daily from local farmers and trusted Mediterranean suppliers.",
+        "Food prepared with great care using only high quality products, focusing on simplicity of preparation for affordable pricing.",
     },
     {
       icon: Heart,
-      title: "Made with Love",
+      title: "Tel-Aviv Experience",
       description:
-        "Every dish is prepared with passion and care, ensuring an exceptional dining experience for our guests.",
+        "Simple unpretentious environs create the authentic experience of a Tel-Aviv outing right here in Tarzana.",
     },
     {
       icon: Users,
-      title: "Family Tradition",
+      title: "Family Atmosphere",
       description:
-        "A family-owned restaurant committed to sharing the rich culinary heritage of the Mediterranean region.",
+        "Welcoming everyone from quick lunch diners to families and young people enjoying our diverse menu and great atmosphere.",
     },
   ];
 
