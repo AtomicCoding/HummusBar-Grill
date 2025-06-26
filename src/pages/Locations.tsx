@@ -2,176 +2,205 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowLeft, MapPin, Phone, Clock, ExternalLink } from "lucide-react";
+import {
+  ArrowLeft,
+  MapPin,
+  Phone,
+  Clock,
+  ExternalLink,
+  Car,
+  Utensils,
+  Truck,
+} from "lucide-react";
 
 const Locations = () => {
-  const locations = [
-    {
-      name: "Downtown Manhattan",
-      address: "123 Main Street",
-      city: "New York, NY 10001",
-      phone: "(555) 123-4567",
-      hours: {
-        weekdays: "11:00 AM - 10:00 PM",
-        weekend: "10:00 AM - 11:00 PM",
-      },
-      features: ["Dine-in", "Takeout", "Delivery", "Catering"],
-    },
-    {
-      name: "Midtown West",
-      address: "456 Broadway",
-      city: "New York, NY 10018",
-      phone: "(555) 234-5678",
-      hours: {
-        weekdays: "11:00 AM - 10:00 PM",
-        weekend: "10:00 AM - 11:00 PM",
-      },
-      features: ["Dine-in", "Takeout", "Delivery", "Private Events"],
-    },
-    {
-      name: "Brooklyn Heights",
-      address: "789 Atlantic Avenue",
-      city: "Brooklyn, NY 11238",
-      phone: "(555) 345-6789",
-      hours: {
-        weekdays: "11:00 AM - 9:00 PM",
-        weekend: "10:00 AM - 10:00 PM",
-      },
-      features: ["Dine-in", "Takeout", "Delivery", "Outdoor Seating"],
-    },
-  ];
-
   return (
     <div className="min-h-screen">
       <Navigation />
       <main className="pt-16 lg:pt-20">
-        {/* Header */}
-        <section className="section-spacing bg-gradient-warm">
-          <div className="container-custom section-padding">
-            <div className="max-w-3xl mx-auto text-center">
+        {/* Header with Hero Image */}
+        <section className="relative min-h-[60vh] flex items-center">
+          <div className="absolute inset-0">
+            <img
+              src="https://i.ibb.co/wN2dVSDS/image.png"
+              alt="Hummus Bar & Grill Location"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40" />
+          </div>
+
+          <div className="relative z-10 container-custom section-padding">
+            <div className="max-w-3xl">
               <Link
                 to="/"
-                className="inline-flex items-center text-sage-600 hover:text-sage-700 font-medium mb-6 group"
+                className="inline-flex items-center text-white/80 hover:text-white font-medium mb-6 group"
               >
                 <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
                 Back to Home
               </Link>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 text-balance">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
                 Our
-                <span className="block text-sage-700">Locations</span>
+                <span className="block text-red-400">Location</span>
               </h1>
 
-              <p className="text-lg text-foreground/80 leading-relaxed mb-8 text-balance">
-                Find the Hummus Bar & Grill location nearest you. Each
-                restaurant offers the same authentic Mediterranean experience
-                with local touches.
+              <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-8">
+                Visit us at our Tarzana location in the heart of Tarzana Village
+                Shopping Center. Enjoy authentic Mediterranean cuisine with
+                plentiful parking and easy access.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Locations Grid */}
+        {/* Location Details */}
         <section className="section-spacing">
           <div className="container-custom section-padding">
-            <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
-              {locations.map((location, index) => (
-                <div
-                  key={location.name}
-                  className="bg-white rounded-2xl shadow-soft border border-warm-200 overflow-hidden hover:shadow-md transition-all duration-300"
-                >
-                  {/* Map Placeholder */}
-                  <div className="h-48 bg-gradient-to-br from-sage-200 to-warm-200 flex items-center justify-center">
-                    <div className="text-center text-sage-700">
-                      <MapPin className="w-12 h-12 mx-auto mb-2" />
-                      <p className="text-sm font-medium">Interactive Map</p>
+            <div className="grid lg:grid-cols-2 gap-12 items-start">
+              {/* Location Info */}
+              <div className="space-y-8">
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-6">
+                    Tarzana Location
+                  </h2>
+
+                  {/* Address */}
+                  <div className="flex items-start mb-6 p-6 bg-white rounded-2xl shadow-soft border border-red-200">
+                    <MapPin className="w-6 h-6 text-red-600 mt-1 mr-4 flex-shrink-0" />
+                    <div>
+                      <h3 className="text-lg font-semibold text-foreground mb-2">
+                        Address
+                      </h3>
+                      <p className="text-foreground/80 text-lg">
+                        18743 Ventura Blvd
+                      </p>
+                      <p className="text-foreground/80 text-lg">
+                        Tarzana, CA 91356
+                      </p>
+                      <p className="text-sm text-foreground/60 mt-2">
+                        Tarzana Village Shopping Center
+                      </p>
                     </div>
                   </div>
 
-                  {/* Content */}
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold text-foreground mb-4">
-                      {location.name}
-                    </h3>
-
-                    {/* Address */}
-                    <div className="flex items-start mb-4">
-                      <MapPin className="w-4 h-4 text-sage-600 mt-1 mr-3 flex-shrink-0" />
-                      <div>
-                        <p className="text-foreground/80">{location.address}</p>
-                        <p className="text-foreground/80">{location.city}</p>
-                      </div>
-                    </div>
-
-                    {/* Phone */}
-                    <div className="flex items-center mb-4">
-                      <Phone className="w-4 h-4 text-sage-600 mr-3" />
+                  {/* Phone */}
+                  <div className="flex items-center mb-6 p-6 bg-white rounded-2xl shadow-soft border border-red-200">
+                    <Phone className="w-6 h-6 text-red-600 mr-4" />
+                    <div>
+                      <h3 className="text-lg font-semibold text-foreground mb-2">
+                        Phone
+                      </h3>
                       <a
-                        href={`tel:${location.phone}`}
-                        className="text-sage-600 hover:text-sage-700 font-medium"
+                        href="tel:8183446606"
+                        className="text-red-600 hover:text-red-700 font-medium text-lg"
                       >
-                        {location.phone}
+                        (818) 344-6606
                       </a>
                     </div>
+                  </div>
 
-                    {/* Hours */}
-                    <div className="flex items-start mb-6">
-                      <Clock className="w-4 h-4 text-sage-600 mt-1 mr-3 flex-shrink-0" />
-                      <div>
-                        <p className="text-foreground/80 text-sm">
-                          Mon-Thu: {location.hours.weekdays}
+                  {/* Hours */}
+                  <div className="flex items-start mb-6 p-6 bg-white rounded-2xl shadow-soft border border-red-200">
+                    <Clock className="w-6 h-6 text-red-600 mt-1 mr-4 flex-shrink-0" />
+                    <div>
+                      <h3 className="text-lg font-semibold text-foreground mb-2">
+                        Hours
+                      </h3>
+                      <div className="space-y-1">
+                        <p className="text-foreground/80">
+                          Daily: 11:00 AM - 12:00 AM
                         </p>
-                        <p className="text-foreground/80 text-sm">
-                          Fri-Sun: {location.hours.weekend}
+                        <p className="text-sm text-foreground/60">
+                          Delivery: 11:00 AM - 11:00 PM
                         </p>
                       </div>
-                    </div>
-
-                    {/* Features */}
-                    <div className="mb-6">
-                      <div className="flex flex-wrap gap-2">
-                        {location.features.map((feature) => (
-                          <span
-                            key={feature}
-                            className="px-3 py-1 bg-sage-100 text-sage-700 text-xs font-medium rounded-full"
-                          >
-                            {feature}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Actions */}
-                    <div className="flex gap-3">
-                      <Button
-                        size="sm"
-                        className="flex-1 bg-sage-600 hover:bg-sage-700"
-                      >
-                        Get Directions
-                        <ExternalLink className="w-3 h-3 ml-2" />
-                      </Button>
-                      <Button variant="outline" size="sm" className="flex-1">
-                        Call Now
-                      </Button>
                     </div>
                   </div>
-                </div>
-              ))}
-            </div>
 
-            {/* Coming Soon */}
-            <div className="mt-12 text-center p-8 bg-sage-50 rounded-2xl border border-sage-200">
-              <h3 className="text-xl font-semibold text-foreground mb-4">
-                More Locations Coming Soon
-              </h3>
-              <p className="text-foreground/70 mb-6">
-                We're expanding to serve more communities with authentic
-                Mediterranean cuisine. Stay tuned for new locations in your
-                area!
-              </p>
-              <Button asChild variant="outline">
-                <Link to="/contact">Request a Location</Link>
-              </Button>
+                  {/* Features */}
+                  <div className="p-6 bg-red-50 rounded-2xl border border-red-200">
+                    <h3 className="text-lg font-semibold text-foreground mb-4">
+                      What We Offer
+                    </h3>
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="flex items-center">
+                        <Utensils className="w-5 h-5 text-red-600 mr-3" />
+                        <span className="text-foreground/80">Dine-in</span>
+                      </div>
+                      <div className="flex items-center">
+                        <Truck className="w-5 h-5 text-red-600 mr-3" />
+                        <span className="text-foreground/80">Takeout</span>
+                      </div>
+                      <div className="flex items-center">
+                        <Truck className="w-5 h-5 text-red-600 mr-3" />
+                        <span className="text-foreground/80">Delivery</span>
+                      </div>
+                      <div className="flex items-center">
+                        <Car className="w-5 h-5 text-red-600 mr-3" />
+                        <span className="text-foreground/80">
+                          Plentiful Parking
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Actions */}
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Button
+                      asChild
+                      size="lg"
+                      className="bg-red-600 hover:bg-red-700 flex-1"
+                    >
+                      <a
+                        href="https://www.google.com/maps/dir//18743+Ventura+Blvd,+Tarzana,+CA+91356"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Get Directions
+                        <ExternalLink className="w-4 h-4 ml-2" />
+                      </a>
+                    </Button>
+                    <Button
+                      asChild
+                      variant="outline"
+                      size="lg"
+                      className="flex-1 border-red-300 text-red-700 hover:bg-red-50"
+                    >
+                      <a href="tel:8183446606">Call Now</a>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Google Maps */}
+              <div className="space-y-6">
+                <h3 className="text-xl font-semibold text-foreground">
+                  Find Us
+                </h3>
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-soft border border-red-200">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.2158!2d-118.5449!3d34.1634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2964f2b1b6f5d%3A0x8a8e1b8b6b8b8b8b!2s18743%20Ventura%20Blvd%2C%20Tarzana%2C%20CA%2091356!5e0!3m2!1sen!2sus!4v1"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Hummus Bar & Grill Location"
+                  />
+                </div>
+
+                <div className="bg-red-50 p-6 rounded-2xl border border-red-200">
+                  <h4 className="font-semibold text-foreground mb-2">
+                    Easy to Find
+                  </h4>
+                  <p className="text-foreground/70 text-sm">
+                    Located in the Tarzana Village Shopping Center on Ventura
+                    Boulevard. Look for our sign and enjoy the convenience of
+                    ample free parking.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
