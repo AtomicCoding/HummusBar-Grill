@@ -78,7 +78,7 @@ const MenuSection = () => {
         name: "Kosher Moroccan Cigars",
         description:
           "5 Pieces of kosher moroccan cigars. Served with a side of tehina. Spicy!!!",
-        price: "$13.95",
+        price: "$20.00",
         image: "https://i.ibb.co/bgcgF5Ps/image.png",
         badges: ["Spicy", "Kosher"],
         spicy: true,
