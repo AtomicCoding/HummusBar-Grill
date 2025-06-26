@@ -75,9 +75,9 @@ const HeroSection = () => {
           <div className="grid grid-cols-3 gap-6 max-w-lg animate-fade-in">
             <div className="text-center">
               <div className="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">
-                15+
+                16+
               </div>
-              <div className="text-sm text-white/80">Years of Excellence</div>
+              <div className="text-sm text-white/80">Years Since 2008</div>
             </div>
             <div className="text-center">
               <div className="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">
