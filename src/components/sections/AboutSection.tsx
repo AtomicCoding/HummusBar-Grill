@@ -47,41 +47,17 @@ const AboutSection = () => {
                 </span>
               </h2>
               <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-                The first Hummus Bar and Grill Restaurant is conveniently
-                located in Tarzana Village Shopping Center on Ventura Boulevard
-                in Tarzana, and boasts plentiful parking. The simple
-                unpretentious environs of the restaurant create the experience
-                of a Tel-Aviv outing, transporting you to the heart of the
-                Mediterranean with every visit.
+                
               </p>
               <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-                We offer a wide range of quality salads prepared daily on the
-                premises, and served with hot pitas baked upon request on
-                location. The food is prepared with great care using only high
-                quality products, focusing on the simplicity of preparation -
-                thus allowing affordable pricing. Our kitchen team brings
-                decades of experience in authentic Mediterranean cooking,
-                ensuring every dish meets the highest standards of freshness and
-                flavor.
+             
               </p>
               <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-                Hummus Bar has introduced a new concept in Los Angeles,
-                combining high quality meats with ambiance and atmosphere. The
-                character of the restaurant changes throughout the day - from
-                busy professionals grabbing a quick, healthy lunch to families
-                and young people gathering in the evening to enjoy our diverse
-                menu and the warm, welcoming atmosphere that makes every guest
-                feel like family.
+           
               </p>
               <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-                We take pride in serving not just adults, but also our youngest
-                customers. Our children's menu features mini-schnitzel,
-                mini-hamburgers, chips, and hot dogs - all the favorites that
-                kids love, prepared with the same attention to quality as our
-                adult menu. Whether you're seeking a quick meal during your busy
-                workday or a relaxed dinner with loved ones, Hummus Bar and
-                Grill offers an authentic taste of the Mediterranean in the
-                heart of Tarzana.
+        
+             
               </p>
             </div>
 
