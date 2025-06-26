@@ -95,7 +95,7 @@ const Navigation = () => {
             </Button>
             <Button
               asChild
-              className="bg-sage-600 hover:bg-sage-700 text-white shadow-soft hover:shadow-md transition-all"
+              className="bg-red-600 hover:bg-red-700 text-white shadow-soft hover:shadow-md transition-all"
             >
               <Link to="/order">
                 <ShoppingBag className="w-4 h-4 mr-2" />
