@@ -38,7 +38,7 @@ const MenuSection = () => {
         name: "Chef's Shakshuka",
         description:
           "A real shakshuka made with real, fresh tomatoes and eggs-to order!",
-        price: "$16.95",
+        price: "$25.00",
         image: "https://i.ibb.co/wFB0KbM7/image.png",
         badges: ["Spicy"],
         spicy: true,
