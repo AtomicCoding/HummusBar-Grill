@@ -212,7 +212,7 @@ const MenuSection = () => {
           <Button
             asChild
             size="lg"
-            className="bg-sage-600 hover:bg-sage-700 text-white px-8 group"
+            className="bg-red-600 hover:bg-red-700 text-white px-8 group"
           >
             <Link to="/menu">
               View Full Menu
