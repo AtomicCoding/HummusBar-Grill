@@ -118,10 +118,14 @@ const Navigation = () => {
               asChild
               className="bg-red-600 hover:bg-red-700 text-white shadow-soft hover:shadow-md transition-all"
             >
-              <Link to="/order">
+              <a
+                href="https://www.toasttab.com/local/order/hummusbargrill/r-7fc07f7e-2b14-4999-8bd9-8c05a07d8e59"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <ShoppingBag className="w-4 h-4 mr-2" />
                 Order Online
-              </Link>
+              </a>
             </Button>
           </div>
 
