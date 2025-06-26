@@ -204,7 +204,7 @@ const Footer = () => {
       <div className="border-t border-warm-800">
         <div className="container-custom section-padding py-6">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-warm-400">
-            <p>© 2024 Hummus Bar & Grill. All rights reserved.</p>
+            <p>© 2024 Hummus Bar & Grill. Serving Tarzana since 2008.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link
                 to="/privacy"
