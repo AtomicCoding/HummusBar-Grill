@@ -69,7 +69,7 @@ const MenuSection = () => {
         name: "Arugula Avocado Salad",
         description:
           "Fresh arugula, avocado, grapefruit, nuts, and seeds with lemon vinaigrette",
-        price: "$14.95",
+        price: "$23.00",
         image: "https://i.ibb.co/rGg6kKh8/image.png",
         badges: ["Vegetarian", "Gluten-Free"],
         spicy: false,
