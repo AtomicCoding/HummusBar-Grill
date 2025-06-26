@@ -186,26 +186,14 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* App Download */}
+            {/* Additional Info */}
             <div>
-              <h5 className="font-medium text-white mb-3">Download Our App</h5>
-              <div className="flex flex-col gap-2">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="justify-start bg-transparent border-warm-700 text-warm-300 hover:bg-warm-800 hover:text-white"
-                >
-                  <Apple className="w-4 h-4 mr-2" />
-                  App Store
-                </Button>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="justify-start bg-transparent border-warm-700 text-warm-300 hover:bg-warm-800 hover:text-white"
-                >
-                  <Smartphone className="w-4 h-4 mr-2" />
-                  Google Play
-                </Button>
+              <h5 className="font-medium text-white mb-3">Restaurant Info</h5>
+              <div className="space-y-2 text-sm text-warm-300">
+                <p>Located in Tarzana Village Shopping Center</p>
+                <p>Plentiful parking available</p>
+                <p>Children's menu available</p>
+                <p>Delivery service provided daily</p>
               </div>
             </div>
           </div>
