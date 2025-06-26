@@ -19,49 +19,29 @@ const MenuSection = () => {
       {
         name: "Classic Hummus Bowl",
         description:
-          "Our signature hummus served with warm pita, olive oil drizzle, and fresh herbs",
-        price: "$12.95",
-        image: "hummus-bowl",
+          "Our signature hummus served with olive oil drizzle and fresh herbs",
+        price: "$8.00",
+        priceNote: "half pint",
+        image: "https://i.ibb.co/mCg8n88F/image.png",
         badges: ["Popular", "Vegetarian"],
         spicy: false,
       },
       {
-        name: "Mediterranean Lamb Platter",
-        description:
-          "Tender grilled lamb with tzatziki, roasted vegetables, and saffron rice",
-        price: "$28.95",
-        image: "lamb-platter",
+        name: "Falafel",
+        description: "8 pieces of falafel. Served with a side of tehina.",
+        price: "$16.00",
+        image: "https://i.ibb.co/B2c05SbT/image.png",
         badges: ["Chef's Choice"],
         spicy: false,
       },
       {
-        name: "Shakshuka Supreme",
+        name: "Chef's Shakshuka",
         description:
-          "Eggs poached in spiced tomato sauce with feta, herbs, and artisan bread",
+          "A real shakshuka made with real, fresh tomatoes and eggs-to order!",
         price: "$16.95",
-        image: "shakshuka",
+        image: "https://i.ibb.co/wFB0KbM7/image.png",
         badges: ["Spicy"],
         spicy: true,
-      },
-    ],
-    appetizers: [
-      {
-        name: "Mezze Sampler",
-        description:
-          "Selection of hummus, baba ganoush, tabbouleh, and stuffed grape leaves",
-        price: "$18.95",
-        image: "mezze",
-        badges: ["Vegetarian", "Share"],
-        spicy: false,
-      },
-      {
-        name: "Crispy Falafel",
-        description:
-          "House-made falafel with tahini sauce and pickled vegetables",
-        price: "$11.95",
-        image: "falafel",
-        badges: ["Vegan"],
-        spicy: false,
       },
     ],
     mains: [
@@ -69,39 +49,39 @@ const MenuSection = () => {
         name: "Grilled Branzino",
         description:
           "Whole Mediterranean sea bass with lemon, herbs, and seasonal vegetables",
-        price: "$32.95",
-        image: "branzino",
+        price: "$42.00",
+        image: "https://i.ibb.co/39svfc3Z/image.png",
         badges: ["Fresh"],
         spicy: false,
       },
       {
-        name: "Moussaka Tradition",
+        name: "Pita Arrayes",
         description:
-          "Layered eggplant, lamb, and béchamel sauce baked to perfection",
+          "Grilled pita stuffed with seasoned ground meat, onions, and Mediterranean spices",
         price: "$24.95",
-        image: "moussaka",
+        image: "https://i.ibb.co/G3QL9Fb6/image.png",
         badges: ["Traditional"],
         spicy: false,
       },
     ],
     fresh: [
       {
-        name: "Greek Village Salad",
+        name: "Arugula Avocado Salad",
         description:
-          "Tomatoes, cucumbers, olives, feta, and oregano with olive oil dressing",
+          "Fresh arugula, avocado, grapefruit, nuts, and seeds with lemon vinaigrette",
         price: "$14.95",
-        image: "greek-salad",
+        image: "https://i.ibb.co/rGg6kKh8/image.png",
         badges: ["Vegetarian", "Gluten-Free"],
         spicy: false,
       },
       {
-        name: "Quinoa Tabbouleh",
+        name: "Kosher Moroccan Cigars",
         description:
-          "Fresh herbs, tomatoes, cucumbers, and quinoa with lemon dressing",
+          "5 Pieces of kosher moroccan cigars. Served with a side of tehina. Spicy!!!",
         price: "$13.95",
-        image: "quinoa-tabbouleh",
-        badges: ["Vegan", "Healthy"],
-        spicy: false,
+        image: "https://i.ibb.co/bgcgF5Ps/image.png",
+        badges: ["Spicy", "Kosher"],
+        spicy: true,
       },
     ],
   };
