@@ -69,8 +69,8 @@ const AboutSection = () => {
                   className="group p-6 bg-white rounded-2xl shadow-soft hover:shadow-md transition-all duration-300 hover:-translate-y-1"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className="w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-sage-200 transition-colors">
-                    <feature.icon className="w-6 h-6 text-sage-600" />
+                  <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-red-200 transition-colors">
+                    <feature.icon className="w-6 h-6 text-red-600" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">
                     {feature.title}
