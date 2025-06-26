@@ -53,9 +53,18 @@ const Navigation = () => {
             />
             <div className="hidden sm:block">
               <h1 className="text-xl font-display font-semibold text-foreground">
-                <span className="text-white">Hummus Bar & Grill</span>
+                <span
+                  className={cn(isScrolled ? "text-gray-900" : "text-white")}
+                >
+                  Hummus Bar & Grill
+                </span>
               </h1>
-              <p className="text-xs text-muted-foreground -mt-0.5">
+              <p
+                className={cn(
+                  "text-xs -mt-0.5",
+                  isScrolled ? "text-gray-600" : "text-gray-300",
+                )}
+              >
                 Authentic Mediterranean
               </p>
             </div>
