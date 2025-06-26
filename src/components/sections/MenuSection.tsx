@@ -168,12 +168,19 @@ const MenuSection = () => {
                 {/* Content */}
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-lg font-semibold text-foreground group-hover:text-sage-700 transition-colors">
+                    <h3 className="text-lg font-semibold text-foreground group-hover:text-red-700 transition-colors">
                       {item.name}
                     </h3>
-                    <span className="text-lg font-bold text-sage-700 ml-2">
-                      {item.price}
-                    </span>
+                    <div className="text-right ml-2">
+                      <span className="text-lg font-bold text-red-700">
+                        {item.price}
+                      </span>
+                      {item.priceNote && (
+                        <div className="text-xs text-foreground/60">
+                          {item.priceNote}
+                        </div>
+                      )}
+                    </div>
                   </div>
 
                   <p className="text-sm text-foreground/70 leading-relaxed mb-4">
@@ -193,14 +200,6 @@ const MenuSection = () => {
                         <span>4.8</span>
                       </div>
                     </div>
-
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      className="text-sage-600 hover:text-sage-700 hover:bg-sage-50 p-2"
-                    >
-                      <Plus className="w-4 h-4" />
-                    </Button>
                   </div>
                 </div>
               </div>
