@@ -99,7 +99,11 @@ const Navigation = () => {
               asChild
               variant="ghost"
               size="sm"
-              className="text-foreground/80 hover:text-foreground"
+              className={cn(
+                isScrolled
+                  ? "text-gray-600 hover:text-gray-900"
+                  : "text-white/80 hover:text-white",
+              )}
             >
               <a href="tel:8183446606">
                 <Phone className="w-4 h-4 mr-2" />
