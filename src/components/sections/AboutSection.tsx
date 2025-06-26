@@ -105,32 +105,29 @@ const AboutSection = () => {
           <div className="relative">
             <div className="grid grid-cols-2 gap-4">
               {/* Main Image */}
-              <div className="col-span-2 aspect-[4/3] bg-sage-200 rounded-2xl overflow-hidden shadow-soft-lg">
-                <div className="w-full h-full bg-gradient-to-br from-sage-300 to-sage-400 flex items-center justify-center">
-                  <div className="text-center text-sage-700">
-                    <ChefHat className="w-16 h-16 mx-auto mb-2" />
-                    <p className="text-sm font-medium">Restaurant Interior</p>
-                  </div>
-                </div>
+              <div className="col-span-2 aspect-[4/3] rounded-2xl overflow-hidden shadow-soft-lg">
+                <img
+                  src="https://i.ibb.co/TBXCtZ7x/image.png"
+                  alt="Restaurant Interior"
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Secondary Images */}
-              <div className="aspect-square bg-warm-200 rounded-2xl overflow-hidden shadow-soft">
-                <div className="w-full h-full bg-gradient-to-br from-warm-300 to-warm-400 flex items-center justify-center">
-                  <div className="text-center text-warm-700">
-                    <Heart className="w-8 h-8 mx-auto mb-1" />
-                    <p className="text-xs">Kitchen</p>
-                  </div>
-                </div>
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-soft">
+                <img
+                  src="https://i.ibb.co/bRCM5VN2/image.png"
+                  alt="Kitchen"
+                  className="w-full h-full object-cover"
+                />
               </div>
 
-              <div className="aspect-square bg-sage-200 rounded-2xl overflow-hidden shadow-soft">
-                <div className="w-full h-full bg-gradient-to-br from-sage-300 to-sage-400 flex items-center justify-center">
-                  <div className="text-center text-sage-700">
-                    <Leaf className="w-8 h-8 mx-auto mb-1" />
-                    <p className="text-xs">Fresh Ingredients</p>
-                  </div>
-                </div>
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-soft">
+                <img
+                  src="https://i.ibb.co/hJygGQsZ/image.png"
+                  alt="Fresh Ingredients"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
