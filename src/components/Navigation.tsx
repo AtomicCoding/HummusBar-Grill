@@ -46,9 +46,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 bg-gradient-to-br from-sage-600 to-sage-700 rounded-xl flex items-center justify-center shadow-soft group-hover:shadow-md transition-shadow">
-              <span className="text-white font-bold text-lg">H</span>
-            </div>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fef5c5c4add29486f8f779aaf4b6e1457?format=webp&width=800"
+              alt="Hummus Bar & Grill Logo"
+              className="w-12 h-12 rounded-xl shadow-soft group-hover:shadow-md transition-shadow object-cover"
+            />
             <div className="hidden sm:block">
               <h1 className="text-xl font-display font-semibold text-foreground">
                 <span className="text-white">Hummus Bar & Grill</span>
