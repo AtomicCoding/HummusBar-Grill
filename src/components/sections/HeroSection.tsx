@@ -46,10 +46,14 @@ const HeroSection = () => {
               size="lg"
               className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-medium shadow-soft hover:shadow-md transition-all group"
             >
-              <Link to="/order">
+              <a
+                href="https://www.toasttab.com/local/order/hummusbargrill/r-7fc07f7e-2b14-4999-8bd9-8c05a07d8e59"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Order Online
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Link>
+              </a>
             </Button>
 
             <Button
