@@ -68,8 +68,8 @@ const Navigation = () => {
                 key={item.name}
                 to={item.href}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-sage-600 relative py-2",
-                  isActive(item.href) ? "text-sage-700" : "text-foreground/80",
+                  "text-sm font-medium transition-colors hover:text-red-600 relative py-2",
+                  isActive(item.href) ? "text-red-700" : "text-foreground/80",
                 )}
               >
                 <span className="text-white">{item.name}</span>
