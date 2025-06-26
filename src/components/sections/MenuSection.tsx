@@ -134,13 +134,12 @@ const MenuSection = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {/* Image */}
-                <div className="aspect-[4/3] bg-gradient-to-br from-sage-200 to-warm-200 relative overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-sage-300/50 to-warm-300/50">
-                    <div className="text-center text-sage-700">
-                      <Star className="w-12 h-12 mx-auto mb-2" />
-                      <p className="text-sm font-medium">{item.name}</p>
-                    </div>
-                  </div>
+                <div className="aspect-[4/3] relative overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-full h-full object-cover"
+                  />
 
                   {/* Badges */}
                   <div className="absolute top-3 left-3 flex flex-wrap gap-1">
@@ -157,22 +156,12 @@ const MenuSection = () => {
                             "bg-green-100 text-green-800",
                           badge === "Vegan" &&
                             "bg-emerald-100 text-emerald-800",
+                          badge === "Kosher" && "bg-blue-100 text-blue-800",
                         )}
                       >
                         {badge}
                       </Badge>
                     ))}
-                  </div>
-
-                  {/* Hover Overlay */}
-                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <Button
-                      size="sm"
-                      className="bg-white text-foreground hover:bg-warm-50"
-                    >
-                      <Plus className="w-4 h-4 mr-2" />
-                      Add to Cart
-                    </Button>
                   </div>
                 </div>
 
