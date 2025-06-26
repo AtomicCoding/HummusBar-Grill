@@ -70,7 +70,7 @@ const Navigation = () => {
                   isActive(item.href) ? "text-sage-700" : "text-foreground/80",
                 )}
               >
-                {item.name}
+                <span className="text-white">{item.name}</span>
                 {isActive(item.href) && (
                   <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-sage-600 rounded-full" />
                 )}
