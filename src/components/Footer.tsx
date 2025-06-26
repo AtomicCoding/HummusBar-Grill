@@ -104,10 +104,10 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Locations */}
+          {/* Location */}
           <div>
             <h4 className="text-lg font-semibold text-white mb-6">
-              Our Locations
+              Our Location
             </h4>
             <div className="space-y-4">
               {locations.map((location) => (
