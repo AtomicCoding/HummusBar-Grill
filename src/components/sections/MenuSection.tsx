@@ -10,7 +10,6 @@ const MenuSection = () => {
 
   const categories = [
     { id: "signature", name: "Signature Dishes", icon: Star },
-    { id: "appetizers", name: "Appetizers", icon: Plus },
     { id: "mains", name: "Main Courses", icon: Flame },
     { id: "fresh", name: "Fresh & Light", icon: Leaf },
   ];
