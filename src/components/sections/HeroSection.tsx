@@ -29,7 +29,7 @@ const HeroSection = () => {
           {/* Main Heading */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-white mb-6 animate-slide-up text-balance">
             Authentic Mediterranean
-            <span className="block text-yellow-400">Flavors & Tradition</span>
+            <span className="block text-red-400">Flavors & Tradition</span>
           </h1>
 
           {/* Subtitle */}
