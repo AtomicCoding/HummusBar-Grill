@@ -81,7 +81,11 @@ const Navigation = () => {
                   isActive(item.href) ? "text-red-700" : "text-foreground/80",
                 )}
               >
-                <span className="text-white">{item.name}</span>
+                <span
+                  className={cn(isScrolled ? "text-gray-900" : "text-white")}
+                >
+                  {item.name}
+                </span>
                 {isActive(item.href) && (
                   <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-600 rounded-full" />
                 )}
