@@ -37,12 +37,12 @@ const AboutSection = () => {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <div className="inline-flex items-center px-3 py-1 bg-sage-100 text-sage-700 rounded-full text-sm font-medium">
+              <div className="inline-flex items-center px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium">
                 Our Story
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground text-balance">
                 Authentic Mediterranean
-                <span className="block text-sage-700">
+                <span className="block text-red-700">
                   Experience Since 2008
                 </span>
               </h2>
