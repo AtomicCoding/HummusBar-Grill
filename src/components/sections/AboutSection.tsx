@@ -41,16 +41,24 @@ const AboutSection = () => {
                 Our Story
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground text-balance">
-                Crafting Mediterranean
+                Authentic Mediterranean
                 <span className="block text-sage-700">
-                  Excellence Since 1998
+                  Experience Since 2008
                 </span>
               </h2>
               <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-                What started as a small family kitchen has grown into a beloved
-                Mediterranean destination. We honor traditional recipes while
-                embracing modern culinary techniques to create unforgettable
-                dining experiences.
+                The first Hummus Bar and Grill Restaurant is conveniently
+                located in Tarzana Village Shopping Center on Ventura Boulevard
+                in Tarzana, and boasts plentiful parking. The simple
+                unpretentious environs of the restaurant create the experience
+                of a Tel-Aviv outing.
+              </p>
+              <p className="text-lg text-foreground/80 leading-relaxed text-balance">
+                We offer a wide range of quality salads prepared daily on the
+                premises, and served with hot pitas baked upon request on
+                location. The food is prepared with great care using only high
+                quality products, focusing on the simplicity of preparation -
+                thus allowing affordable pricing.
               </p>
             </div>
 
