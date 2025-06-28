@@ -153,7 +153,7 @@ const AboutSection = () => {
 
               <div className="aspect-square rounded-2xl overflow-hidden shadow-soft">
                 <img
-                  src="https://i.ibb.co/hJygGQsZ/image.png"
+                  src="https://i.ibb.co/sp8K7sNF/image.png"
                   alt="Fresh Ingredients"
                   className="w-full h-full object-cover"
                 />
