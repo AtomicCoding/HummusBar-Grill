@@ -7,8 +7,75 @@ const AboutSection = () => {
     <section id="about" className="section-spacing bg-gradient-warm">
       <div className="container-custom section-padding">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Minimal Content */}
+          {/* Content */}
           <div className="space-y-8">
+            <div className="space-y-4">
+              <div className="inline-flex items-center px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium">
+                Our Story
+              </div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground text-balance">
+                Authentic Mediterranean
+                <span className="block text-red-700">
+                  Experience Since 2008
+                </span>
+              </h2>
+            </div>
+
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div className="group p-6 bg-white rounded-2xl shadow-soft hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+                <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-red-200 transition-colors">
+                  <ChefHat className="w-6 h-6 text-red-600" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground mb-2">
+                  Daily Fresh Preparation
+                </h3>
+                <p className="text-foreground/70 text-sm leading-relaxed">
+                  Quality salads prepared daily on the premises, with hot pitas
+                  baked upon request on location for the freshest experience.
+                </p>
+              </div>
+
+              <div className="group p-6 bg-white rounded-2xl shadow-soft hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+                <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-red-200 transition-colors">
+                  <Leaf className="w-6 h-6 text-red-600" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground mb-2">
+                  High Quality Products
+                </h3>
+                <p className="text-foreground/70 text-sm leading-relaxed">
+                  Food prepared with great care using only high quality
+                  products, focusing on simplicity of preparation for affordable
+                  pricing.
+                </p>
+              </div>
+
+              <div className="group p-6 bg-white rounded-2xl shadow-soft hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+                <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-red-200 transition-colors">
+                  <Heart className="w-6 h-6 text-red-600" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground mb-2">
+                  Tel-Aviv Experience
+                </h3>
+                <p className="text-foreground/70 text-sm leading-relaxed">
+                  Simple unpretentious environs create the authentic experience
+                  of a Tel-Aviv outing right here in Tarzana.
+                </p>
+              </div>
+
+              <div className="group p-6 bg-white rounded-2xl shadow-soft hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+                <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-red-200 transition-colors">
+                  <Users className="w-6 h-6 text-red-600" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground mb-2">
+                  Family Atmosphere
+                </h3>
+                <p className="text-foreground/70 text-sm leading-relaxed">
+                  Welcoming everyone from quick lunch diners to families and
+                  young people enjoying our diverse menu and great atmosphere.
+                </p>
+              </div>
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 asChild
