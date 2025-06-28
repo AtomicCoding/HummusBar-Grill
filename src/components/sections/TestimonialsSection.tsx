@@ -80,7 +80,7 @@ const TestimonialsSection = () => {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-sage-700 mb-2">
+            <div className="text-3xl md:text-4xl font-bold text-red-700 mb-2">
               4.9
             </div>
             <div className="flex justify-center mb-2">
