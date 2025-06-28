@@ -28,15 +28,17 @@ const HeroSection = () => {
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-white mb-6 animate-slide-up text-balance">
-            Authentic Mediterranean
-            <span className="block text-red-400">Flavors & Tradition</span>
+            Hummus Bar
+            <span className="block text-red-400">& Grill</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl leading-relaxed animate-slide-up text-balance">
-            Experience the finest Mediterranean cuisine crafted with traditional
-            recipes, fresh ingredients, and passionate attention to detail. From
-            our signature hummus to perfectly grilled specialties.
+            Authentic Mediterranean Flavors & Tradition. Experience the
+            healthiest cuisine in the world, crafted daily with the freshest
+            ingredients sourced from local farms and Mediterranean suppliers.
+            Every dish celebrates the nutritional benefits of the Mediterranean
+            diet.
           </p>
 
           {/* CTAs */}
