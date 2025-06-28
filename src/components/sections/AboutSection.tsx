@@ -162,21 +162,4 @@ const AboutSection = () => {
 
             {/* Floating Award Badge */}
             <div className="absolute -top-4 -right-4 bg-white rounded-2xl p-4 shadow-soft-lg border border-warm-200">
-              <div className="text-center">
-                <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-2">
-                  <span className="text-yellow-600 text-xl">🏆</span>
-                </div>
-                <div className="text-sm font-semibold text-foreground">
-                  Best of 2024
-                </div>
-                <div className="text-xs text-foreground/60">Mediterranean</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default AboutSection;
+          <div className="space-y-8">
