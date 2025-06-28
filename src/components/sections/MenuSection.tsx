@@ -6,13 +6,9 @@ import { ArrowRight, Plus, Star, Flame, Leaf } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const MenuSection = () => {
-  const [activeCategory, setActiveCategory] = useState("signature");
+  const [activeCategory, setActiveCategory] = useState("popular");
 
-  const categories = [
-    { id: "signature", name: "Signature Dishes", icon: Star },
-    { id: "mains", name: "Main Courses", icon: Flame },
-    { id: "fresh", name: "Fresh & Light", icon: Leaf },
-  ];
+  const categories = [{ id: "popular", name: "Popular", icon: Star }];
 
   const menuItems = {
     signature: [
