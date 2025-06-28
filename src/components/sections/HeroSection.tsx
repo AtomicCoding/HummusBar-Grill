@@ -22,7 +22,7 @@ const HeroSection = () => {
           <div className="inline-flex items-center px-4 py-2 bg-white/95 backdrop-blur-sm rounded-full shadow-soft mb-6 animate-fade-in">
             <Star className="w-4 h-4 text-yellow-500 mr-2" />
             <span className="text-sm font-medium text-gray-900">
-              Rated #1 Mediterranean Restaurant
+              Best Israeli Food
             </span>
           </div>
 
