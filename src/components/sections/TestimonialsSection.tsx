@@ -94,20 +94,20 @@ const TestimonialsSection = () => {
             <div className="text-sm text-foreground/70">Average Rating</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-sage-700 mb-2">
+            <div className="text-3xl md:text-4xl font-bold text-red-700 mb-2">
               2.5K+
             </div>
             <div className="text-sm text-foreground/70">Happy Reviews</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-sage-700 mb-2">
+            <div className="text-3xl md:text-4xl font-bold text-red-700 mb-2">
               98%
             </div>
             <div className="text-sm text-foreground/70">Recommend Us</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-sage-700 mb-2">
-              15
+            <div className="text-3xl md:text-4xl font-bold text-red-700 mb-2">
+              16
             </div>
             <div className="text-sm text-foreground/70">Years Serving</div>
           </div>
