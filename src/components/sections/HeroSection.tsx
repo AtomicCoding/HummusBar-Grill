@@ -94,15 +94,17 @@ const HeroSection = () => {
             </div>
             <div className="text-center">
               <div className="text-2xl md:text-3xl font-bold text-red-400 mb-1">
-                10K+
+                1M+
               </div>
               <div className="text-sm text-white/80">Happy Customers</div>
             </div>
             <div className="text-center">
               <div className="text-2xl md:text-3xl font-bold text-red-400 mb-1">
-                ⭐
+                🏆
               </div>
-              <div className="text-sm text-white/80">Tarzana Favorite</div>
+              <div className="text-sm text-white/80">
+                OpenTable Diners Choice 2024
+              </div>
             </div>
           </div>
         </div>
