@@ -19,22 +19,6 @@ const AboutSection = () => {
                   Experience Since 2008
                 </span>
               </h2>
-<<<<<<< HEAD
-=======
-              <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-                
-              </p>
-              <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-             
-              </p>
-              <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-           
-              </p>
-              <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-        
-             
-              </p>
->>>>>>> 62498066e057efbf5c6e29ef220d31b40d61020f
             </div>
 
             <div className="grid sm:grid-cols-2 gap-6">
