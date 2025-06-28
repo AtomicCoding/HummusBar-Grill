@@ -63,16 +63,17 @@ const TestimonialsSection = () => {
       <div className="container-custom section-padding">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center px-3 py-1 bg-white/80 backdrop-blur-sm text-sage-700 rounded-full text-sm font-medium mb-4">
-            Customer Reviews
+          <div className="inline-flex items-center px-3 py-1 bg-white/80 backdrop-blur-sm text-red-700 rounded-full text-sm font-medium mb-4">
+            Health & Satisfaction
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6 text-balance">
-            What Our Guests
-            <span className="block text-sage-700">Are Saying</span>
+            Fresh Ingredients
+            <span className="block text-red-700">Happy Customers</span>
           </h2>
           <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-            Don't just take our word for it. Here's what our valued customers
-            have to say about their Mediterranean dining experience.
+            Our commitment to the freshest ingredients and heart-healthy
+            Mediterranean cuisine creates satisfied customers who feel great
+            about what they eat.
           </p>
         </div>
 
