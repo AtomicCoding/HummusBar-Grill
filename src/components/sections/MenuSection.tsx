@@ -11,73 +11,33 @@ const MenuSection = () => {
   const categories = [{ id: "popular", name: "Popular", icon: Star }];
 
   const menuItems = {
-    signature: [
+    popular: [
       {
-        name: "Classic Hummus Bowl",
+        name: "Mushroom Hummus",
         description:
-          "Our signature hummus served with olive oil drizzle and fresh herbs",
-        price: "$8.00",
-        priceNote: "half pint",
+          "Creamy hummus topped with fresh sautéed mushrooms, olive oil, and herbs - packed with plant-based protein and Mediterranean superfoods",
+        price: "$12.00",
         image: "https://i.ibb.co/mCg8n88F/image.png",
-        badges: ["Popular", "Vegetarian"],
+        badges: ["Heart-Healthy", "Vegetarian"],
         spicy: false,
       },
       {
-        name: "Falafel",
-        description: "8 pieces of falafel. Served with a side of tehina.",
-        price: "$16.00",
+        name: "Rib Eye Steak",
+        description:
+          "Premium grass-fed rib eye served with fresh Mediterranean vegetables and herbs - high in protein and essential nutrients",
+        price: "$36.00",
         image: "https://i.ibb.co/B2c05SbT/image.png",
-        badges: ["Chef's Choice"],
+        badges: ["Protein-Rich", "Premium"],
         spicy: false,
       },
       {
-        name: "Chef's Shakshuka",
+        name: "Greek Salad",
         description:
-          "A real shakshuka made with real, fresh tomatoes and eggs-to order!",
-        price: "$25.00",
-        image: "https://i.ibb.co/wFB0KbM7/image.png",
-        badges: ["Spicy"],
-        spicy: true,
-      },
-    ],
-    mains: [
-      {
-        name: "Grilled Branzino",
-        description:
-          "Whole Mediterranean sea bass with lemon, herbs, and seasonal vegetables",
-        price: "$42.00",
-        image: "https://i.ibb.co/39svfc3Z/image.png",
-        badges: ["Fresh"],
-        spicy: false,
-      },
-      {
-        name: "Pita Arrayes",
-        description:
-          "Grilled pita stuffed with seasoned ground meat, onions, and Mediterranean spices",
-        price: "$29.00",
-        image: "https://i.ibb.co/G3QL9Fb6/image.png",
-        badges: ["Traditional"],
-        spicy: false,
-      },
-    ],
-    fresh: [
-      {
-        name: "Arugula Avocado Salad",
-        description:
-          "Fresh arugula, avocado, grapefruit, nuts, and seeds with lemon vinaigrette",
-        price: "$23.00",
+          "Traditional Greek salad with farm-fresh tomatoes, cucumbers, olives, and feta - the cornerstone of heart-healthy Mediterranean eating",
+        price: "$18.00",
         image: "https://i.ibb.co/rGg6kKh8/image.png",
-        badges: ["Vegetarian", "Gluten-Free"],
+        badges: ["Heart-Healthy", "Fresh Daily"],
         spicy: false,
-      },
-      {
-        name: "Kosher Moroccan Cigars",
-        description:
-          "5 Pieces of kosher moroccan cigars. Served with a side of tehina. Spicy!!!",
-        price: "$20.00",
-        image: "https://i.ibb.co/bgcgF5Ps/image.png",
-        badges: ["Spicy", "Kosher"],
-        spicy: true,
       },
     ],
   };
