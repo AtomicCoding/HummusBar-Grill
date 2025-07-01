@@ -34,11 +34,7 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl leading-relaxed animate-slide-up text-balance">
-            Authentic Mediterranean Flavors & Tradition. Experience the
-            healthiest cuisine in the world, crafted daily with the freshest
-            ingredients sourced from local farms and Mediterranean suppliers.
-            Every dish celebrates the nutritional benefits of the Mediterranean
-            diet.
+            Authentic Mediterranean Flavors & Tradition.
           </p>
 
           {/* CTAs */}

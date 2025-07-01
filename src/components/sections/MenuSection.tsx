@@ -22,19 +22,19 @@ const MenuSection = () => {
         spicy: false,
       },
       {
-        name: "Rib Eye Steak",
+        name: "Falafel",
         description:
-          "Premium grass-fed rib eye served with fresh Mediterranean vegetables and herbs - high in protein and essential nutrients",
-        price: "$36.00",
+          "Crispy golden falafel made from fresh chickpeas, herbs, and spices - a traditional Mediterranean protein packed with flavor",
+        price: "$16.00",
         image: "https://i.ibb.co/B2c05SbT/image.png",
-        badges: ["Protein-Rich", "Premium"],
+        badges: ["Vegetarian", "Traditional"],
         spicy: false,
       },
       {
-        name: "Greek Salad",
+        name: "Arugula Avocado Salad",
         description:
-          "Traditional Greek salad with farm-fresh tomatoes, cucumbers, olives, and feta - the cornerstone of heart-healthy Mediterranean eating",
-        price: "$18.00",
+          "Fresh arugula topped with creamy avocado, mixed greens, and Mediterranean herbs - a nutritious and satisfying healthy choice",
+        price: "$23.00",
         image: "https://i.ibb.co/rGg6kKh8/image.png",
         badges: ["Heart-Healthy", "Fresh Daily"],
         spicy: false,

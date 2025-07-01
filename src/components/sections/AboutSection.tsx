@@ -10,9 +10,6 @@ const AboutSection = () => {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <div className="inline-flex items-center px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium">
-                Our Story
-              </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground text-balance">
                 Authentic Mediterranean
                 <span className="block text-red-700">
@@ -135,12 +132,11 @@ const AboutSection = () => {
             <div className="absolute -top-4 -right-4 bg-white rounded-2xl p-4 shadow-soft-lg border border-warm-200">
               <div className="text-center">
                 <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-2">
-                  <span className="text-yellow-600 text-xl">🏆</span>
+                  <span className="text-yellow-600 text-xl">⭐</span>
                 </div>
                 <div className="text-sm font-semibold text-foreground">
-                  Best of 2024
+                  Tarzana Favorite
                 </div>
-                <div className="text-xs text-foreground/60">Mediterranean</div>
               </div>
             </div>
           </div>
