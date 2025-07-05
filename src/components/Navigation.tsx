@@ -1,12 +1,22 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, ShoppingBag, ChevronDown, MapPin } from "lucide-react";
+import {
+  Menu,
+  X,
+  Phone,
+  ShoppingBag,
+  ChevronDown,
+  MapPin,
+  Coffee,
+  Utensils,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuDropdownOpen, setIsMenuDropdownOpen] = useState(false);
   const [isOrderDropdownOpen, setIsOrderDropdownOpen] = useState(false);
   const location = useLocation();
 
@@ -73,25 +83,149 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={cn(
-                  "text-sm font-medium transition-colors hover:text-red-600 relative py-2",
-                  isActive(item.href) ? "text-red-700" : "text-foreground/80",
-                )}
-              >
-                <span
-                  className={cn(isScrolled ? "text-gray-900" : "text-white")}
+            {navigation.map((item) => {
+              if (item.name === "Menu") {
+                return (
+                  <div key={item.name} className="relative">
+                    <button
+                      onClick={() => setIsMenuDropdownOpen(!isMenuDropdownOpen)}
+                      className={cn(
+                        "text-sm font-medium transition-colors hover:text-red-600 relative py-2 flex items-center",
+                        isActive(item.href)
+                          ? "text-red-700"
+                          : "text-foreground/80",
+                      )}
+                    >
+                      <span
+                        className={cn(
+                          isScrolled ? "text-gray-900" : "text-white",
+                        )}
+                      >
+                        {item.name}
+                      </span>
+                      <ChevronDown
+                        className={cn(
+                          "w-4 h-4 ml-1 transition-transform",
+                          isMenuDropdownOpen && "rotate-180",
+                          isScrolled ? "text-gray-900" : "text-white",
+                        )}
+                      />
+                      {isActive(item.href) && (
+                        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-600 rounded-full" />
+                      )}
+                    </button>
+
+                    {isMenuDropdownOpen && (
+                      <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden z-50">
+                        <Link
+                          to="/menu"
+                          className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
+                          onClick={() => setIsMenuDropdownOpen(false)}
+                        >
+                          <Coffee className="w-4 h-4 mr-3" />
+                          Breakfast Menu
+                        </Link>
+                        <Link
+                          to="/menu"
+                          className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
+                          onClick={() => setIsMenuDropdownOpen(false)}
+                        >
+                          <Utensils className="w-4 h-4 mr-3" />
+                          Lunch & Dinner
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              if (item.name === "Order") {
+                return (
+                  <div key={item.name} className="relative">
+                    <button
+                      onClick={() =>
+                        setIsOrderDropdownOpen(!isOrderDropdownOpen)
+                      }
+                      className={cn(
+                        "text-sm font-medium transition-colors hover:text-red-600 relative py-2 flex items-center",
+                        isActive(item.href)
+                          ? "text-red-700"
+                          : "text-foreground/80",
+                      )}
+                    >
+                      <span
+                        className={cn(
+                          isScrolled ? "text-gray-900" : "text-white",
+                        )}
+                      >
+                        {item.name}
+                      </span>
+                      <ChevronDown
+                        className={cn(
+                          "w-4 h-4 ml-1 transition-transform",
+                          isOrderDropdownOpen && "rotate-180",
+                          isScrolled ? "text-gray-900" : "text-white",
+                        )}
+                      />
+                      {isActive(item.href) && (
+                        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-600 rounded-full" />
+                      )}
+                    </button>
+
+                    {isOrderDropdownOpen && (
+                      <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden z-50">
+                        <a
+                          href="tel:(818) 344-6606"
+                          className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
+                          onClick={() => setIsOrderDropdownOpen(false)}
+                        >
+                          <Phone className="w-4 h-4 mr-3" />
+                          Call to Order
+                        </a>
+                        <a
+                          href="https://www.toasttab.com/local/order/hummusbargrill/r-7fc07f7e-2b14-4999-8bd9-8c05a07d8e59"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
+                          onClick={() => setIsOrderDropdownOpen(false)}
+                        >
+                          <ShoppingBag className="w-4 h-4 mr-3" />
+                          Order Online
+                        </a>
+                        <Link
+                          to="/locations"
+                          className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
+                          onClick={() => setIsOrderDropdownOpen(false)}
+                        >
+                          <MapPin className="w-4 h-4 mr-3" />
+                          Find Location
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              return (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={cn(
+                    "text-sm font-medium transition-colors hover:text-red-600 relative py-2",
+                    isActive(item.href) ? "text-red-700" : "text-foreground/80",
+                  )}
                 >
-                  {item.name}
-                </span>
-                {isActive(item.href) && (
-                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-600 rounded-full" />
-                )}
-              </Link>
-            ))}
+                  <span
+                    className={cn(isScrolled ? "text-gray-900" : "text-white")}
+                  >
+                    {item.name}
+                  </span>
+                  {isActive(item.href) && (
+                    <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-600 rounded-full" />
+                  )}
+                </Link>
+              );
+            })}
           </div>
 
           {/* Desktop CTA Buttons */}
@@ -115,52 +249,19 @@ const Navigation = () => {
                 </span>
               </a>
             </Button>
-            <div className="relative">
-              <Button
-                onClick={() => setIsOrderDropdownOpen(!isOrderDropdownOpen)}
-                className="bg-red-600 hover:bg-red-700 text-white shadow-soft hover:shadow-md transition-all"
+            <Button
+              asChild
+              className="bg-red-600 hover:bg-red-700 text-white shadow-soft hover:shadow-md transition-all"
+            >
+              <a
+                href="https://www.toasttab.com/local/order/hummusbargrill/r-7fc07f7e-2b14-4999-8bd9-8c05a07d8e59"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <ShoppingBag className="w-4 h-4 mr-2" />
                 Order Now
-                <ChevronDown
-                  className={cn(
-                    "w-4 h-4 ml-2 transition-transform",
-                    isOrderDropdownOpen && "rotate-180",
-                  )}
-                />
-              </Button>
-
-              {isOrderDropdownOpen && (
-                <div className="absolute top-full right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden z-50">
-                  <a
-                    href="tel:(818) 344-6606"
-                    className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
-                    onClick={() => setIsOrderDropdownOpen(false)}
-                  >
-                    <Phone className="w-4 h-4 mr-3" />
-                    Call to Order
-                  </a>
-                  <a
-                    href="https://www.toasttab.com/local/order/hummusbargrill/r-7fc07f7e-2b14-4999-8bd9-8c05a07d8e59"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
-                    onClick={() => setIsOrderDropdownOpen(false)}
-                  >
-                    <ShoppingBag className="w-4 h-4 mr-3" />
-                    Order Online
-                  </a>
-                  <Link
-                    to="/locations"
-                    className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
-                    onClick={() => setIsOrderDropdownOpen(false)}
-                  >
-                    <MapPin className="w-4 h-4 mr-3" />
-                    Find Location
-                  </Link>
-                </div>
-              )}
-            </div>
+              </a>
+            </Button>
           </div>
 
           {/* Mobile menu button */}
