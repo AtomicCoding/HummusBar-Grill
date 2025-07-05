@@ -16,9 +16,9 @@ const About = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <main className="pt-16 lg:pt-20">
+      <main>
         {/* Header with Hero Image */}
-        <section className="relative min-h-[60vh] flex items-center">
+        <section className="relative min-h-screen flex items-center">
           <div className="absolute inset-0">
             <img
               src="https://i.ibb.co/kv1mqsG/image.png"

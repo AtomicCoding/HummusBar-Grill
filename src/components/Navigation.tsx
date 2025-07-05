@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isOrderDropdownOpen, setIsOrderDropdownOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -114,19 +115,52 @@ const Navigation = () => {
                 </span>
               </a>
             </Button>
-            <Button
-              asChild
-              className="bg-red-600 hover:bg-red-700 text-white shadow-soft hover:shadow-md transition-all"
-            >
-              <a
-                href="https://www.toasttab.com/local/order/hummusbargrill/r-7fc07f7e-2b14-4999-8bd9-8c05a07d8e59"
-                target="_blank"
-                rel="noopener noreferrer"
+            <div className="relative">
+              <Button
+                onClick={() => setIsOrderDropdownOpen(!isOrderDropdownOpen)}
+                className="bg-red-600 hover:bg-red-700 text-white shadow-soft hover:shadow-md transition-all"
               >
                 <ShoppingBag className="w-4 h-4 mr-2" />
-                Order Online
-              </a>
-            </Button>
+                Order Now
+                <ChevronDown
+                  className={cn(
+                    "w-4 h-4 ml-2 transition-transform",
+                    isOrderDropdownOpen && "rotate-180",
+                  )}
+                />
+              </Button>
+
+              {isOrderDropdownOpen && (
+                <div className="absolute top-full right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden z-50">
+                  <a
+                    href="tel:(818) 344-6606"
+                    className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
+                    onClick={() => setIsOrderDropdownOpen(false)}
+                  >
+                    <Phone className="w-4 h-4 mr-3" />
+                    Call to Order
+                  </a>
+                  <a
+                    href="https://www.toasttab.com/local/order/hummusbargrill/r-7fc07f7e-2b14-4999-8bd9-8c05a07d8e59"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
+                    onClick={() => setIsOrderDropdownOpen(false)}
+                  >
+                    <ShoppingBag className="w-4 h-4 mr-3" />
+                    Order Online
+                  </a>
+                  <Link
+                    to="/locations"
+                    className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
+                    onClick={() => setIsOrderDropdownOpen(false)}
+                  >
+                    <MapPin className="w-4 h-4 mr-3" />
+                    Find Location
+                  </Link>
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Mobile menu button */}

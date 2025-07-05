@@ -2,16 +2,49 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
-import { ArrowRight, Plus, Star, Flame, Leaf } from "lucide-react";
+import { ArrowRight, Plus, Star, Flame, Leaf, ChevronDown, Coffee, Utensils } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const MenuSection = () => {
-  const [activeCategory, setActiveCategory] = useState("popular");
+  const [activeCategory, setActiveCategory] = useState("breakfast");
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const categories = [{ id: "popular", name: "Popular", icon: Star }];
+  const categories = [
+    { id: "breakfast", name: "Breakfast", icon: Coffee },
+    { id: "lunch-dinner", name: "Lunch & Dinner", icon: Utensils }
+  ];
 
   const menuItems = {
-    popular: [
+    breakfast: [
+      {
+        name: "Mediterranean Shakshuka",
+        description:
+          "Eggs poached in spiced tomato sauce with peppers, onions, and fresh herbs - a traditional breakfast full of flavor",
+        price: "$16.00",
+        image: "https://i.ibb.co/wFB0KbM7/image.png",
+        badges: ["Traditional", "Vegetarian"],
+        spicy: true,
+      },
+      {
+        name: "Breakfast Hummus Bowl",
+        description:
+          "Fresh hummus topped with hard-boiled egg, olive oil, and warm pita - a protein-rich start to your day",
+        price: "$12.00",
+        image: "https://i.ibb.co/mCg8n88F/image.png",
+        badges: ["Protein-Rich", "Vegetarian"],
+        spicy: false,
+      },
+      {
+        name: "Israeli Breakfast Platter",
+        description:
+          "Selection of fresh vegetables, cheeses, olives, and warm pita - the traditional Israeli breakfast experience",
+        price: "$18.00",
+        image: "https://i.ibb.co/rGg6kKh8/image.png",
+        badges: ["Traditional", "Fresh Daily"],
+        spicy: false,
+      },
+    ],
+    "lunch-dinner": [
       {
         name: "Mushroom Hummus",
         description:
@@ -63,23 +96,43 @@ const MenuSection = () => {
           </p>
         </div>
 
-        {/* Category Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
-          {categories.map((category) => (
+        {/* Category Dropdown */}
+        <div className="flex justify-center mb-12">
+          <div className="relative">
             <button
-              key={category.id}
-              onClick={() => setActiveCategory(category.id)}
-              className={cn(
-                "flex items-center px-6 py-3 rounded-full font-medium transition-all duration-300",
-                activeCategory === category.id
-                  ? "bg-red-600 text-white shadow-soft"
-                  : "bg-red-50 text-foreground/70 hover:bg-red-100 hover:text-foreground",
-              )}
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              className="flex items-center px-6 py-3 bg-red-600 text-white rounded-full font-medium shadow-soft hover:shadow-md transition-all duration-300 min-w-[200px] justify-between"
             >
-              <category.icon className="w-4 h-4 mr-2" />
-              {category.name}
+              <div className="flex items-center">
+                {categories.find(cat => cat.id === activeCategory)?.icon && (
+                  <categories.find(cat => cat.id === activeCategory).icon className="w-4 h-4 mr-2" />
+                )}
+                {categories.find(cat => cat.id === activeCategory)?.name}
+              </div>
+              <ChevronDown className={cn("w-4 h-4 transition-transform", isDropdownOpen && "rotate-180")} />
             </button>
-          ))}
+
+            {isDropdownOpen && (
+              <div className="absolute top-full mt-2 w-full bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden z-10">
+                {categories.map((category) => (
+                  <button
+                    key={category.id}
+                    onClick={() => {
+                      setActiveCategory(category.id);
+                      setIsDropdownOpen(false);
+                    }}
+                    className={cn(
+                      "w-full flex items-center px-4 py-3 text-left hover:bg-gray-50 transition-colors",
+                      activeCategory === category.id ? "bg-red-50 text-red-600" : "text-gray-700"
+                    )}
+                  >
+                    <category.icon className="w-4 h-4 mr-3" />
+                    {category.name}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
 
         {/* Menu Items Grid */}
