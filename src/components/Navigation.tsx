@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, ShoppingBag } from "lucide-react";
+import { Menu, X, Phone, ShoppingBag, ChevronDown, MapPin } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isOrderDropdownOpen, setIsOrderDropdownOpen] = useState(false);
   const [isOrderDropdownOpen, setIsOrderDropdownOpen] = useState(false);
   const location = useLocation();
 

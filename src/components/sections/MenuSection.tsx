@@ -2,7 +2,16 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
-import { ArrowRight, Plus, Star, Flame, Leaf, ChevronDown, Coffee, Utensils } from "lucide-react";
+import {
+  ArrowRight,
+  Plus,
+  Star,
+  Flame,
+  Leaf,
+  ChevronDown,
+  Coffee,
+  Utensils,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const MenuSection = () => {
@@ -11,7 +20,7 @@ const MenuSection = () => {
 
   const categories = [
     { id: "breakfast", name: "Breakfast", icon: Coffee },
-    { id: "lunch-dinner", name: "Lunch & Dinner", icon: Utensils }
+    { id: "lunch-dinner", name: "Lunch & Dinner", icon: Utensils },
   ];
 
   const menuItems = {
@@ -104,12 +113,23 @@ const MenuSection = () => {
               className="flex items-center px-6 py-3 bg-red-600 text-white rounded-full font-medium shadow-soft hover:shadow-md transition-all duration-300 min-w-[200px] justify-between"
             >
               <div className="flex items-center">
-                {categories.find(cat => cat.id === activeCategory)?.icon && (
-                  <categories.find(cat => cat.id === activeCategory).icon className="w-4 h-4 mr-2" />
-                )}
-                {categories.find(cat => cat.id === activeCategory)?.name}
+                {(() => {
+                  const category = categories.find(
+                    (cat) => cat.id === activeCategory,
+                  );
+                  const IconComponent = category?.icon;
+                  return IconComponent ? (
+                    <IconComponent className="w-4 h-4 mr-2" />
+                  ) : null;
+                })()}
+                {categories.find((cat) => cat.id === activeCategory)?.name}
               </div>
-              <ChevronDown className={cn("w-4 h-4 transition-transform", isDropdownOpen && "rotate-180")} />
+              <ChevronDown
+                className={cn(
+                  "w-4 h-4 transition-transform",
+                  isDropdownOpen && "rotate-180",
+                )}
+              />
             </button>
 
             {isDropdownOpen && (
@@ -123,7 +143,9 @@ const MenuSection = () => {
                     }}
                     className={cn(
                       "w-full flex items-center px-4 py-3 text-left hover:bg-gray-50 transition-colors",
-                      activeCategory === category.id ? "bg-red-50 text-red-600" : "text-gray-700"
+                      activeCategory === category.id
+                        ? "bg-red-50 text-red-600"
+                        : "text-gray-700",
                     )}
                   >
                     <category.icon className="w-4 h-4 mr-3" />
