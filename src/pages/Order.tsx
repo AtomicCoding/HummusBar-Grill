@@ -104,7 +104,7 @@ const Order = () => {
                   variant="outline"
                   className="w-full border-red-300 text-red-700 hover:bg-red-50"
                 >
-                  <Link to="/contact">Get Directions</Link>
+                  <Link to="/locations">Get Directions</Link>
                 </Button>
               </div>
             </div>
@@ -132,7 +132,7 @@ const Order = () => {
 
               <div className="mt-6 text-center">
                 <Button asChild className="bg-red-600 hover:bg-red-700">
-                  <Link to="/contact">Visit Our Restaurant</Link>
+                  <Link to="/locations">Visit Our Restaurant</Link>
                 </Button>
               </div>
             </div>

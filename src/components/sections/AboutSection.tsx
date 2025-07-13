@@ -93,7 +93,7 @@ const AboutSection = () => {
                 size="lg"
                 className="px-8 border-red-300 text-red-700 hover:bg-red-50"
               >
-                <Link to="/contact">Visit Our Restaurant</Link>
+                <Link to="/locations">Visit Our Restaurant</Link>
               </Button>
             </div>
           </div>

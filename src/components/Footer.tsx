@@ -34,7 +34,7 @@ const Footer = () => {
     { name: "Menu", href: "/menu" },
     { name: "Locations", href: "/locations" },
     { name: "Catering", href: "/catering" },
-    { name: "Contact", href: "/contact" },
+    { name: "Contact", href: "/locations" },
     { name: "Careers", href: "/careers" },
   ];
 
