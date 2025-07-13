@@ -81,7 +81,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-10">
             {navigation.map((item) => {
               if (item.name === "Order") {
                 return (
@@ -91,7 +91,7 @@ const Navigation = () => {
                         setIsOrderDropdownOpen(!isOrderDropdownOpen)
                       }
                       className={cn(
-                        "text-sm font-medium transition-colors hover:text-red-600 relative py-2 flex items-center",
+                        "text-lg font-medium transition-colors hover:text-red-600 relative py-2 flex items-center",
                         isActive(item.href)
                           ? "text-red-700"
                           : "text-foreground/80",
@@ -155,7 +155,7 @@ const Navigation = () => {
                   key={item.name}
                   to={item.href}
                   className={cn(
-                    "text-sm font-medium transition-colors hover:text-red-600 relative py-2",
+                    "text-lg font-medium transition-colors hover:text-red-600 relative py-2",
                     isActive(item.href) ? "text-red-700" : "text-foreground/80",
                   )}
                 >
