@@ -107,9 +107,10 @@ const Locations = () => {
                         Hours
                       </h3>
                       <div className="space-y-1">
-                        <p className="text-foreground/80">
-                          Daily: 11:00 AM - 12:00 AM
-                        </p>
+                        <div className="text-foreground/80 space-y-1">
+                          <p>Monday – Saturday: 9 AM – 11 PM</p>
+                          <p>Sunday: 9 AM ��� 10 PM</p>
+                        </div>
                         <p className="text-sm text-foreground/60">
                           Delivery: 11:00 AM - 11:00 PM
                         </p>

@@ -158,9 +158,14 @@ const About = () => {
                     </h3>
                   </div>
                   <div className="space-y-2">
-                    <p className="text-foreground/80">
-                      <strong>Restaurant:</strong> Daily 11:00 AM - 12:00 AM
-                    </p>
+                    <div className="text-foreground/80 space-y-1">
+                      <p>
+                        <strong>Monday – Saturday:</strong> 9 AM – 11 PM
+                      </p>
+                      <p>
+                        <strong>Sunday:</strong> 9 AM – 10 PM
+                      </p>
+                    </div>
                     <p className="text-foreground/80">
                       <strong>Delivery:</strong> Daily 11:00 AM - 11:00 PM
                     </p>

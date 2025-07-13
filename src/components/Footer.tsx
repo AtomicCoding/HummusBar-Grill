@@ -25,8 +25,8 @@ const Footer = () => {
   ];
 
   const hours = [
-    { day: "Monday - Sunday", hours: "11:00 AM - 12:00 AM" },
-    { day: "Delivery Hours", hours: "11:00 AM - 11:00 PM" },
+    { day: "Monday - Saturday", hours: "9 AM - 11 PM" },
+    { day: "Sunday", hours: "9 AM - 10 PM" },
   ];
 
   const quickLinks = [
