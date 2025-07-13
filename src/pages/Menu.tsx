@@ -34,11 +34,63 @@ const Menu = () => {
             </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto mb-16">
+              {/* Butter Pancakes */}
+              <div className="text-center">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fed447ea944274105ba1f1238db556036?format=webp&width=800"
+                    alt="Butter Pancakes"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">
+                  Butter Pancakes
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Stacked pancakes topped with fresh cream and maple syrup
+                </p>
+              </div>
+
+              {/* Khachapuri */}
+              <div className="text-center">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fee96b803297d4a81ab38c2a8878b01fc?format=webp&width=800"
+                    alt="Khachapuri"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">
+                  Khachapuri
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Cheese-filled flatbread with za'atar spice blend on top
+                </p>
+              </div>
+
+              {/* Avocado Toast */}
+              <div className="text-center">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F11ab52ee9bb74c7f98543f700384c066?format=webp&width=800"
+                    alt="Avocado Toast"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">
+                  Avocado Toast
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Avocado, za'atar, chili flakes, sunny-side up egg (additional
+                  charge)
+                </p>
+              </div>
+
               {/* Burekas Platter */}
               <div className="text-center">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F3a5145461f91441d8aa5a13d8e490c1f?format=webp&width=800"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fbcd1442aeb90459fb2c1447d091b0ea0?format=webp&width=800"
                     alt="Burekas Platter"
                     className="w-full h-full object-cover"
                   />
@@ -52,63 +104,11 @@ const Menu = () => {
                 </p>
               </div>
 
-              {/* Avocado Toast with Egg */}
-              <div className="text-center">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0ab0acc4dbd940b481d6057f77844ef4?format=webp&width=800"
-                    alt="Avocado Toast with Egg"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  Avocado Toast with Egg
-                </h3>
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  Avocado, za'atar, chili flakes, sunny-side up egg (additional
-                  charge)
-                </p>
-              </div>
-
-              {/* Khachapuri */}
-              <div className="text-center">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ffb8d6e99290f4201ae41b82ed505929a?format=webp&width=800"
-                    alt="Khachapuri"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  Khachapuri
-                </h3>
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  Cheese-filled flatbread with za'atar spice blend on top
-                </p>
-              </div>
-
-              {/* Butter Pancakes */}
-              <div className="text-center">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fe72c6ce63407468e99c0b0d91ca8585f?format=webp&width=800"
-                    alt="Butter Pancakes"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  Butter Pancakes
-                </h3>
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  Stacked pancakes topped with fresh cream and maple syrup
-                </p>
-              </div>
-
               {/* Royal Breakfast */}
               <div className="text-center lg:col-start-2">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F022e5f63c31645729e5f75c9295db767?format=webp&width=800"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ff31f3c717bd1474b9b964d640e05ffa8?format=webp&width=800"
                     alt="Royal Breakfast"
                     className="w-full h-full object-cover"
                   />
