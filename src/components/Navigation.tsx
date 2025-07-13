@@ -84,61 +84,6 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             {navigation.map((item) => {
-              if (item.name === "Menu") {
-                return (
-                  <div key={item.name} className="relative">
-                    <button
-                      onClick={() => setIsMenuDropdownOpen(!isMenuDropdownOpen)}
-                      className={cn(
-                        "text-sm font-medium transition-colors hover:text-red-600 relative py-2 flex items-center",
-                        isActive(item.href)
-                          ? "text-red-700"
-                          : "text-foreground/80",
-                      )}
-                    >
-                      <span
-                        className={cn(
-                          isScrolled ? "text-gray-900" : "text-white",
-                        )}
-                      >
-                        {item.name}
-                      </span>
-                      <ChevronDown
-                        className={cn(
-                          "w-4 h-4 ml-1 transition-transform",
-                          isMenuDropdownOpen && "rotate-180",
-                          isScrolled ? "text-gray-900" : "text-white",
-                        )}
-                      />
-                      {isActive(item.href) && (
-                        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-600 rounded-full" />
-                      )}
-                    </button>
-
-                    {isMenuDropdownOpen && (
-                      <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden z-50">
-                        <Link
-                          to="/menu"
-                          className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
-                          onClick={() => setIsMenuDropdownOpen(false)}
-                        >
-                          <Coffee className="w-4 h-4 mr-3" />
-                          Breakfast Menu
-                        </Link>
-                        <Link
-                          to="/menu"
-                          className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
-                          onClick={() => setIsMenuDropdownOpen(false)}
-                        >
-                          <Utensils className="w-4 h-4 mr-3" />
-                          Lunch & Dinner
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-                );
-              }
-
               if (item.name === "Order") {
                 return (
                   <div key={item.name} className="relative">
