@@ -33,9 +33,8 @@ const Navigation = () => {
     { name: "Home", href: "/" },
     { name: "Menu", href: "/menu" },
     { name: "Order", href: "/order" },
-    { name: "Locations", href: "/locations" },
+    { name: "Contact", href: "/locations" },
     { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
   ];
 
   const isActive = (href: string) => {
