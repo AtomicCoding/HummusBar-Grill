@@ -83,9 +83,9 @@ const About = () => {
                   </p>
 
                   <p className="text-lg text-foreground/80 leading-relaxed">
-                    Hummus Bar is open daily from 11:00am to 12:00am and 7 days
-                    a week. We also offer a delivery system provided daily from
-                    11:00 a.m. to 11:00 p.m. 7 days a week.
+                    Hummus Bar is open Monday through Saturday from 9 AM to 11
+                    PM, and Sunday from 9 AM to 10 PM. We also offer a delivery
+                    system during our operating hours.
                   </p>
 
                   <p className="text-lg text-foreground/80 leading-relaxed">
