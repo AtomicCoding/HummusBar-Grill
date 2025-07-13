@@ -9,20 +9,38 @@ const Menu = () => {
     <div className="min-h-screen bg-black">
       <Navigation />
       <main>
-        {/* HERO SECTION */}
-        <section className="relative min-h-screen flex items-center justify-center">
+        {/* Header with Hero Image */}
+        <section className="relative min-h-screen flex items-center">
           <div className="absolute inset-0">
             <img
-              src="https://images.pexels.com/photos/4163020/pexels-photo-4163020.jpeg"
+              src="https://images.pexels.com/photos/24289217/pexels-photo-24289217.jpeg"
               alt="Mediterranean Food Menu"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40" />
           </div>
-          <div className="relative z-10 text-center">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-display font-bold text-white">
-              MENU
-            </h1>
+
+          <div className="relative z-10 container-custom section-padding">
+            <div className="max-w-3xl">
+              <Link
+                to="/"
+                className="inline-flex items-center text-white/80 hover:text-white font-medium mb-6 group"
+              >
+                <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
+                Back to Home
+              </Link>
+
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
+                Our
+                <span className="block text-red-400">Menu</span>
+              </h1>
+
+              <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-8">
+                Explore our complete collection of authentic Mediterranean
+                dishes, crafted with traditional recipes and the finest
+                ingredients.
+              </p>
+            </div>
           </div>
         </section>
 
