@@ -21,7 +21,7 @@ const About = () => {
         <section className="relative min-h-screen flex items-center">
           <div className="absolute inset-0">
             <img
-              src="https://i.ibb.co/kv1mqsG/image.png"
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F05b59a2fb315497ea9f169c1793026f1?format=webp&width=800"
               alt="About Hummus Bar & Grill"
               className="w-full h-full object-cover"
             />

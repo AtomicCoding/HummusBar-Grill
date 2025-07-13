@@ -22,7 +22,7 @@ const Locations = () => {
         <section className="relative min-h-screen flex items-center">
           <div className="absolute inset-0">
             <img
-              src="https://i.ibb.co/wN2dVSDS/image.png"
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fae8fd3b3ba6e402384fb51a0149c24ff?format=webp&width=800"
               alt="Hummus Bar & Grill Location"
               className="w-full h-full object-cover"
             />
@@ -109,7 +109,7 @@ const Locations = () => {
                       <div className="space-y-1">
                         <div className="text-foreground/80 space-y-1">
                           <p>Monday – Saturday: 9 AM – 11 PM</p>
-                          <p>Sunday: 9 AM ��� 10 PM</p>
+                          <p>Sunday: 9 AM – 10 PM</p>
                         </div>
                         <p className="text-sm text-foreground/60">
                           Delivery: 11:00 AM - 11:00 PM
