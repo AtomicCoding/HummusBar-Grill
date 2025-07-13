@@ -12,6 +12,7 @@ import {
   Apple,
   Smartphone,
   ArrowRight,
+  Truck,
 } from "lucide-react";
 
 const Footer = () => {
@@ -140,10 +141,23 @@ const Footer = () => {
             <div className="mb-6">
               <div className="flex items-center text-white mb-3">
                 <Clock className="w-4 h-4 mr-2" />
-                <span className="font-medium">Opening Hours</span>
+                <span className="font-medium">Restaurant Hours</span>
+              </div>
+              <div className="space-y-1 mb-4">
+                {hours.map((schedule) => (
+                  <div key={schedule.day} className="text-sm">
+                    <span className="text-warm-300">{schedule.day}:</span>
+                    <span className="text-white ml-2">{schedule.hours}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex items-center text-white mb-3">
+                <Truck className="w-4 h-4 mr-2" />
+                <span className="font-medium">Delivery Hours</span>
               </div>
               <div className="space-y-1">
-                {hours.map((schedule) => (
+                {deliveryHours.map((schedule) => (
                   <div key={schedule.day} className="text-sm">
                     <span className="text-warm-300">{schedule.day}:</span>
                     <span className="text-white ml-2">{schedule.hours}</span>
