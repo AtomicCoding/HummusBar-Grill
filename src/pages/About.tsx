@@ -161,10 +161,10 @@ const About = () => {
                   <div className="space-y-2">
                     <div className="text-foreground/80 space-y-1">
                       <p>
-                        <strong>Monday – Saturday:</strong> 9 AM – 11 PM
+                        <strong>Monday – Saturday:</strong> 9:00 AM – 11:00 PM
                       </p>
                       <p>
-                        <strong>Sunday:</strong> 9 AM – 10 PM
+                        <strong>Sunday:</strong> 9:00 AM – 10:00 PM
                       </p>
                     </div>
                     <div className="text-foreground/80 space-y-1">
