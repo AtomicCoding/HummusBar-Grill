@@ -108,15 +108,15 @@ const Locations = () => {
                       </h3>
                       <div className="space-y-1">
                         <div className="text-foreground/80 space-y-1">
-                          <p>Monday – Saturday: 9 AM – 11 PM</p>
-                          <p>Sunday: 9 AM – 10 PM</p>
+                          <p>Monday – Saturday: 9:00 AM – 11:00 PM</p>
+                          <p>Sunday: 9:00 AM – 10:00 PM</p>
                         </div>
                         <div className="text-sm text-foreground/60 space-y-1">
                           <p>
                             <strong>Delivery Hours:</strong>
                           </p>
-                          <p>Monday – Saturday: 11 AM – 9:30 PM</p>
-                          <p>Sunday: 11 AM – 8:30 PM</p>
+                          <p>Monday – Saturday: 10:30 AM – 9:30 PM</p>
+                          <p>Sunday: 10:30 AM – 8:30 PM</p>
                         </div>
                       </div>
                     </div>
