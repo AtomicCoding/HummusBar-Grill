@@ -535,6 +535,68 @@ const Menu = () => {
             </div>
           </div>
         </section>
+
+        {/* SECTION 6: KIDS MENU */}
+        <section className="py-20 bg-gradient-to-b from-gray-900 to-black">
+          <div className="container-custom section-padding">
+            <h2 className="text-4xl lg:text-5xl font-bold text-center text-yellow-400 uppercase mb-16">
+              KIDS MENU
+            </h2>
+
+            <div className="grid md:grid-cols-3 gap-12 max-w-4xl mx-auto mb-16">
+              {/* Kids Chicken Nuggets */}
+              <div className="text-center">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
+                  <img
+                    src="https://images.pexels.com/photos/60616/fried-chicken-chicken-fried-crunchy-60616.jpeg"
+                    alt="Kids Chicken Nuggets"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">
+                  Kids Chicken Nuggets
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Crispy golden chicken nuggets served with fries
+                </p>
+              </div>
+
+              {/* Kids Beef Sliders */}
+              <div className="text-center">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
+                  <img
+                    src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
+                    alt="Kids Beef Sliders"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">
+                  Kids Beef Sliders
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Mini beef sliders served with fries
+                </p>
+              </div>
+
+              {/* Kids Crispy Chicken */}
+              <div className="text-center">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
+                  <img
+                    src="https://images.pexels.com/photos/552056/pexels-photo-552056.jpeg"
+                    alt="Kids Crispy Chicken"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">
+                  Kids Crispy Chicken
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Chicken nugget sliders served with fries
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
