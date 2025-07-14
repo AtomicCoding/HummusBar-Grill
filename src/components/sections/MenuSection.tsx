@@ -70,10 +70,8 @@ const MenuSection = () => {
             Fresh Daily
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6 text-balance">
-            Farm-Fresh Ingredients
-            <span className="block text-red-700">
-              Heart-Healthy Mediterranean
-            </span>
+            Our Most
+            <span className="block text-red-700">Popular Dishes</span>
           </h2>
           <p className="text-lg text-foreground/80 leading-relaxed text-balance">
             Every dish is prepared daily with the freshest ingredients,
