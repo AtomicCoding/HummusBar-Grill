@@ -3,58 +3,58 @@ import { Star, Quote } from "lucide-react";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Sarah Mitchell",
-      role: "Food Blogger",
-      content:
-        "The most authentic Mediterranean experience I've had outside of Greece. Every bite transported me back to the coastal tavernas of Santorini.",
-      rating: 5,
-      avatar: "SM",
-      location: "New York, NY",
-    },
-    {
-      name: "David Chen",
-      role: "Local Resident",
-      content:
-        "Their hummus is absolutely divine! The perfect blend of tahini, lemon, and garlic. I come here weekly just for their mezze platter.",
-      rating: 5,
-      avatar: "DC",
-      location: "San Francisco, CA",
-    },
-    {
-      name: "Maria Rodriguez",
-      role: "Chef",
-      content:
-        "As a fellow chef, I appreciate the attention to detail and traditional techniques. The lamb is perfectly seasoned and the service is exceptional.",
-      rating: 5,
-      avatar: "MR",
-      location: "Los Angeles, CA",
-    },
-    {
-      name: "James Thompson",
+      name: "Kim A.",
       role: "Regular Customer",
       content:
-        "Family-owned warmth with restaurant-quality food. The shakshuka is my weekend ritual, and the staff treats you like family.",
+        "Amazing Mediterranean food! The shakshuka is to die for and the staff is incredibly friendly. This place has become our go-to spot for family dinners.",
       rating: 5,
-      avatar: "JT",
-      location: "Austin, TX",
+      avatar: "KA",
+      location: "San Diego, CA",
     },
     {
-      name: "Lisa Park",
-      role: "Food Critic",
+      name: "Elena L.",
+      role: "Food Enthusiast",
       content:
-        "A hidden gem that deserves recognition. The fresh ingredients, traditional recipes, and modern presentation create a perfect dining experience.",
+        "Authentic flavors that remind me of my travels through Greece and Turkey. The hummus is creamy perfection and the lamb is seasoned beautifully.",
       rating: 5,
-      avatar: "LP",
-      location: "Chicago, IL",
+      avatar: "EL",
+      location: "Portland, OR",
     },
     {
-      name: "Michael Brown",
-      role: "Business Owner",
+      name: "Karin Z.",
+      role: "Local Resident",
       content:
-        "Perfect for both business lunches and family dinners. The ambiance is elegant yet welcoming, and the food never disappoints.",
+        "Fresh ingredients, generous portions, and reasonable prices. The kids menu is perfect for our little ones, and the delivery is always on time.",
       rating: 5,
-      avatar: "MB",
-      location: "Miami, FL",
+      avatar: "KZ",
+      location: "Denver, CO",
+    },
+    {
+      name: "Cameron Z.",
+      role: "Business Professional",
+      content:
+        "Great spot for lunch meetings. The atmosphere is professional yet relaxed, and the Mediterranean salads are fresh and satisfying every time.",
+      rating: 5,
+      avatar: "CZ",
+      location: "Seattle, WA",
+    },
+    {
+      name: "Jas D.",
+      role: "Health Conscious Diner",
+      content:
+        "Love that they focus on heart-healthy Mediterranean cuisine. The ingredients are clearly fresh and the preparation methods are traditional and authentic.",
+      rating: 5,
+      avatar: "JD",
+      location: "Phoenix, AZ",
+    },
+    {
+      name: "Esmeralda A.",
+      role: "Family Customer",
+      content:
+        "Wonderful family restaurant with something for everyone. The kids love their nuggets and sliders, while we adults enjoy the sophisticated Mediterranean dishes.",
+      rating: 5,
+      avatar: "EA",
+      location: "Las Vegas, NV",
     },
   ];
 
