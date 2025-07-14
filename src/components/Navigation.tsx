@@ -136,14 +136,6 @@ const Navigation = () => {
                           <ShoppingBag className="w-4 h-4 mr-3" />
                           Order Online
                         </a>
-                        <Link
-                          to="/locations"
-                          className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
-                          onClick={() => setIsOrderDropdownOpen(false)}
-                        >
-                          <MapPin className="w-4 h-4 mr-3" />
-                          Find Location
-                        </Link>
                       </div>
                     )}
                   </div>
