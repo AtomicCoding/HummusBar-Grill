@@ -21,36 +21,16 @@ const MenuSection = () => {
   const categories = [{ id: "popular", name: "Popular", icon: Star }];
 
   const menuItems = {
-    breakfast: [
+    popular: [
       {
-        name: "Mediterranean Shakshuka",
+        name: "Shakshuka",
         description:
-          "Eggs poached in spiced tomato sauce with peppers, onions, and fresh herbs - a traditional breakfast full of flavor",
-        price: "$16.00",
+          "Eggs poached in spiced tomato sauce with peppers, onions, and fresh herbs - our signature Mediterranean dish",
+        price: "$25.00",
         image: "https://i.ibb.co/wFB0KbM7/image.png",
-        badges: ["Traditional", "Vegetarian"],
+        badges: ["Signature", "Traditional"],
         spicy: true,
       },
-      {
-        name: "Breakfast Hummus Bowl",
-        description:
-          "Fresh hummus topped with hard-boiled egg, olive oil, and warm pita - a protein-rich start to your day",
-        price: "$12.00",
-        image: "https://i.ibb.co/mCg8n88F/image.png",
-        badges: ["Protein-Rich", "Vegetarian"],
-        spicy: false,
-      },
-      {
-        name: "Israeli Breakfast Platter",
-        description:
-          "Selection of fresh vegetables, cheeses, olives, and warm pita - the traditional Israeli breakfast experience",
-        price: "$18.00",
-        image: "https://i.ibb.co/rGg6kKh8/image.png",
-        badges: ["Traditional", "Fresh Daily"],
-        spicy: false,
-      },
-    ],
-    "lunch-dinner": [
       {
         name: "Mushroom Hummus",
         description:
