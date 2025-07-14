@@ -154,9 +154,6 @@ const TestimonialsSection = () => {
                   <div className="font-semibold text-foreground">
                     {testimonial.name}
                   </div>
-                  <div className="text-sm text-foreground/60">
-                    {testimonial.role} • {testimonial.location}
-                  </div>
                 </div>
               </div>
             </div>
@@ -175,13 +172,34 @@ const TestimonialsSection = () => {
           </div>
 
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            {["Google", "Yelp", "TripAdvisor", "OpenTable", "Zomato"].map(
-              (platform) => (
-                <div key={platform} className="text-foreground/80 font-medium">
-                  {platform}
-                </div>
-              ),
-            )}
+            {[
+              {
+                name: "Google",
+                href: "https://www.google.com/search?sca_esv=b9187f4daeb51a28&sxsrf=AE3TifPaQiOpYopQ8wmvYGhaUvtYy7Qi1A:1752526521016&q=hummus+bar+and+grill+google&si=AMgyJEuzsz2NflaaWzrzdpjxXXRaJ2hfdMsbe_mSWso6src8s1efczvWarCM_dBuc_L1g8-v75SJS-_ufkB-CSZAoS6v2up8QPPbjsXgQqPiRpLJ23YttyB5oYUmKPr1ntjFsoKm6B3qgAK3Aoz79gRjMerWxIKyug%3D%3D&sa=X&ved=2ahUKEwjLpPqFnr2OAxWRI0QIHYkoHBkQrrQLegQIGhAA&cshid=1752526527524544&biw=1643&bih=825&dpr=1.1",
+              },
+              {
+                name: "Yelp",
+                href: "https://www.yelp.com/biz/hummus-bar-and-grill-tarzana-2",
+              },
+              {
+                name: "TripAdvisor",
+                href: "https://www.tripadvisor.com/Restaurant_Review-g32655-d1047440-Reviews-The_Hummus_Bar_Grill-Los_Angeles_California.html",
+              },
+              {
+                name: "OpenTable",
+                href: "https://www.opentable.com/r/hummus-bar-and-grill-tarzana",
+              },
+            ].map((platform) => (
+              <a
+                key={platform.name}
+                href={platform.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground/80 font-medium hover:text-red-600 transition-colors"
+              >
+                {platform.name}
+              </a>
+            ))}
           </div>
         </div>
       </div>

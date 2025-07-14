@@ -6,7 +6,6 @@ import {
   Phone,
   Mail,
   Clock,
-  Facebook,
   Instagram,
   Twitter,
   Apple,
@@ -41,13 +40,15 @@ const Footer = () => {
     { name: "Locations", href: "/locations" },
     { name: "Catering", href: "/catering" },
     { name: "Contact", href: "/locations" },
-    { name: "Careers", href: "/careers" },
   ];
 
   const socialLinks = [
-    { name: "Facebook", icon: Facebook, href: "#" },
-    { name: "Instagram", icon: Instagram, href: "#" },
-    { name: "Twitter", icon: Twitter, href: "#" },
+    {
+      name: "Instagram",
+      icon: Instagram,
+      href: "https://www.instagram.com/hummusbarandgrill/?hl=en",
+    },
+    { name: "Twitter", icon: Twitter, href: "https://x.com/hummusbargrill" },
   ];
 
   return (
@@ -196,7 +197,10 @@ const Footer = () => {
       <div className="border-t border-warm-800">
         <div className="container-custom section-padding py-6">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-warm-400">
-            <p>© 2024 Hummus Bar & Grill. Serving Tarzana since 2008.</p>
+            <div className="flex flex-col items-center md:items-start">
+              <p>© 2025 Hummus Bar & Grill. Serving Tarzana since 2008.</p>
+              <p className="text-xs mt-1">Built by MJ Website Design</p>
+            </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link
                 to="/privacy"

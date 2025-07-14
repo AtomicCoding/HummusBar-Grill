@@ -146,6 +146,7 @@ const Navigation = () => {
                 <Link
                   key={item.name}
                   to={item.href}
+                  onClick={() => window.scrollTo(0, 0)}
                   className={cn(
                     "text-lg font-medium transition-colors hover:text-red-600 relative py-2",
                     isActive(item.href) ? "text-red-700" : "text-foreground/80",
@@ -223,13 +224,16 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden border-t border-warm-200 mt-4 pt-4 pb-6 bg-white/95 backdrop-blur-md rounded-b-2xl shadow-soft-lg">
-            <div className="space-y-4">
+          <div className="lg:hidden border-t border-warm-200 mt-4 pt-4 pb-6 bg-white/95 backdrop-blur-md rounded-b-2xl shadow-soft-lg mx-4">
+            <div className="space-y-4 px-2">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => {
+                    setIsOpen(false);
+                    window.scrollTo(0, 0);
+                  }}
                   className={cn(
                     "block px-4 py-2 text-base font-medium rounded-lg transition-colors",
                     isActive(item.href)
