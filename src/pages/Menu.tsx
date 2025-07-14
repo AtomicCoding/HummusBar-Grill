@@ -183,18 +183,21 @@ const Menu = () => {
                 </p>
               </div>
 
-              {/* Kubeh */}
+              {/* Focaccia Sabich */}
               <div className="text-center">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F2df0587948774b8594b82f0dc3b9c598?format=webp&width=800"
-                    alt="Kubeh"
+                    src="https://images.pexels.com/photos/1633525/pexels-photo-1633525.jpeg"
+                    alt="Focaccia Sabich"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">Kubeh</h3>
+                <h3 className="text-xl font-bold text-white mb-3">
+                  Focaccia Sabich
+                </h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Beef and semolina dumplings in broth
+                  Traditional sabich in focaccia bread with egg, eggplant, and
+                  tahini
                 </p>
               </div>
 
