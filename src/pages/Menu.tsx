@@ -52,6 +52,21 @@ const Menu = () => {
             </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto mb-16">
+              {/* Shakshuka */}
+              <div className="text-center">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F9ee7f179f29a40babee4581e1dbe7090?format=webp&width=800"
+                    alt="Shakshuka"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Shakshuka</h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Eggs poached in spiced tomato sauce with peppers and herbs
+                </p>
+              </div>
+
               {/* Butter Pancakes */}
               <div className="text-center">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
@@ -165,7 +180,7 @@ const Menu = () => {
               APPETIZERS
             </h2>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
               {/* Moroccan Cigars */}
               <div className="text-center">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
@@ -187,7 +202,7 @@ const Menu = () => {
               <div className="text-center">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
-                    src="https://images.pexels.com/photos/1633525/pexels-photo-1633525.jpeg"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F846bb99ee99a4688bfb0ea7c7c36b98d?format=webp&width=800"
                     alt="Focaccia Sabich"
                     className="w-full h-full object-cover"
                   />
@@ -232,6 +247,40 @@ const Menu = () => {
                 </h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
                   Crispy fried cauliflower with lemon and tahini
+                </p>
+              </div>
+
+              {/* Laffa Zatar */}
+              <div className="text-center">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F4816ceb177b14a5eaf6e2957338676d9?format=webp&width=800"
+                    alt="Laffa Zatar"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">
+                  Laffa Zatar
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Freshly baked laffa topped with olive oil and za'atar spice
+                </p>
+              </div>
+
+              {/* Barbarian Mushroom */}
+              <div className="text-center">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0b7c0caaee924d419a648dc8314b7941?format=webp&width=800"
+                    alt="Barbarian Mushroom"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">
+                  Barbarian Mushroom
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Mushroom and asparagus tossed with a bright, zesty lime sauce
                 </p>
               </div>
             </div>
@@ -451,22 +500,58 @@ const Menu = () => {
               DESSERTS
             </h2>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-6xl mx-auto mb-16">
-              {/* Bavarian Cream with Chocolate */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto mb-16">
+              {/* Inside Out Baklava */}
               <div className="text-center">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fb596fbde004d4a4da8e1d1bc58a0bd42?format=webp&width=800"
-                    alt="Bavarian Cream with Chocolate"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fa1a8c95627674001bff3de435d7ab626?format=webp&width=800"
+                    alt="Inside Out Baklava"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
-                  Bavarian Cream with Chocolate
+                  Inside Out Baklava
                 </h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Vanilla cream topped with bread crumbs and chocolate syrup
-                  drizzle
+                  Flaky filo dough filled with walnuts, halva, dates, honey, and
+                  sweet syrup
+                </p>
+              </div>
+
+              {/* Bavarian Cream */}
+              <div className="text-center">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fb596fbde004d4a4da8e1d1bc58a0bd42?format=webp&width=800"
+                    alt="Bavarian Cream"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">
+                  Bavarian Cream
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Flaky filo dough filled with walnuts, halva, dates, honey, and
+                  sweet syrup
+                </p>
+              </div>
+
+              {/* Chocolate Mousse in a Jar */}
+              <div className="text-center">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc5575aaa05ea477b99a5722a059d8f95?format=webp&width=800"
+                    alt="Chocolate Mousse in a Jar"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">
+                  Chocolate Mousse in a Jar
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Fresh chocolate mousse layered with cookie crumble and rich
+                  chocolate ganache
                 </p>
               </div>
 
@@ -551,7 +636,7 @@ const Menu = () => {
               <div className="text-center">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
-                    src="https://images.pexels.com/photos/60616/fried-chicken-chicken-fried-crunchy-60616.jpeg"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Feb00405b88a34b27848fb34250c2fa20?format=webp&width=800"
                     alt="Kids Chicken Nuggets"
                     className="w-full h-full object-cover"
                   />
@@ -581,17 +666,17 @@ const Menu = () => {
                 </p>
               </div>
 
-              {/* Kids Crispy Chicken */}
+              {/* Kids Fried Chicken Sliders */}
               <div className="text-center">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://images.pexels.com/photos/552056/pexels-photo-552056.jpeg"
-                    alt="Kids Crispy Chicken"
+                    alt="Kids Fried Chicken Sliders"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
-                  Kids Crispy Chicken
+                  Kids Fried Chicken Sliders
                 </h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
                   Chicken nugget sliders served with fries

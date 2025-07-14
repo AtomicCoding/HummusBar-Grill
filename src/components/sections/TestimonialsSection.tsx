@@ -6,7 +6,7 @@ const TestimonialsSection = () => {
       name: "Kim A.",
       role: "Regular Customer",
       content:
-        "Amazing Mediterranean food! The shakshuka is to die for and the staff is incredibly friendly. This place has become our go-to spot for family dinners.",
+        "There is a large Israeli population in Tarzana and Hummus Bar & Grill could be the reason. Delicious food and kind people make HB&G a comfort and a joy. The chicken kabobs were fall-off-the-bone juicy and the seasoning perfection. The salads are delicious, authentic and satisfying. I can't wait to try the lamb and the filet. There is no doubt that it will all be scrumptious. The outdoor seating is in a parking lot but the sounds of Spanish, Hebrew and Arabic will make you feel as if you are on vacation in a cosmopolitan town. The servers treat customers like family. Dogs are welcome and a big appetite is encouraged.",
       rating: 5,
       avatar: "KA",
       location: "San Diego, CA",
@@ -15,7 +15,7 @@ const TestimonialsSection = () => {
       name: "Elena L.",
       role: "Food Enthusiast",
       content:
-        "Authentic flavors that remind me of my travels through Greece and Turkey. The hummus is creamy perfection and the lamb is seasoned beautifully.",
+        "We had a fantastic experience at this place! The service was excellent, and everything was fresh and hot. The hummus was delicious, and you could tell it was made with quality ingredients. The place is very popular—we barely managed to get a spot at the bar. Highly recommend it for anyone looking for great food and a lively atmosphere! Food: 5/5 | Service: 5/5 | Atmosphere: 5/5 Recommended dishes: Pickles, Shawarma Plate Recommendation for vegetarians: Highly recommend Vegetarian offerings: Large vegetarian selection.",
       rating: 5,
       avatar: "EL",
       location: "Portland, OR",
@@ -24,7 +24,7 @@ const TestimonialsSection = () => {
       name: "Karin Z.",
       role: "Local Resident",
       content:
-        "Fresh ingredients, generous portions, and reasonable prices. The kids menu is perfect for our little ones, and the delivery is always on time.",
+        "Hummus Bar never disappoints! The food is always fresh and delicious—I'm especially obsessed with their chicken thighs, flavorful appetizers, and the wide selection of tasty sides. Whether it's a casual dinner or a big group outing, they always manage to accommodate us with ease. Great vibes, easy service, and amazing food every time! Food: 5/5 | Service: 5/5 | Atmosphere: 5/5 Noise level: Moderate noise Wait time: No wait Recommendation for vegetarians: Highly recommend Vegetarian offerings: Vegetarian menu or section",
       rating: 5,
       avatar: "KZ",
       location: "Denver, CO",
@@ -33,7 +33,7 @@ const TestimonialsSection = () => {
       name: "Cameron Z.",
       role: "Business Professional",
       content:
-        "Great spot for lunch meetings. The atmosphere is professional yet relaxed, and the Mediterranean salads are fresh and satisfying every time.",
+        "Unlike most Middle Eastern places everything is way above average at this place. Fresh hot bread, freshly made humus, tasty marinated, lots of salads and it is even open on Saturdays. Food: 5/5 | Service: 5/5 | Atmosphere: 5/5 Recommendation for vegetarians: Highly recommend Vegetarian offerings: Large vegetarian selection Parking space: Plenty of parking Parking options: Free parking lot Kid-friendliness: Family friendly",
       rating: 5,
       avatar: "CZ",
       location: "Seattle, WA",
@@ -42,7 +42,7 @@ const TestimonialsSection = () => {
       name: "Jas D.",
       role: "Health Conscious Diner",
       content:
-        "Love that they focus on heart-healthy Mediterranean cuisine. The ingredients are clearly fresh and the preparation methods are traditional and authentic.",
+        "Humus Bar is a fantastic place to hang out with your loved ones for a vegetarian meal or loaded with meat dishes! The food is nothing short of spectacular���perfectly seasoned hummus served with fluffy, fresh-baked pita, and dishes like falafel and grilled meats bursting with authentic Middle Eastern flavors. Every bite felt homemade and full of love. The staff is attentive, friendly, and genuinely passionate about ensuring you enjoy your meal. Whether you're a hummus aficionado or just craving a wholesome, flavorful meal that includes lamb and chicken skewers—Humus Bar delivers it all. I'll definitely be back! Food: 5/5 | Service: 5/5 | Atmosphere: 5/5 Recommended dishes: Pickles, Lamb and Chicken Skewers, Babaganush, Fresh Pita, Hummus Plate, Shawarma Plate, Cucumber Salad Recommendation for vegetarians: Highly recommend Vegetarian offerings: Vegetarian menu or section",
       rating: 5,
       avatar: "JD",
       location: "Phoenix, AZ",
@@ -51,7 +51,7 @@ const TestimonialsSection = () => {
       name: "Esmeralda A.",
       role: "Family Customer",
       content:
-        "Wonderful family restaurant with something for everyone. The kids love their nuggets and sliders, while we adults enjoy the sophisticated Mediterranean dishes.",
+        "The food and service here were absolutely incredible. My friends and I showed up during rush hour without a reservation, but the staff went above and beyond to accommodate us as quickly as possible. The host and waitstaff were extremely friendly and attentive, making sure we had everything we needed throughout the meal.",
       rating: 5,
       avatar: "EA",
       location: "Las Vegas, NV",

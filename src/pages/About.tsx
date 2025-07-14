@@ -63,46 +63,54 @@ const About = () => {
 
                 <div className="prose prose-lg max-w-none space-y-6">
                   <p className="text-lg text-foreground/80 leading-relaxed">
-                    The first Hummus Bar and Grill Restaurant is conveniently
-                    located in Tarzana Village Shopping Center on Ventura
-                    Boulevard in Tarzana, and boasts plentiful parking. The
-                    simple unpretentious environs of the restaurant create the
-                    experience of a Tel-Aviv outing, transporting you to the
-                    heart of the Mediterranean with every visit.
+                    Welcome to Hummus Bar & Grill — Tarzana's Favorite Taste of
+                    the Mediterranean
                   </p>
 
                   <p className="text-lg text-foreground/80 leading-relaxed">
-                    The restaurant offers a wide range of quality salads
-                    prepared daily on the premises, and served with hot pitas
-                    baked upon request on location. The food is prepared with
-                    great care using only high quality products, and focusing on
-                    the simplicity of preparation - thus allowing affordable
-                    pricing. Hummus Bar has introduced a new concept in Los
-                    Angeles, combining high quality meats with ambiance and a
-                    concept.
+                    Located in the heart of the Tarzana Village Shopping Center
+                    on Ventura Boulevard, Hummus Bar & Grill offers a warm and
+                    inviting experience inspired by the casual dining culture of
+                    Tel Aviv. With plenty of convenient parking and a relaxed
+                    atmosphere, we've created a space where great food and good
+                    vibes come together.
                   </p>
 
                   <p className="text-lg text-foreground/80 leading-relaxed">
-                    Hummus Bar is open Monday through Saturday from 9 AM to 11
-                    PM, and Sunday from 9 AM to 10 PM. We also offer delivery
-                    service Monday through Saturday from 11 AM to 9:30 PM, and
-                    Sunday from 11 AM to 8:30 PM.
+                    Our menu is all about freshness and flavor. Each day, we
+                    prepare a colorful variety of Mediterranean salads in-house
+                    and serve them with hot, fluffy pita bread baked fresh to
+                    order. From sizzling grilled meats to vibrant vegetarian
+                    dishes, everything is made with high-quality ingredients and
+                    simple, honest cooking. This allows us to keep the food
+                    delicious while offering fair and accessible pricing.
                   </p>
 
                   <p className="text-lg text-foreground/80 leading-relaxed">
-                    The character of the restaurant changes throughout the day.
-                    At lunchtime you will see people coming for a quick meal in
-                    the midst of their busy workday, while in the evening the
-                    premises fill up with young people and families to enjoy our
-                    diverse menu, as well as the great atmosphere that the place
-                    offers.
+                    We've introduced something unique to Los Angeles: a place
+                    where top-quality food meets authentic Mediterranean
+                    hospitality and a welcoming, upbeat vibe. Whether you're
+                    grabbing a quick lunch or enjoying a relaxed dinner with
+                    family and friends, Hummus Bar is your go-to destination for
+                    flavorful meals and friendly service.
                   </p>
 
                   <p className="text-lg text-foreground/80 leading-relaxed">
-                    The Hummus Bar does not forget about its youngest customers,
-                    the children, offering them a children's menu containing
-                    mini-schnitzel, mini-hamburger and chips with hot dogs, just
-                    what every kid loves.
+                    We're open Monday through Saturday from 9 AM to 11 PM and
+                    Sunday from 9 AM to 10 PM. Delivery is available every day
+                    starting at 10:30 AM and ending at 9:30 PM on weekdays and
+                    8:30 PM on Sundays.
+                  </p>
+
+                  <p className="text-lg text-foreground/80 leading-relaxed">
+                    The energy of the restaurant changes throughout the day.
+                    During lunchtime, we welcome professionals looking for a
+                    fast, satisfying meal, and in the evenings, we're a favorite
+                    spot for families and groups to gather and enjoy great food
+                    in a lively setting. We also make sure our younger guests
+                    are taken care of with a kid-friendly menu featuring crispy
+                    chicken nuggets, juicy beef sliders, and mini chicken
+                    sliders — all simple favorites kids love.
                   </p>
                 </div>
               </div>
