@@ -26,13 +26,13 @@ const Footer = () => {
   ];
 
   const hours = [
-    { day: "Monday - Saturday", hours: "9 AM - 11 PM" },
-    { day: "Sunday", hours: "9 AM - 10 PM" },
+    { day: "Monday - Saturday", hours: "9:00 AM - 11:00 PM" },
+    { day: "Sunday", hours: "9:00 AM - 10:00 PM" },
   ];
 
   const deliveryHours = [
-    { day: "Monday - Saturday", hours: "11 AM - 9:30 PM" },
-    { day: "Sunday", hours: "11 AM - 8:30 PM" },
+    { day: "Monday - Saturday", hours: "10:30 AM - 9:30 PM" },
+    { day: "Sunday", hours: "10:30 AM - 8:30 PM" },
   ];
 
   const quickLinks = [
