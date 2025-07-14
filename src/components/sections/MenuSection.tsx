@@ -15,13 +15,10 @@ import {
 import { cn } from "@/lib/utils";
 
 const MenuSection = () => {
-  const [activeCategory, setActiveCategory] = useState("breakfast");
+  const [activeCategory, setActiveCategory] = useState("popular");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const categories = [
-    { id: "breakfast", name: "Breakfast", icon: Coffee },
-    { id: "lunch-dinner", name: "Lunch & Dinner", icon: Utensils },
-  ];
+  const categories = [{ id: "popular", name: "Popular", icon: Star }];
 
   const menuItems = {
     breakfast: [
