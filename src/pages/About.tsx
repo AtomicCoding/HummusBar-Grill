@@ -171,8 +171,8 @@ const About = () => {
                       <p>
                         <strong>Delivery Hours:</strong>
                       </p>
-                      <p>Monday – Saturday: 11 AM – 9:30 PM</p>
-                      <p>Sunday: 11 AM – 8:30 PM</p>
+                      <p>Monday – Saturday: 10:30 AM – 9:30 PM</p>
+                      <p>Sunday: 10:30 AM – 8:30 PM</p>
                     </div>
                   </div>
                 </div>
