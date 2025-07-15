@@ -137,21 +137,24 @@ const Menu = () => {
                 </p>
               </div>
 
-              {/* Royal Breakfast */}
-              <div className="text-center lg:col-start-2">
+              {/* Traditional Israeli Breakfast */}
+              <div className="text-center">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ff31f3c717bd1474b9b964d640e05ffa8?format=webp&width=800"
-                    alt="Royal Breakfast"
+                    alt="Traditional Israeli Breakfast"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
-                  Royal Breakfast
+                  Traditional Israeli Breakfast
                 </h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Eggs any style, 1 cold drink, 1 hot drink, Jerusalem bagel,
-                  jam, labneh, tuna, olive tapenade, cottage cheese, babaganoush
+                  3 eggs any style (scrambled, omelet, etc) served with chopped
+                  Israeli salad, assorted plates, and a bread basket with jam
+                  and butter. Includes 1 hot beverage and 1 cold beverage.
+                  Assortment plate includes: Labneh, olive tapenade, cottage
+                  cheese, sour cream, tuna salad, and babaganoush.
                 </p>
               </div>
             </div>
