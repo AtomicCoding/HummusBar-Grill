@@ -81,7 +81,7 @@ const TestimonialsSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           <div className="text-center">
             <div className="text-3xl md:text-4xl font-bold text-red-700 mb-2">
-              4.9
+              4.42
             </div>
             <div className="flex justify-center mb-2">
               {[1, 2, 3, 4, 5].map((star) => (
@@ -95,19 +95,19 @@ const TestimonialsSection = () => {
           </div>
           <div className="text-center">
             <div className="text-3xl md:text-4xl font-bold text-red-700 mb-2">
-              2.5K+
+              6.3K+
             </div>
             <div className="text-sm text-foreground/70">Happy Reviews</div>
           </div>
           <div className="text-center">
             <div className="text-3xl md:text-4xl font-bold text-red-700 mb-2">
-              98%
+              97%
             </div>
             <div className="text-sm text-foreground/70">Recommend Us</div>
           </div>
           <div className="text-center">
             <div className="text-3xl md:text-4xl font-bold text-red-700 mb-2">
-              16
+              Since 2008
             </div>
             <div className="text-sm text-foreground/70">Years Serving</div>
           </div>
