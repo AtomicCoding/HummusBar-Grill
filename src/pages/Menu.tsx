@@ -431,11 +431,11 @@ const Menu = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto mb-16">
               {/* Iced Matcha */}
               <div className="text-center">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
+                <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl mb-6 bg-gray-100 flex items-center justify-center p-4">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F1d667902c0a647e8bd9e97517686b1b1?format=webp&width=800"
                     alt="Iced Matcha"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
@@ -449,11 +449,11 @@ const Menu = () => {
 
               {/* Aperol Spritz */}
               <div className="text-center">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
+                <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl mb-6 bg-gray-100 flex items-center justify-center p-4">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc5b06c22feed4c2b96a6e6763b2d926b?format=webp&width=800"
                     alt="Aperol Spritz"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
@@ -467,11 +467,11 @@ const Menu = () => {
 
               {/* Malibu Sunset */}
               <div className="text-center">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
+                <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl mb-6 bg-gray-100 flex items-center justify-center p-4">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F7f9cf299bf024416beaca54819e7fa86?format=webp&width=800"
                     alt="Malibu Sunset"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
@@ -485,11 +485,11 @@ const Menu = () => {
 
               {/* Lemonana */}
               <div className="text-center">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
+                <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl mb-6 bg-gray-100 flex items-center justify-center p-4">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F2c00d0195a484562ba8f93aa7ae7a5ea?format=webp&width=800"
                     alt="Lemonana"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">Lemonana</h3>
@@ -500,11 +500,11 @@ const Menu = () => {
 
               {/* Cappuccino */}
               <div className="text-center">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
+                <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl mb-6 bg-gray-100 flex items-center justify-center p-4">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F3e337c79f7b645d29e35881aa4a34974?format=webp&width=800"
                     alt="Cappuccino"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
