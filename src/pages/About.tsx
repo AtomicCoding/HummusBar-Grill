@@ -122,7 +122,7 @@ const About = () => {
                     <ChefHat className="w-8 h-8 text-red-600" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-3">
-                    Daily Fresh Preparation
+                    Fresh Ingredients Daily
                   </h3>
                   <p className="text-foreground/70 text-sm">
                     Fresh Mediterranean ingredients prepared daily with
