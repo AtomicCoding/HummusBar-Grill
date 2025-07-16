@@ -30,10 +30,6 @@ const Catering = () => {
                 Back to Home
               </Link>
 
-              <div className="inline-flex items-center px-4 py-2 bg-red-600/20 backdrop-blur-sm text-red-400 rounded-full text-sm font-medium mb-6">
-                🔥 Big Portions, Big Flavor — Since 2008
-              </div>
-
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
                 Our
                 <span className="block text-red-400">Catering Menu</span>
@@ -49,7 +45,8 @@ const Catering = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   asChild
-                  className="bg-red-600 hover:bg-red-700 text-white shadow-xl"
+                  size="lg"
+                  className="bg-red-600 hover:bg-red-700 text-white shadow-xl catering-hero-button"
                 >
                   <a href="tel:8183446606">
                     <Phone className="w-4 h-4 mr-2" />
@@ -59,7 +56,8 @@ const Catering = () => {
                 <Button
                   asChild
                   variant="outline"
-                  className="border-white/30 text-white hover:bg-white/10"
+                  size="lg"
+                  className="border-white/30 text-white hover:bg-white/10 catering-hero-button"
                 >
                   <Link to="/menu">View Regular Menu</Link>
                 </Button>
