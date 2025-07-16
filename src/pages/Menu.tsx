@@ -428,7 +428,7 @@ const Menu = () => {
               DRINKS
             </h2>
 
-            <div className="grid md:grid-cols-3 gap-12 max-w-4xl mx-auto mb-16">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto mb-16">
               {/* Iced Matcha */}
               <div className="text-center">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
