@@ -27,8 +27,8 @@ const AboutSection = () => {
                   Daily Fresh Preparation
                 </h3>
                 <p className="text-foreground/70 text-sm leading-relaxed">
-                  Quality salads prepared daily on the premises, with hot pitas
-                  baked upon request on location for the freshest experience.
+                  Fresh Mediterranean ingredients prepared daily with
+                  traditional recipes and authentic cooking methods.
                 </p>
               </div>
 
