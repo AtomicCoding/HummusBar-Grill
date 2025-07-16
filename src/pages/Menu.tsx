@@ -429,20 +429,57 @@ const Menu = () => {
             </h2>
 
             <div className="grid md:grid-cols-3 gap-12 max-w-4xl mx-auto mb-16">
-              {/* Strawberry Iced Matcha */}
+              {/* Iced Matcha */}
               <div className="text-center">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F9203c5faec45446981d85b60a97af384?format=webp&width=800"
-                    alt="Strawberry Iced Matcha"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F1d667902c0a647e8bd9e97517686b1b1?format=webp&width=800"
+                    alt="Iced Matcha"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
-                  Strawberry Iced Matcha
+                  Iced Matcha
                 </h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Iced matcha latte with fresh strawberry puree at the base
+                  Chilled Japanese green tea blended with milk and lightly
+                  sweetened, served over ice
+                </p>
+              </div>
+
+              {/* Aperol Spritz */}
+              <div className="text-center">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F73ee1c6adb234bf69f33608df6f79468?format=webp&width=800"
+                    alt="Aperol Spritz"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">
+                  Aperol Spritz
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  A light and bubbly mix of Aperol, Prosecco, and a splash of
+                  soda, served over ice with a slice of orange
+                </p>
+              </div>
+
+              {/* Malibu Sunset */}
+              <div className="text-center">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F7f9cf299bf024416beaca54819e7fa86?format=webp&width=800"
+                    alt="Malibu Sunset"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">
+                  Malibu Sunset
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  A tropical blend of Malibu rum, pineapple juice, and orange
+                  juice, served over ice with a splash of grenadine
                 </p>
               </div>
 
@@ -656,7 +693,7 @@ const Menu = () => {
               <div className="text-center">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
-                    src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fa43b0afe6eea45e6baccb3810ad554f1?format=webp&width=800"
                     alt="Kids Beef Sliders"
                     className="w-full h-full object-cover"
                   />

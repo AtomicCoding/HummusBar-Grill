@@ -13,7 +13,7 @@ const Catering = () => {
         <section className="relative min-h-screen flex items-center">
           <div className="absolute inset-0">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0a0eda9784cc438c818cf02b2c391418?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0d64f0aa3e3c4fb687ab93be98fe427d?format=webp&width=800"
               alt="Mediterranean Catering Menu"
               className="w-full h-full object-cover"
             />

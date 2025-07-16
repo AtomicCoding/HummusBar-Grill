@@ -22,7 +22,7 @@ const Locations = () => {
         <section className="relative min-h-screen flex items-center">
           <div className="absolute inset-0">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fae8fd3b3ba6e402384fb51a0149c24ff?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F01e7cbdb34d547768781c49c8e86b408?format=webp&width=800"
               alt="Hummus Bar & Grill Location"
               className="w-full h-full object-cover"
             />
