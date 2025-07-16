@@ -471,7 +471,8 @@ const Menu = () => {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F7f9cf299bf024416beaca54819e7fa86?format=webp&width=800"
                     alt="Malibu Sunset"
-                    className="w-full h-full object-contain"
+                    className="w-full object-cover mx-auto"
+                    style={{ height: "85%" }}
                   />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
