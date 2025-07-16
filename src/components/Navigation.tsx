@@ -83,87 +83,26 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-10">
-            {navigation.map((item) => {
-              if (item.name === "Order") {
-                return (
-                  <div key={item.name} className="relative">
-                    <button
-                      onClick={() =>
-                        setIsOrderDropdownOpen(!isOrderDropdownOpen)
-                      }
-                      className={cn(
-                        "text-lg font-medium transition-colors hover:text-red-600 relative py-2 flex items-center",
-                        isActive(item.href)
-                          ? "text-red-700"
-                          : "text-foreground/80",
-                      )}
-                    >
-                      <span
-                        className={cn(
-                          isScrolled ? "text-gray-900" : "text-white",
-                        )}
-                      >
-                        {item.name}
-                      </span>
-                      <ChevronDown
-                        className={cn(
-                          "w-4 h-4 ml-1 transition-transform",
-                          isOrderDropdownOpen && "rotate-180",
-                          isScrolled ? "text-gray-900" : "text-white",
-                        )}
-                      />
-                      {isActive(item.href) && (
-                        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-600 rounded-full" />
-                      )}
-                    </button>
-
-                    {isOrderDropdownOpen && (
-                      <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden z-50">
-                        <a
-                          href="tel:(818) 344-6606"
-                          className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
-                          onClick={() => setIsOrderDropdownOpen(false)}
-                        >
-                          <Phone className="w-4 h-4 mr-3" />
-                          Call to Order
-                        </a>
-                        <a
-                          href="https://www.toasttab.com/local/order/hummusbargrill/r-7fc07f7e-2b14-4999-8bd9-8c05a07d8e59"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
-                          onClick={() => setIsOrderDropdownOpen(false)}
-                        >
-                          <ShoppingBag className="w-4 h-4 mr-3" />
-                          Order Online
-                        </a>
-                      </div>
-                    )}
-                  </div>
-                );
-              }
-
-              return (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  onClick={() => window.scrollTo(0, 0)}
-                  className={cn(
-                    "text-lg font-medium transition-colors hover:text-red-600 relative py-2",
-                    isActive(item.href) ? "text-red-700" : "text-foreground/80",
-                  )}
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                onClick={() => window.scrollTo(0, 0)}
+                className={cn(
+                  "text-lg font-medium transition-colors hover:text-red-600 relative py-2",
+                  isActive(item.href) ? "text-red-700" : "text-foreground/80",
+                )}
+              >
+                <span
+                  className={cn(isScrolled ? "text-gray-900" : "text-white")}
                 >
-                  <span
-                    className={cn(isScrolled ? "text-gray-900" : "text-white")}
-                  >
-                    {item.name}
-                  </span>
-                  {isActive(item.href) && (
-                    <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-600 rounded-full" />
-                  )}
-                </Link>
-              );
-            })}
+                  {item.name}
+                </span>
+                {isActive(item.href) && (
+                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-600 rounded-full" />
+                )}
+              </Link>
+            ))}
           </div>
 
           {/* Desktop CTA Buttons */}

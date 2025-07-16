@@ -150,7 +150,7 @@ const Locations = () => {
                   </div>
 
                   {/* Actions */}
-                  <div className="flex flex-col sm:flex-row gap-4">
+                  <div className="flex flex-col sm:flex-row gap-4 mt-8">
                     <Button
                       asChild
                       size="lg"
