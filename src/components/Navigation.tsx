@@ -32,6 +32,7 @@ const Navigation = () => {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Menu", href: "/menu" },
+    { name: "Catering", href: "/catering" },
     { name: "Order", href: "/order" },
     { name: "Contact", href: "/locations" },
     { name: "About", href: "/about" },
