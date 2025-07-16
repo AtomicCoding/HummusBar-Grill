@@ -451,7 +451,7 @@ const Menu = () => {
               <div className="text-center">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F73ee1c6adb234bf69f33608df6f79468?format=webp&width=800"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc5b06c22feed4c2b96a6e6763b2d926b?format=webp&width=800"
                     alt="Aperol Spritz"
                     className="w-full h-full object-cover"
                   />
