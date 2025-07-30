@@ -664,6 +664,40 @@ const Menu = () => {
                   Mini donuts dusted in sugar with dipping sauce on the side
                 </p>
               </div>
+
+              {/* Chocolate Soufflé */}
+              <div className="text-center">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F6af7f1ef8ff4416b864d8f6c8e7140af?format=webp&width=800"
+                    alt="Chocolate Soufflé"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">
+                  Chocolate Soufflé
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  A warm chocolate soufflé, served with a scoop of vanilla ice cream on the side
+                </p>
+              </div>
+
+              {/* Pavlova */}
+              <div className="text-center">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F340f43aef02942919e0b034aab09d9d2?format=webp&width=800"
+                    alt="Pavlova"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">
+                  Pavlova
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  A meringue cake topped with whipped cream and filled with a refreshing passion fruit sauce
+                </p>
+              </div>
             </div>
 
             <div className="text-center pt-6">
