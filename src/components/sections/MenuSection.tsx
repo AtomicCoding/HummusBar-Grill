@@ -13,56 +13,56 @@ const MenuSection = () => {
     {
       name: "Chicken Thigh Steak (K)",
       description: "Two sides of your choice.",
-      image: "https://i.ibb.co/wFB0KbM7/image.png",
+      image: "https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fd4d89d7a8cfc4ea6b641fea272a70744?format=webp&width=800",
       badges: ["Kosher"],
       spicy: false,
     },
     {
       name: "Kosher Rib Eye Steak (K)",
       description: "16oz Angus all-natural steak, two sides of your choice.",
-      image: "https://i.ibb.co/mCg8n88F/image.png",
+      image: "https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0d0477c50fcb40dca29f991ff8979804?format=webp&width=800",
       badges: ["Kosher"],
       spicy: false,
     },
     {
       name: "Kababonim (K)",
       description: "Two sides of your choice.",
-      image: "https://i.ibb.co/B2c05SbT/image.png",
+      image: "https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F64767615d955453e96cc6f9fed97d768?format=webp&width=800",
       badges: ["Kosher"],
       spicy: false,
     },
     {
       name: "Chicken Tenders Skewer (K)",
       description: "Two sides of your choice.",
-      image: "https://i.ibb.co/rGg6kKh8/image.png",
+      image: "https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fff1e37af1812431594a84a621416dca2?format=webp&width=800",
       badges: ["Kosher"],
       spicy: false,
     },
     {
       name: "Spicy Merguez Sausages (K)",
       description: "Two sides of your choice.",
-      image: "https://i.ibb.co/wFB0KbM7/image.png",
+      image: "https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fd6a63fa04cc848b998210dbece197533?format=webp&width=800",
       badges: ["Kosher"],
       spicy: true,
     },
     {
       name: "Beef Angus Sliders (K)",
       description: "Ketchup, mayo, lettuce, tomato, roasted onion, served with French fries.",
-      image: "https://i.ibb.co/mCg8n88F/image.png",
+      image: "https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fe1d3cec5ef8a48609bed01cd65f2f56f?format=webp&width=800",
       badges: ["Kosher"],
       spicy: false,
     },
     {
       name: "Pita Arayes (K)",
       description: "Ground beef & lamb, tahini, harissa, pickled lemon spread.",
-      image: "https://i.ibb.co/B2c05SbT/image.png",
+      image: "https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F6fcd9851f5f5484db13733a53c1f70fa?format=webp&width=800",
       badges: ["Kosher"],
       spicy: false,
     },
     {
       name: "Shnitzelonim (K)",
       description: "Two sides of your choice.",
-      image: "https://i.ibb.co/rGg6kKh8/image.png",
+      image: "https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F6ea349aae6014677a5727d2d276a91bb?format=webp&width=800",
       badges: ["Kosher"],
       spicy: false,
     },
@@ -137,10 +137,6 @@ const MenuSection = () => {
                         <span>Spicy</span>
                       </div>
                     )}
-                    <div className="flex items-center">
-                      <Star className="w-3 h-3 text-yellow-500 mr-1" />
-                      <span>4.8</span>
-                    </div>
                   </div>
                 </div>
               </div>

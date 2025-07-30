@@ -101,27 +101,29 @@ const AboutSection = () => {
           {/* Images */}
           <div className="relative">
             <div className="grid grid-cols-2 gap-4">
-              {/* Main Image */}
+              {/* Main Image - Top (5th image) */}
               <div className="col-span-2 aspect-[4/3] rounded-2xl overflow-hidden shadow-soft-lg">
                 <img
-                  src="https://i.ibb.co/TBXCtZ7x/image.png"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F3b1ac74d9ed54ab39eccd40d09ca18d4?format=webp&width=800"
                   alt="Restaurant Interior"
                   className="w-full h-full object-cover"
                 />
               </div>
 
               {/* Secondary Images */}
+              {/* Bottom Left (4th image) */}
               <div className="aspect-square rounded-2xl overflow-hidden shadow-soft">
                 <img
-                  src="https://i.ibb.co/bRCM5VN2/image.png"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F1c5cfe7564924568a1cd430bfa81749d?format=webp&width=800"
                   alt="Kitchen"
                   className="w-full h-full object-cover"
                 />
               </div>
 
+              {/* Bottom Right (3rd image) */}
               <div className="aspect-square rounded-2xl overflow-hidden shadow-soft">
                 <img
-                  src="https://i.ibb.co/sp8K7sNF/image.png"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fe839b3157fa74681afe8946b997cd6cc?format=webp&width=800"
                   alt="Fresh Ingredients"
                   className="w-full h-full object-cover"
                 />

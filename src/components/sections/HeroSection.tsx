@@ -8,7 +8,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://i.ibb.co/SDVLnHRK/image-1.jpg"
+          src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F5dc6991075bd41c2be954029dea0aac6?format=webp&width=800"
           alt="Hummus Bar & Grill Restaurant Interior"
           className="w-full h-full object-cover"
         />
