@@ -74,6 +74,7 @@ const Catering = () => {
                 🥗 <span className="text-yellow-400">Mediterranean Salads</span>
               </h2>
               <div className="w-24 h-1 bg-yellow-400 mx-auto rounded-full"></div>
+              <p className="text-gray-300 mt-4">Tray</p>
             </div>
 
             <div className="max-w-4xl mx-auto">
@@ -182,7 +183,7 @@ const Catering = () => {
                 <span className="text-white font-medium">
                   Fried Cauliflower (V)
                 </span>
-                <span className="text-red-400 font-bold">$60</span>
+                <span className="text-red-400 font-bold">$60 Tray</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <span className="text-white font-medium">
@@ -291,7 +292,7 @@ const Catering = () => {
               </h2>
               <div className="w-24 h-1 bg-red-500 mx-auto rounded-full"></div>
               <p className="text-gray-300 mt-4">
-                Per Skewer – 10 Skewers Minimum
+                Per Skewer – 10 Skewers Minimum | À la Carte
               </p>
             </div>
 
@@ -373,7 +374,7 @@ const Catering = () => {
               </h2>
               <div className="w-24 h-1 bg-blue-400 mx-auto rounded-full"></div>
               <p className="text-gray-300 mt-4">
-                Per Skewer or Piece – 10 Minimum
+                Per Skewer or Piece – 10 Minimum | À la Carte
               </p>
             </div>
 
@@ -470,6 +471,7 @@ const Catering = () => {
                 🍰 <span className="text-pink-400">Happy Endings</span>
               </h2>
               <div className="w-24 h-1 bg-pink-400 mx-auto rounded-full"></div>
+              <p className="text-gray-300 mt-4">Tray</p>
             </div>
 
             <div className="max-w-3xl mx-auto space-y-4">
