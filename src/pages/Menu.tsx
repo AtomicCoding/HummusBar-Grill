@@ -763,7 +763,7 @@ const Menu = () => {
               <div className="text-center">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
-                    src="https://images.pexels.com/photos/552056/pexels-photo-552056.jpeg"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F225620198c2e4df7a647430557d7c588?format=webp&width=800"
                     alt="Kids Fried Chicken Sliders"
                     className="w-full h-full object-cover"
                   />
