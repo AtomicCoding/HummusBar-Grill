@@ -67,17 +67,17 @@ const Menu = () => {
                 </p>
               </div>
 
-              {/* Butter Pancakes */}
+              {/* Pancakes */}
               <div className="text-center">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fed447ea944274105ba1f1238db556036?format=webp&width=800"
-                    alt="Butter Pancakes"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F318420b311734c4d97286f652c36673d?format=webp&width=800"
+                    alt="Pancakes"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
-                  Butter Pancakes
+                  Pancakes
                 </h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
                   Stacked pancakes topped with fresh cream and maple syrup
@@ -433,7 +433,7 @@ const Menu = () => {
               <div className="text-center">
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden mb-6 flex items-center justify-center p-4">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F1d667902c0a647e8bd9e97517686b1b1?format=webp&width=800"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc9762011f5d147d0b998404e948e63a9?format=webp&width=800"
                     alt="Iced Matcha"
                     className="w-full h-full object-contain"
                   />
@@ -472,7 +472,7 @@ const Menu = () => {
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F7f9cf299bf024416beaca54819e7fa86?format=webp&width=800"
                     alt="Malibu Sunset"
                     className="w-full object-cover mx-auto"
-                    style={{ height: "85%" }}
+                    style={{ height: '85%' }}
                   />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
@@ -506,7 +506,7 @@ const Menu = () => {
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F3e337c79f7b645d29e35881aa4a34974?format=webp&width=800"
                     alt="Cappuccino"
                     className="w-full object-cover mx-auto"
-                    style={{ height: "85%" }}
+                    style={{ height: '85%' }}
                   />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
@@ -514,6 +514,24 @@ const Menu = () => {
                 </h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
                   Espresso with velvety milk foam and heart latte art
+                </p>
+              </div>
+
+              {/* Sangria */}
+              <div className="text-center">
+                <div className="aspect-[3/4] rounded-2xl overflow-hidden mb-6 flex items-center justify-center p-4">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8c24610e24ca4a219fd6bf7b1430d47a?format=webp&width=800"
+                    alt="Sangria"
+                    className="w-full object-cover mx-auto"
+                    style={{ height: '85%' }}
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">
+                  Sangria
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  A smooth blend of red wine, orange juice, and apple syrup, garnished with a cinnamon stick
                 </p>
               </div>
             </div>
