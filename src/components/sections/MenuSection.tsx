@@ -1,65 +1,72 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import {
   ArrowRight,
-  Plus,
   Star,
   Flame,
-  Leaf,
-  ChevronDown,
-  Coffee,
-  Utensils,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const MenuSection = () => {
-  const [activeCategory, setActiveCategory] = useState("popular");
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  const categories = [{ id: "popular", name: "Popular", icon: Star }];
-
-  const menuItems = {
-    popular: [
-      {
-        name: "Shakshuka",
-        description:
-          "Eggs poached in spiced tomato sauce with peppers, onions, and fresh herbs - our signature Mediterranean dish",
-        price: "$25.00",
-        image: "https://i.ibb.co/wFB0KbM7/image.png",
-        badges: ["Signature", "Traditional"],
-        spicy: true,
-      },
-      {
-        name: "Mushroom Hummus",
-        description:
-          "Creamy hummus topped with fresh sautéed mushrooms, olive oil, and herbs - packed with plant-based protein and Mediterranean superfoods",
-        price: "$12.00",
-        image: "https://i.ibb.co/mCg8n88F/image.png",
-        badges: ["Heart-Healthy", "Vegetarian"],
-        spicy: false,
-      },
-      {
-        name: "Falafel",
-        description:
-          "Crispy golden falafel made from fresh chickpeas, herbs, and spices - a traditional Mediterranean protein packed with flavor",
-        price: "$16.00",
-        image: "https://i.ibb.co/B2c05SbT/image.png",
-        badges: ["Vegetarian", "Traditional"],
-        spicy: false,
-      },
-      {
-        name: "Arugula Avocado Salad",
-        description:
-          "Fresh arugula topped with creamy avocado, mixed greens, and Mediterranean herbs - a nutritious and satisfying healthy choice",
-        price: "$23.00",
-        image: "https://i.ibb.co/rGg6kKh8/image.png",
-        badges: ["Heart-Healthy", "Fresh Daily"],
-        spicy: false,
-      },
-    ],
-  };
+  const kosherItems = [
+    {
+      name: "Chicken Thigh Steak (K)",
+      description: "Two sides of your choice.",
+      image: "https://i.ibb.co/wFB0KbM7/image.png",
+      badges: ["Kosher"],
+      spicy: false,
+    },
+    {
+      name: "Kosher Rib Eye Steak (K)",
+      description: "16oz Angus all-natural steak, two sides of your choice.",
+      image: "https://i.ibb.co/mCg8n88F/image.png",
+      badges: ["Kosher"],
+      spicy: false,
+    },
+    {
+      name: "Kababonim (K)",
+      description: "Two sides of your choice.",
+      image: "https://i.ibb.co/B2c05SbT/image.png",
+      badges: ["Kosher"],
+      spicy: false,
+    },
+    {
+      name: "Chicken Tenders Skewer (K)",
+      description: "Two sides of your choice.",
+      image: "https://i.ibb.co/rGg6kKh8/image.png",
+      badges: ["Kosher"],
+      spicy: false,
+    },
+    {
+      name: "Spicy Merguez Sausages (K)",
+      description: "Two sides of your choice.",
+      image: "https://i.ibb.co/wFB0KbM7/image.png",
+      badges: ["Kosher"],
+      spicy: true,
+    },
+    {
+      name: "Beef Angus Sliders (K)",
+      description: "Ketchup, mayo, lettuce, tomato, roasted onion, served with French fries.",
+      image: "https://i.ibb.co/mCg8n88F/image.png",
+      badges: ["Kosher"],
+      spicy: false,
+    },
+    {
+      name: "Pita Arayes (K)",
+      description: "Ground beef & lamb, tahini, harissa, pickled lemon spread.",
+      image: "https://i.ibb.co/B2c05SbT/image.png",
+      badges: ["Kosher"],
+      spicy: false,
+    },
+    {
+      name: "Shnitzelonim (K)",
+      description: "Two sides of your choice.",
+      image: "https://i.ibb.co/rGg6kKh8/image.png",
+      badges: ["Kosher"],
+      spicy: false,
+    },
+  ];
 
   return (
     <section id="menu" className="section-spacing bg-white">
@@ -70,149 +77,75 @@ const MenuSection = () => {
             Fresh Daily
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6 text-balance">
-            Our Most
-            <span className="block text-red-700">Popular Dishes</span>
+            <span className="block text-red-700">Kosher</span>
           </h2>
           <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-            Every dish is prepared daily with the freshest ingredients,
-            celebrating the proven health benefits of the Mediterranean diet.
-            Experience nutrition and flavor in perfect harmony.
+            Kosher-style meat is served in this section only. All other meat on our menu is not kosher. Please note that none of our food is prepared in a fully kosher kitchen.
           </p>
         </div>
 
-        {/* Category Dropdown */}
-        <div className="flex justify-center mb-12">
-          <div className="relative">
-            <button
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-              className="flex items-center px-6 py-3 bg-red-600 text-white rounded-full font-medium shadow-soft hover:shadow-md transition-all duration-300 min-w-[200px] justify-between"
-            >
-              <div className="flex items-center">
-                {(() => {
-                  const category = categories.find(
-                    (cat) => cat.id === activeCategory,
-                  );
-                  const IconComponent = category?.icon;
-                  return IconComponent ? (
-                    <IconComponent className="w-4 h-4 mr-2" />
-                  ) : null;
-                })()}
-                {categories.find((cat) => cat.id === activeCategory)?.name}
-              </div>
-              <ChevronDown
-                className={cn(
-                  "w-4 h-4 transition-transform",
-                  isDropdownOpen && "rotate-180",
-                )}
-              />
-            </button>
-
-            {isDropdownOpen && (
-              <div className="absolute top-full mt-2 w-full bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden z-10">
-                {categories.map((category) => (
-                  <button
-                    key={category.id}
-                    onClick={() => {
-                      setActiveCategory(category.id);
-                      setIsDropdownOpen(false);
-                    }}
-                    className={cn(
-                      "w-full flex items-center px-4 py-3 text-left hover:bg-gray-50 transition-colors",
-                      activeCategory === category.id
-                        ? "bg-red-50 text-red-600"
-                        : "text-gray-700",
-                    )}
-                  >
-                    <category.icon className="w-4 h-4 mr-3" />
-                    {category.name}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
-
         {/* Menu Items Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {menuItems[activeCategory as keyof typeof menuItems].map(
-            (item, index) => (
-              <div
-                key={item.name}
-                className="group bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-warm-200"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                {/* Image */}
-                <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={item.name}
-                    className="w-full h-full object-cover"
-                  />
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          {kosherItems.map((item, index) => (
+            <div
+              key={item.name}
+              className="group bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-warm-200"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              {/* Image */}
+              <div className="aspect-[4/3] relative overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-full h-full object-cover"
+                />
 
-                  {/* Badges */}
-                  <div className="absolute top-3 left-3 flex flex-wrap gap-1">
-                    {item.badges.map((badge) => (
-                      <Badge
-                        key={badge}
-                        variant="secondary"
-                        className={cn(
-                          "text-xs bg-white/90 backdrop-blur-sm",
-                          badge === "Popular" &&
-                            "bg-yellow-100 text-yellow-800",
-                          badge === "Spicy" && "bg-red-100 text-red-800",
-                          badge === "Vegetarian" &&
-                            "bg-green-100 text-green-800",
-                          badge === "Vegan" &&
-                            "bg-emerald-100 text-emerald-800",
-                          badge === "Kosher" && "bg-blue-100 text-blue-800",
-                        )}
-                      >
-                        {badge}
-                      </Badge>
-                    ))}
-                  </div>
+                {/* Badges */}
+                <div className="absolute top-3 left-3 flex flex-wrap gap-1">
+                  {item.badges.map((badge) => (
+                    <Badge
+                      key={badge}
+                      variant="secondary"
+                      className={cn(
+                        "text-xs bg-white/90 backdrop-blur-sm",
+                        badge === "Kosher" && "bg-blue-100 text-blue-800",
+                      )}
+                    >
+                      {badge}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="p-6">
+                <div className="mb-3">
+                  <h3 className="text-lg font-semibold text-foreground group-hover:text-red-700 transition-colors">
+                    {item.name}
+                  </h3>
                 </div>
 
-                {/* Content */}
-                <div className="p-6">
-                  <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-lg font-semibold text-foreground group-hover:text-red-700 transition-colors">
-                      {item.name}
-                    </h3>
-                    <div className="text-right ml-2">
-                      <span className="text-lg font-bold text-red-700">
-                        {item.price}
-                      </span>
-                      {item.priceNote && (
-                        <div className="text-xs text-foreground/60">
-                          {item.priceNote}
-                        </div>
-                      )}
-                    </div>
-                  </div>
+                <p className="text-sm text-foreground/70 leading-relaxed mb-4">
+                  {item.description}
+                </p>
 
-                  <p className="text-sm text-foreground/70 leading-relaxed mb-4">
-                    {item.description}
-                  </p>
-
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center text-xs text-foreground/60">
-                      {item.spicy && (
-                        <div className="flex items-center mr-3">
-                          <Flame className="w-3 h-3 text-red-500 mr-1" />
-                          <span>Spicy</span>
-                        </div>
-                      )}
-                      <div className="flex items-center">
-                        <Star className="w-3 h-3 text-yellow-500 mr-1" />
-                        <span>4.8</span>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center text-xs text-foreground/60">
+                    {item.spicy && (
+                      <div className="flex items-center mr-3">
+                        <Flame className="w-3 h-3 text-red-500 mr-1" />
+                        <span>Spicy</span>
                       </div>
+                    )}
+                    <div className="flex items-center">
+                      <Star className="w-3 h-3 text-yellow-500 mr-1" />
+                      <span>4.8</span>
                     </div>
                   </div>
                 </div>
               </div>
-            ),
-          )}
+            </div>
+          ))}
         </div>
 
         {/* View Full Menu CTA */}
