@@ -385,21 +385,20 @@ const Menu = () => {
                 </p>
               </div>
 
-              {/* Mega Schnitzel Plate */}
+              {/* Mega Schnitzel */}
               <div className="text-center">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F4af304b196e245019129930933b0400b?format=webp&width=800"
-                    alt="Mega Schnitzel Plate"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F08269cdef40a40c2a4ac88b1144ee55f?format=webp&width=800"
+                    alt="Mega Schnitzel"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
-                  Mega Schnitzel Plate
+                  Mega Schnitzel
                 </h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Breaded crispy schnitzel with any two side options of your
-                  choice (not just the fries and salad shown)
+                  Breaded crispy schnitzel with two sides of your choice
                 </p>
               </div>
             </div>
