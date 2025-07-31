@@ -82,26 +82,125 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-10">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                onClick={() => window.scrollTo(0, 0)}
-                className={cn(
-                  "text-lg font-medium transition-colors hover:text-red-600 relative py-2",
-                  isActive(item.href) ? "text-red-700" : "text-foreground/80",
-                )}
-              >
-                <span
-                  className={cn(isScrolled ? "text-gray-900" : "text-white")}
+            {navigation.map((item) => {
+              if (item.name === "Menu") {
+                return (
+                  <div
+                    key={item.name}
+                    className="relative"
+                    onMouseEnter={() => setIsMenuDropdownOpen(true)}
+                    onMouseLeave={() => {
+                      setTimeout(() => setIsMenuDropdownOpen(false), 150);
+                    }}
+                  >
+                    <Link
+                      to={item.href}
+                      onClick={() => window.scrollTo(0, 0)}
+                      className={cn(
+                        "text-lg font-medium transition-colors hover:text-red-600 relative py-2 flex items-center",
+                        isActive(item.href) ? "text-red-700" : "text-foreground/80",
+                      )}
+                    >
+                      <span
+                        className={cn(isScrolled ? "text-gray-900" : "text-white")}
+                      >
+                        {item.name}
+                      </span>
+                      <ChevronDown
+                        className={cn(
+                          "w-4 h-4 ml-1 transition-transform",
+                          isMenuDropdownOpen ? "rotate-180" : "",
+                          isScrolled ? "text-gray-900" : "text-white"
+                        )}
+                      />
+                      {isActive(item.href) && (
+                        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-600 rounded-full" />
+                      )}
+                    </Link>
+
+                    {/* Menu Dropdown */}
+                    {isMenuDropdownOpen && (
+                      <div
+                        className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-warm-200 py-2 z-50"
+                        onMouseEnter={() => setIsMenuDropdownOpen(true)}
+                        onMouseLeave={() => setIsMenuDropdownOpen(false)}
+                      >
+                        <Link
+                          to="/menu#breakfast-section"
+                          className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                          onClick={() => setIsMenuDropdownOpen(false)}
+                        >
+                          Breakfast
+                        </Link>
+                        <Link
+                          to="/menu#appetizers-section"
+                          className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                          onClick={() => setIsMenuDropdownOpen(false)}
+                        >
+                          Appetizers
+                        </Link>
+                        <Link
+                          to="/menu#lunch-dinner-section"
+                          className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                          onClick={() => setIsMenuDropdownOpen(false)}
+                        >
+                          Lunch & Dinner
+                        </Link>
+                        <Link
+                          to="/menu#drinks-section"
+                          className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                          onClick={() => setIsMenuDropdownOpen(false)}
+                        >
+                          Drinks
+                        </Link>
+                        <Link
+                          to="/menu#desserts-section"
+                          className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                          onClick={() => setIsMenuDropdownOpen(false)}
+                        >
+                          Desserts
+                        </Link>
+                        <Link
+                          to="/menu#kids-menu-section"
+                          className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                          onClick={() => setIsMenuDropdownOpen(false)}
+                        >
+                          Kids Menu
+                        </Link>
+                        <Link
+                          to="/#kosher-section"
+                          className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                          onClick={() => setIsMenuDropdownOpen(false)}
+                        >
+                          Kosher
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              return (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  onClick={() => window.scrollTo(0, 0)}
+                  className={cn(
+                    "text-lg font-medium transition-colors hover:text-red-600 relative py-2",
+                    isActive(item.href) ? "text-red-700" : "text-foreground/80",
+                  )}
                 >
-                  {item.name}
-                </span>
-                {isActive(item.href) && (
-                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-600 rounded-full" />
-                )}
-              </Link>
-            ))}
+                  <span
+                    className={cn(isScrolled ? "text-gray-900" : "text-white")}
+                  >
+                    {item.name}
+                  </span>
+                  {isActive(item.href) && (
+                    <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-600 rounded-full" />
+                  )}
+                </Link>
+              );
+            })}
           </div>
 
           {/* Desktop CTA Buttons */}
@@ -165,24 +264,126 @@ const Navigation = () => {
         {isOpen && (
           <div className="lg:hidden border-t border-warm-200 mt-4 pt-4 pb-6 bg-white/95 backdrop-blur-md rounded-b-2xl shadow-soft-lg mx-4">
             <div className="space-y-4 px-2">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  onClick={() => {
-                    setIsOpen(false);
-                    window.scrollTo(0, 0);
-                  }}
-                  className={cn(
-                    "block px-4 py-2 text-base font-medium rounded-lg transition-colors",
-                    isActive(item.href)
-                      ? "text-red-700 bg-red-50"
-                      : "text-foreground/80 hover:text-red-600 hover:bg-red-50",
-                  )}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {navigation.map((item) => {
+                if (item.name === "Menu") {
+                  return (
+                    <div key={item.name}>
+                      <button
+                        onClick={() => setIsMenuDropdownOpen(!isMenuDropdownOpen)}
+                        className={cn(
+                          "w-full flex items-center justify-between px-4 py-2 text-base font-medium rounded-lg transition-colors",
+                          isActive(item.href)
+                            ? "text-red-700 bg-red-50"
+                            : "text-foreground/80 hover:text-red-600 hover:bg-red-50",
+                        )}
+                      >
+                        <span>{item.name}</span>
+                        <ChevronDown
+                          className={cn(
+                            "w-4 h-4 transition-transform",
+                            isMenuDropdownOpen ? "rotate-180" : ""
+                          )}
+                        />
+                      </button>
+
+                      {/* Mobile Menu Dropdown */}
+                      {isMenuDropdownOpen && (
+                        <div className="ml-4 mt-2 space-y-1">
+                          <Link
+                            to="/menu#breakfast-section"
+                            onClick={() => {
+                              setIsOpen(false);
+                              setIsMenuDropdownOpen(false);
+                            }}
+                            className="block px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                          >
+                            Breakfast
+                          </Link>
+                          <Link
+                            to="/menu#appetizers-section"
+                            onClick={() => {
+                              setIsOpen(false);
+                              setIsMenuDropdownOpen(false);
+                            }}
+                            className="block px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                          >
+                            Appetizers
+                          </Link>
+                          <Link
+                            to="/menu#lunch-dinner-section"
+                            onClick={() => {
+                              setIsOpen(false);
+                              setIsMenuDropdownOpen(false);
+                            }}
+                            className="block px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                          >
+                            Lunch & Dinner
+                          </Link>
+                          <Link
+                            to="/menu#drinks-section"
+                            onClick={() => {
+                              setIsOpen(false);
+                              setIsMenuDropdownOpen(false);
+                            }}
+                            className="block px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                          >
+                            Drinks
+                          </Link>
+                          <Link
+                            to="/menu#desserts-section"
+                            onClick={() => {
+                              setIsOpen(false);
+                              setIsMenuDropdownOpen(false);
+                            }}
+                            className="block px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                          >
+                            Desserts
+                          </Link>
+                          <Link
+                            to="/menu#kids-menu-section"
+                            onClick={() => {
+                              setIsOpen(false);
+                              setIsMenuDropdownOpen(false);
+                            }}
+                            className="block px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                          >
+                            Kids Menu
+                          </Link>
+                          <Link
+                            to="/#kosher-section"
+                            onClick={() => {
+                              setIsOpen(false);
+                              setIsMenuDropdownOpen(false);
+                            }}
+                            className="block px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                          >
+                            Kosher
+                          </Link>
+                        </div>
+                      )}
+                    </div>
+                  );
+                }
+
+                return (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    onClick={() => {
+                      setIsOpen(false);
+                      window.scrollTo(0, 0);
+                    }}
+                    className={cn(
+                      "block px-4 py-2 text-base font-medium rounded-lg transition-colors",
+                      isActive(item.href)
+                        ? "text-red-700 bg-red-50"
+                        : "text-foreground/80 hover:text-red-600 hover:bg-red-50",
+                    )}
+                  >
+                    {item.name}
+                  </Link>
+                );
+              })}
               <div className="pt-4 border-t border-warm-200 space-y-3">
                 <Button
                   asChild
