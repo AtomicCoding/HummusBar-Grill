@@ -19,6 +19,37 @@ const Navigation = () => {
   const [isMenuDropdownOpen, setIsMenuDropdownOpen] = useState(false);
   const [isOrderDropdownOpen, setIsOrderDropdownOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  // Function to scroll to section
+  const scrollToSection = (sectionId: string) => {
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }, 100);
+  };
+
+  // Handle navigation with hash
+  const handleHashNavigation = (to: string) => {
+    const [path, hash] = to.split('#');
+    if (hash) {
+      if (location.pathname === path) {
+        // Same page, just scroll
+        scrollToSection(hash);
+      } else {
+        // Different page, navigate then scroll
+        navigate(to);
+      }
+    } else {
+      navigate(to);
+      window.scrollTo(0, 0);
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
