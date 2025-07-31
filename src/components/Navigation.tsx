@@ -60,6 +60,14 @@ const Navigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Handle hash on page load and route changes
+  useEffect(() => {
+    const hash = location.hash.substring(1);
+    if (hash) {
+      scrollToSection(hash);
+    }
+  }, [location]);
+
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Menu", href: "/menu" },
