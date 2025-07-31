@@ -89,9 +89,7 @@ const Navigation = () => {
                     key={item.name}
                     className="relative"
                     onMouseEnter={() => setIsMenuDropdownOpen(true)}
-                    onMouseLeave={() => {
-                      setTimeout(() => setIsMenuDropdownOpen(false), 150);
-                    }}
+                    onMouseLeave={() => setIsMenuDropdownOpen(false)}
                   >
                     <Link
                       to={item.href}
@@ -120,11 +118,7 @@ const Navigation = () => {
 
                     {/* Menu Dropdown */}
                     {isMenuDropdownOpen && (
-                      <div
-                        className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-warm-200 py-2 z-50"
-                        onMouseEnter={() => setIsMenuDropdownOpen(true)}
-                        onMouseLeave={() => setIsMenuDropdownOpen(false)}
-                      >
+                      <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-lg shadow-xl border border-warm-200 py-2 z-50">
                         <Link
                           to="/menu#breakfast-section"
                           className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
