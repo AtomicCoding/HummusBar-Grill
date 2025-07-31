@@ -35,79 +35,11 @@ const Menu = () => {
                 <span className="block text-red-400">Menu</span>
               </h1>
 
-              {/* Menu Navigation Buttons */}
-              <div className="max-w-4xl mx-auto mb-8 space-y-4">
-                {/* Top Row - 4 buttons */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                  <Button
-                    asChild
-                    size="lg"
-                    className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-medium shadow-soft hover:shadow-md transition-all group"
-                  >
-                    <a href="#breakfast-section">
-                      Breakfast
-                    </a>
-                  </Button>
-                  <Button
-                    asChild
-                    size="lg"
-                    className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-medium shadow-soft hover:shadow-md transition-all group"
-                  >
-                    <a href="#appetizers-section">
-                      Appetizers
-                    </a>
-                  </Button>
-                  <Button
-                    asChild
-                    size="lg"
-                    className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-medium shadow-soft hover:shadow-md transition-all group"
-                  >
-                    <a href="#lunch-dinner-section">
-                      Lunch & Dinner
-                    </a>
-                  </Button>
-                  <Button
-                    asChild
-                    size="lg"
-                    className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-medium shadow-soft hover:shadow-md transition-all group"
-                  >
-                    <a href="#drinks-section">
-                      Drinks
-                    </a>
-                  </Button>
-                </div>
-
-                {/* Bottom Row - 3 buttons (centered) */}
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
-                  <Button
-                    asChild
-                    size="lg"
-                    className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-medium shadow-soft hover:shadow-md transition-all group"
-                  >
-                    <a href="#desserts-section">
-                      Desserts
-                    </a>
-                  </Button>
-                  <Button
-                    asChild
-                    size="lg"
-                    className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-medium shadow-soft hover:shadow-md transition-all group"
-                  >
-                    <a href="#kids-menu-section">
-                      Kids Menu
-                    </a>
-                  </Button>
-                  <Button
-                    asChild
-                    size="lg"
-                    className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-medium shadow-soft hover:shadow-md transition-all group"
-                  >
-                    <Link to="/#kosher-section">
-                      Kosher
-                    </Link>
-                  </Button>
-                </div>
-              </div>
+              <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-8">
+                Explore our complete collection of authentic Mediterranean
+                dishes, crafted with traditional recipes and the finest
+                ingredients.
+              </p>
             </div>
           </div>
         </section>
