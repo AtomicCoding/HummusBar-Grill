@@ -37,7 +37,7 @@ const Catering = () => {
 
               <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-8">
                 Hosting an event? We offer generous trays of your favorite
-                Mediterranean dishes—perfect for parties, holidays, and large
+                Mediterranean dishes perfect for parties, holidays, and large
                 gatherings. Need staff too? Give us a call to discuss
                 availability.
               </p>
