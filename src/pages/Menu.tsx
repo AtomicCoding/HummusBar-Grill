@@ -36,12 +36,10 @@ const Menu = () => {
               </h1>
 
               {/* Menu Navigation Buttons */}
-              <div className="flex flex-wrap justify-center gap-3 mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-w-4xl mx-auto mb-8">
                 <Button
                   asChild
-                  variant="outline"
-                  size="sm"
-                  className="px-4 py-2 text-sm font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
+                  className="px-6 py-4 text-base md:text-lg font-bold bg-black hover:bg-gray-900 text-red-500 hover:text-red-400 border border-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all"
                 >
                   <a href="#breakfast-section">
                     Breakfast
@@ -49,9 +47,7 @@ const Menu = () => {
                 </Button>
                 <Button
                   asChild
-                  variant="outline"
-                  size="sm"
-                  className="px-4 py-2 text-sm font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
+                  className="px-6 py-4 text-base md:text-lg font-bold bg-black hover:bg-gray-900 text-red-500 hover:text-red-400 border border-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all"
                 >
                   <a href="#appetizers-section">
                     Appetizers
@@ -59,9 +55,7 @@ const Menu = () => {
                 </Button>
                 <Button
                   asChild
-                  variant="outline"
-                  size="sm"
-                  className="px-4 py-2 text-sm font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
+                  className="px-6 py-4 text-base md:text-lg font-bold bg-black hover:bg-gray-900 text-red-500 hover:text-red-400 border border-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all"
                 >
                   <a href="#lunch-dinner-section">
                     Lunch & Dinner
@@ -69,9 +63,7 @@ const Menu = () => {
                 </Button>
                 <Button
                   asChild
-                  variant="outline"
-                  size="sm"
-                  className="px-4 py-2 text-sm font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
+                  className="px-6 py-4 text-base md:text-lg font-bold bg-black hover:bg-gray-900 text-red-500 hover:text-red-400 border border-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all"
                 >
                   <a href="#drinks-section">
                     Drinks
@@ -79,9 +71,7 @@ const Menu = () => {
                 </Button>
                 <Button
                   asChild
-                  variant="outline"
-                  size="sm"
-                  className="px-4 py-2 text-sm font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
+                  className="px-6 py-4 text-base md:text-lg font-bold bg-black hover:bg-gray-900 text-red-500 hover:text-red-400 border border-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all"
                 >
                   <a href="#desserts-section">
                     Desserts
@@ -89,9 +79,7 @@ const Menu = () => {
                 </Button>
                 <Button
                   asChild
-                  variant="outline"
-                  size="sm"
-                  className="px-4 py-2 text-sm font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
+                  className="px-6 py-4 text-base md:text-lg font-bold bg-black hover:bg-gray-900 text-red-500 hover:text-red-400 border border-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all"
                 >
                   <a href="#kids-menu-section">
                     Kids Menu
@@ -99,9 +87,7 @@ const Menu = () => {
                 </Button>
                 <Button
                   asChild
-                  variant="outline"
-                  size="sm"
-                  className="px-4 py-2 text-sm font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
+                  className="px-6 py-4 text-base md:text-lg font-bold bg-black hover:bg-gray-900 text-red-500 hover:text-red-400 border border-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all sm:col-span-2 lg:col-span-1"
                 >
                   <Link to="/#kosher-section">
                     Kosher

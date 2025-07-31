@@ -69,7 +69,7 @@ const MenuSection = () => {
   ];
 
   return (
-    <section id="menu" className="section-spacing bg-white">
+    <section id="kosher-section" className="section-spacing bg-white">
       <div className="container-custom section-padding">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
