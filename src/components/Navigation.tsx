@@ -115,7 +115,7 @@ const Navigation = () => {
                         <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-600 rounded-full" />
                       )}
                     </Link>
-
+                    
                     {/* Menu Dropdown */}
                     {isMenuDropdownOpen && (
                       <>
@@ -177,7 +177,7 @@ const Navigation = () => {
                   </div>
                 );
               }
-
+              
               return (
                 <Link
                   key={item.name}
@@ -283,7 +283,7 @@ const Navigation = () => {
                           )}
                         />
                       </button>
-
+                      
                       {/* Mobile Menu Dropdown */}
                       {isMenuDropdownOpen && (
                         <div className="ml-4 mt-2 space-y-1">
@@ -362,7 +362,7 @@ const Navigation = () => {
                     </div>
                   );
                 }
-
+                
                 return (
                   <Link
                     key={item.name}
@@ -409,10 +409,9 @@ const Navigation = () => {
                   </a>
                 </Button>
               </div>
-                        </div>
-                        </div>
-                      </>
-                    )}
+            </div>
+          </div>
+        )}
       </nav>
     </header>
   );
