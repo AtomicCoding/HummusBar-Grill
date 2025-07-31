@@ -43,7 +43,7 @@ const Menu = () => {
                   size="sm"
                   className="px-4 py-2 text-sm font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
                 >
-                  <a href="#breakfast-section" className="scroll-smooth">
+                  <a href="#breakfast-section">
                     Breakfast
                   </a>
                 </Button>
@@ -53,7 +53,7 @@ const Menu = () => {
                   size="sm"
                   className="px-4 py-2 text-sm font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
                 >
-                  <a href="#appetizers-section" className="scroll-smooth">
+                  <a href="#appetizers-section">
                     Appetizers
                   </a>
                 </Button>
@@ -63,7 +63,7 @@ const Menu = () => {
                   size="sm"
                   className="px-4 py-2 text-sm font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
                 >
-                  <a href="#lunch-dinner-section" className="scroll-smooth">
+                  <a href="#lunch-dinner-section">
                     Lunch & Dinner
                   </a>
                 </Button>
@@ -73,7 +73,7 @@ const Menu = () => {
                   size="sm"
                   className="px-4 py-2 text-sm font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
                 >
-                  <a href="#drinks-section" className="scroll-smooth">
+                  <a href="#drinks-section">
                     Drinks
                   </a>
                 </Button>
@@ -83,7 +83,7 @@ const Menu = () => {
                   size="sm"
                   className="px-4 py-2 text-sm font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
                 >
-                  <a href="#desserts-section" className="scroll-smooth">
+                  <a href="#desserts-section">
                     Desserts
                   </a>
                 </Button>
@@ -93,7 +93,7 @@ const Menu = () => {
                   size="sm"
                   className="px-4 py-2 text-sm font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
                 >
-                  <a href="#kids-menu-section" className="scroll-smooth">
+                  <a href="#kids-menu-section">
                     Kids Menu
                   </a>
                 </Button>
