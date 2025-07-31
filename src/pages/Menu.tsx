@@ -36,63 +36,77 @@ const Menu = () => {
               </h1>
 
               {/* Menu Navigation Buttons */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-w-4xl mx-auto mb-8">
-                <Button
-                  asChild
-                  className="px-6 py-4 text-base md:text-lg font-bold bg-black hover:bg-gray-900 text-red-500 hover:text-red-400 border border-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all"
-                >
-                  <a href="#breakfast-section">
-                    Breakfast
-                  </a>
-                </Button>
-                <Button
-                  asChild
-                  className="px-6 py-4 text-base md:text-lg font-bold bg-black hover:bg-gray-900 text-red-500 hover:text-red-400 border border-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all"
-                >
-                  <a href="#appetizers-section">
-                    Appetizers
-                  </a>
-                </Button>
-                <Button
-                  asChild
-                  className="px-6 py-4 text-base md:text-lg font-bold bg-black hover:bg-gray-900 text-red-500 hover:text-red-400 border border-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all"
-                >
-                  <a href="#lunch-dinner-section">
-                    Lunch & Dinner
-                  </a>
-                </Button>
-                <Button
-                  asChild
-                  className="px-6 py-4 text-base md:text-lg font-bold bg-black hover:bg-gray-900 text-red-500 hover:text-red-400 border border-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all"
-                >
-                  <a href="#drinks-section">
-                    Drinks
-                  </a>
-                </Button>
-                <Button
-                  asChild
-                  className="px-6 py-4 text-base md:text-lg font-bold bg-black hover:bg-gray-900 text-red-500 hover:text-red-400 border border-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all"
-                >
-                  <a href="#desserts-section">
-                    Desserts
-                  </a>
-                </Button>
-                <Button
-                  asChild
-                  className="px-6 py-4 text-base md:text-lg font-bold bg-black hover:bg-gray-900 text-red-500 hover:text-red-400 border border-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all"
-                >
-                  <a href="#kids-menu-section">
-                    Kids Menu
-                  </a>
-                </Button>
-                <Button
-                  asChild
-                  className="px-6 py-4 text-base md:text-lg font-bold bg-black hover:bg-gray-900 text-red-500 hover:text-red-400 border border-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all sm:col-span-2 lg:col-span-1"
-                >
-                  <Link to="/#kosher-section">
-                    Kosher
-                  </Link>
-                </Button>
+              <div className="max-w-4xl mx-auto mb-8 space-y-4">
+                {/* Top Row - 4 buttons */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-medium shadow-soft hover:shadow-md transition-all group"
+                  >
+                    <a href="#breakfast-section">
+                      Breakfast
+                    </a>
+                  </Button>
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-medium shadow-soft hover:shadow-md transition-all group"
+                  >
+                    <a href="#appetizers-section">
+                      Appetizers
+                    </a>
+                  </Button>
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-medium shadow-soft hover:shadow-md transition-all group"
+                  >
+                    <a href="#lunch-dinner-section">
+                      Lunch & Dinner
+                    </a>
+                  </Button>
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-medium shadow-soft hover:shadow-md transition-all group"
+                  >
+                    <a href="#drinks-section">
+                      Drinks
+                    </a>
+                  </Button>
+                </div>
+
+                {/* Bottom Row - 3 buttons (centered) */}
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-medium shadow-soft hover:shadow-md transition-all group"
+                  >
+                    <a href="#desserts-section">
+                      Desserts
+                    </a>
+                  </Button>
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-medium shadow-soft hover:shadow-md transition-all group"
+                  >
+                    <a href="#kids-menu-section">
+                      Kids Menu
+                    </a>
+                  </Button>
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-medium shadow-soft hover:shadow-md transition-all group"
+                  >
+                    <Link to="/#kosher-section">
+                      Kosher
+                    </Link>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
