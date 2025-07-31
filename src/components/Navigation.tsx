@@ -122,56 +122,57 @@ const Navigation = () => {
                         {/* Invisible bridge to prevent gap issues */}
                         <div className="absolute top-full left-0 w-56 h-2 -mt-2 z-40"></div>
                         <div className="absolute top-full left-0 w-56 bg-white rounded-lg shadow-xl border border-warm-200 py-2 z-50">
-                        <Link
-                          to="/menu#breakfast-section"
-                          className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
-                          onClick={() => setIsMenuDropdownOpen(false)}
-                        >
-                          Breakfast
-                        </Link>
-                        <Link
-                          to="/menu#appetizers-section"
-                          className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
-                          onClick={() => setIsMenuDropdownOpen(false)}
-                        >
-                          Appetizers
-                        </Link>
-                        <Link
-                          to="/menu#lunch-dinner-section"
-                          className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
-                          onClick={() => setIsMenuDropdownOpen(false)}
-                        >
-                          Lunch & Dinner
-                        </Link>
-                        <Link
-                          to="/menu#drinks-section"
-                          className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
-                          onClick={() => setIsMenuDropdownOpen(false)}
-                        >
-                          Drinks
-                        </Link>
-                        <Link
-                          to="/menu#desserts-section"
-                          className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
-                          onClick={() => setIsMenuDropdownOpen(false)}
-                        >
-                          Desserts
-                        </Link>
-                        <Link
-                          to="/menu#kids-menu-section"
-                          className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
-                          onClick={() => setIsMenuDropdownOpen(false)}
-                        >
-                          Kids Menu
-                        </Link>
-                        <Link
-                          to="/#kosher-section"
-                          className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
-                          onClick={() => setIsMenuDropdownOpen(false)}
-                        >
-                          Kosher
-                        </Link>
-                      </div>
+                          <Link
+                            to="/menu#breakfast-section"
+                            className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                            onClick={() => setIsMenuDropdownOpen(false)}
+                          >
+                            Breakfast
+                          </Link>
+                          <Link
+                            to="/menu#appetizers-section"
+                            className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                            onClick={() => setIsMenuDropdownOpen(false)}
+                          >
+                            Appetizers
+                          </Link>
+                          <Link
+                            to="/menu#lunch-dinner-section"
+                            className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                            onClick={() => setIsMenuDropdownOpen(false)}
+                          >
+                            Lunch & Dinner
+                          </Link>
+                          <Link
+                            to="/menu#drinks-section"
+                            className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                            onClick={() => setIsMenuDropdownOpen(false)}
+                          >
+                            Drinks
+                          </Link>
+                          <Link
+                            to="/menu#desserts-section"
+                            className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                            onClick={() => setIsMenuDropdownOpen(false)}
+                          >
+                            Desserts
+                          </Link>
+                          <Link
+                            to="/menu#kids-menu-section"
+                            className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                            onClick={() => setIsMenuDropdownOpen(false)}
+                          >
+                            Kids Menu
+                          </Link>
+                          <Link
+                            to="/#kosher-section"
+                            className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                            onClick={() => setIsMenuDropdownOpen(false)}
+                          >
+                            Kosher
+                          </Link>
+                        </div>
+                      </>
                     )}
                   </div>
                 );
