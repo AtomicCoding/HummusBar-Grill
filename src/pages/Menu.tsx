@@ -35,17 +35,85 @@ const Menu = () => {
                 <span className="block text-red-400">Menu</span>
               </h1>
 
-              <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-8">
-                Explore our complete collection of authentic Mediterranean
-                dishes, crafted with traditional recipes and the finest
-                ingredients.
-              </p>
+              {/* Menu Navigation Buttons */}
+              <div className="flex flex-wrap justify-center gap-3 mb-8">
+                <Button
+                  asChild
+                  variant="outline"
+                  size="sm"
+                  className="px-4 py-2 text-sm font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
+                >
+                  <a href="#breakfast-section" className="scroll-smooth">
+                    Breakfast
+                  </a>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="sm"
+                  className="px-4 py-2 text-sm font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
+                >
+                  <a href="#appetizers-section" className="scroll-smooth">
+                    Appetizers
+                  </a>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="sm"
+                  className="px-4 py-2 text-sm font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
+                >
+                  <a href="#lunch-dinner-section" className="scroll-smooth">
+                    Lunch & Dinner
+                  </a>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="sm"
+                  className="px-4 py-2 text-sm font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
+                >
+                  <a href="#drinks-section" className="scroll-smooth">
+                    Drinks
+                  </a>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="sm"
+                  className="px-4 py-2 text-sm font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
+                >
+                  <a href="#desserts-section" className="scroll-smooth">
+                    Desserts
+                  </a>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="sm"
+                  className="px-4 py-2 text-sm font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
+                >
+                  <a href="#kids-menu-section" className="scroll-smooth">
+                    Kids Menu
+                  </a>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="sm"
+                  className="px-4 py-2 text-sm font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
+                >
+                  <Link to="/#kosher-section">
+                    Kosher
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
 
         {/* SECTION 1: BREAKFAST MENU */}
-        <section className="py-20 bg-gradient-to-b from-black to-gray-900">
+        <section id="breakfast-section" className="py-20 bg-gradient-to-b from-black to-gray-900">
           <div className="container-custom section-padding">
             <h2 className="text-4xl lg:text-5xl font-bold text-center uppercase mb-16 text-yellow-400">
               BREAKFAST MENU
@@ -177,7 +245,7 @@ const Menu = () => {
         </section>
 
         {/* SECTION 2: APPETIZERS */}
-        <section className="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <section id="appetizers-section" className="py-20 bg-gradient-to-b from-gray-900 to-black">
           <div className="container-custom section-padding">
             <h2 className="text-4xl lg:text-5xl font-bold text-center text-yellow-400 uppercase mb-16">
               APPETIZERS
@@ -291,7 +359,7 @@ const Menu = () => {
         </section>
 
         {/* SECTION 3: LUNCH & DINNER MENU */}
-        <section className="py-20 bg-gradient-to-b from-black to-gray-900">
+        <section id="lunch-dinner-section" className="py-20 bg-gradient-to-b from-black to-gray-900">
           <div className="container-custom section-padding">
             <h2 className="text-4xl lg:text-5xl font-bold text-center uppercase mb-16">
               <span className="text-white">LUNCH & </span>
@@ -421,7 +489,7 @@ const Menu = () => {
         </section>
 
         {/* SECTION 4: DRINKS */}
-        <section className="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <section id="drinks-section" className="py-20 bg-gradient-to-b from-gray-900 to-black">
           <div className="container-custom section-padding">
             <h2 className="text-4xl lg:text-5xl font-bold text-center text-blue-400 uppercase mb-16">
               DRINKS
@@ -553,7 +621,7 @@ const Menu = () => {
         </section>
 
         {/* SECTION 5: DESSERTS */}
-        <section className="py-20 bg-gradient-to-b from-black to-gray-900">
+        <section id="desserts-section" className="py-20 bg-gradient-to-b from-black to-gray-900">
           <div className="container-custom section-padding">
             <h2 className="text-4xl lg:text-5xl font-bold text-center text-red-600 uppercase mb-16">
               DESSERTS
@@ -718,7 +786,7 @@ const Menu = () => {
         </section>
 
         {/* SECTION 6: KIDS MENU */}
-        <section className="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <section id="kids-menu-section" className="py-20 bg-gradient-to-b from-gray-900 to-black">
           <div className="container-custom section-padding">
             <h2 className="text-4xl lg:text-5xl font-bold text-center text-yellow-400 uppercase mb-16">
               KIDS MENU
