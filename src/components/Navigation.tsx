@@ -27,8 +27,8 @@ const Navigation = () => {
       const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
+          behavior: "smooth",
+          block: "start",
         });
       }
     }, 100);
@@ -36,7 +36,7 @@ const Navigation = () => {
 
   // Handle navigation with hash
   const handleHashNavigation = (to: string) => {
-    const [path, hash] = to.split('#');
+    const [path, hash] = to.split("#");
     if (hash) {
       if (location.pathname === path) {
         // Same page, just scroll
@@ -186,7 +186,9 @@ const Navigation = () => {
                           <button
                             onClick={() => {
                               setIsMenuDropdownOpen(false);
-                              handleHashNavigation("/menu#lunch-dinner-section");
+                              handleHashNavigation(
+                                "/menu#lunch-dinner-section",
+                              );
                             }}
                             className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
                           >
@@ -370,7 +372,9 @@ const Navigation = () => {
                             onClick={() => {
                               setIsOpen(false);
                               setIsMenuDropdownOpen(false);
-                              handleHashNavigation("/menu#lunch-dinner-section");
+                              handleHashNavigation(
+                                "/menu#lunch-dinner-section",
+                              );
                             }}
                             className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                           >

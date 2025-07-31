@@ -45,7 +45,10 @@ const Menu = () => {
         </section>
 
         {/* SECTION 1: BREAKFAST MENU */}
-        <section id="breakfast-section" className="py-20 bg-gradient-to-b from-black to-gray-900">
+        <section
+          id="breakfast-section"
+          className="py-20 bg-gradient-to-b from-black to-gray-900"
+        >
           <div className="container-custom section-padding">
             <h2 className="text-4xl lg:text-5xl font-bold text-center uppercase mb-16 text-yellow-400">
               BREAKFAST MENU
@@ -76,9 +79,7 @@ const Menu = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  Pancakes
-                </h3>
+                <h3 className="text-xl font-bold text-white mb-3">Pancakes</h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
                   Stacked pancakes topped with fresh cream and maple syrup
                 </p>
@@ -177,7 +178,10 @@ const Menu = () => {
         </section>
 
         {/* SECTION 2: APPETIZERS */}
-        <section id="appetizers-section" className="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <section
+          id="appetizers-section"
+          className="py-20 bg-gradient-to-b from-gray-900 to-black"
+        >
           <div className="container-custom section-padding">
             <h2 className="text-4xl lg:text-5xl font-bold text-center text-yellow-400 uppercase mb-16">
               APPETIZERS
@@ -291,7 +295,10 @@ const Menu = () => {
         </section>
 
         {/* SECTION 3: LUNCH & DINNER MENU */}
-        <section id="lunch-dinner-section" className="py-20 bg-gradient-to-b from-black to-gray-900">
+        <section
+          id="lunch-dinner-section"
+          className="py-20 bg-gradient-to-b from-black to-gray-900"
+        >
           <div className="container-custom section-padding">
             <h2 className="text-4xl lg:text-5xl font-bold text-center uppercase mb-16">
               <span className="text-white">LUNCH & </span>
@@ -421,7 +428,10 @@ const Menu = () => {
         </section>
 
         {/* SECTION 4: DRINKS */}
-        <section id="drinks-section" className="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <section
+          id="drinks-section"
+          className="py-20 bg-gradient-to-b from-gray-900 to-black"
+        >
           <div className="container-custom section-padding">
             <h2 className="text-4xl lg:text-5xl font-bold text-center text-blue-400 uppercase mb-16">
               DRINKS
@@ -471,7 +481,7 @@ const Menu = () => {
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F7f9cf299bf024416beaca54819e7fa86?format=webp&width=800"
                     alt="Malibu Sunset"
                     className="w-full object-cover mx-auto"
-                    style={{ height: '85%' }}
+                    style={{ height: "85%" }}
                   />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
@@ -505,7 +515,7 @@ const Menu = () => {
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F3e337c79f7b645d29e35881aa4a34974?format=webp&width=800"
                     alt="Cappuccino"
                     className="w-full object-cover mx-auto"
-                    style={{ height: '85%' }}
+                    style={{ height: "85%" }}
                   />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
@@ -523,14 +533,13 @@ const Menu = () => {
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8c24610e24ca4a219fd6bf7b1430d47a?format=webp&width=800"
                     alt="Sangria"
                     className="w-full object-cover mx-auto"
-                    style={{ height: '85%' }}
+                    style={{ height: "85%" }}
                   />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  Sangria
-                </h3>
+                <h3 className="text-xl font-bold text-white mb-3">Sangria</h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  A smooth blend of red wine, orange juice, and apple syrup, garnished with a cinnamon stick
+                  A smooth blend of red wine, orange juice, and apple syrup,
+                  garnished with a cinnamon stick
                 </p>
               </div>
             </div>
@@ -553,7 +562,10 @@ const Menu = () => {
         </section>
 
         {/* SECTION 5: DESSERTS */}
-        <section id="desserts-section" className="py-20 bg-gradient-to-b from-black to-gray-900">
+        <section
+          id="desserts-section"
+          className="py-20 bg-gradient-to-b from-black to-gray-900"
+        >
           <div className="container-custom section-padding">
             <h2 className="text-4xl lg:text-5xl font-bold text-center text-red-600 uppercase mb-16">
               DESSERTS
@@ -678,7 +690,8 @@ const Menu = () => {
                   Chocolate Soufflé
                 </h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  A warm chocolate soufflé, served with a scoop of vanilla ice cream on the side
+                  A warm chocolate soufflé, served with a scoop of vanilla ice
+                  cream on the side
                 </p>
               </div>
 
@@ -691,11 +704,10 @@ const Menu = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  Pavlova
-                </h3>
+                <h3 className="text-xl font-bold text-white mb-3">Pavlova</h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  A meringue cake topped with whipped cream and filled with a refreshing passion fruit sauce
+                  A meringue cake topped with whipped cream and filled with a
+                  refreshing passion fruit sauce
                 </p>
               </div>
             </div>
@@ -703,7 +715,10 @@ const Menu = () => {
         </section>
 
         {/* SECTION 6: KIDS MENU */}
-        <section id="kids-menu-section" className="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <section
+          id="kids-menu-section"
+          className="py-20 bg-gradient-to-b from-gray-900 to-black"
+        >
           <div className="container-custom section-padding">
             <h2 className="text-4xl lg:text-5xl font-bold text-center text-yellow-400 uppercase mb-16">
               KIDS MENU
