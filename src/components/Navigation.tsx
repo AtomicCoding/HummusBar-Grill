@@ -96,11 +96,15 @@ const Navigation = () => {
                       onClick={() => window.scrollTo(0, 0)}
                       className={cn(
                         "text-lg font-medium transition-colors hover:text-red-600 relative py-2 flex items-center",
-                        isActive(item.href) ? "text-red-700" : "text-foreground/80",
+                        isActive(item.href)
+                          ? "text-red-700"
+                          : "text-foreground/80",
                       )}
                     >
                       <span
-                        className={cn(isScrolled ? "text-gray-900" : "text-white")}
+                        className={cn(
+                          isScrolled ? "text-gray-900" : "text-white",
+                        )}
                       >
                         {item.name}
                       </span>
@@ -108,14 +112,14 @@ const Navigation = () => {
                         className={cn(
                           "w-4 h-4 ml-1 transition-transform",
                           isMenuDropdownOpen ? "rotate-180" : "",
-                          isScrolled ? "text-gray-900" : "text-white"
+                          isScrolled ? "text-gray-900" : "text-white",
                         )}
                       />
                       {isActive(item.href) && (
                         <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-600 rounded-full" />
                       )}
                     </Link>
-                    
+
                     {/* Menu Dropdown */}
                     {isMenuDropdownOpen && (
                       <>
@@ -177,7 +181,7 @@ const Navigation = () => {
                   </div>
                 );
               }
-              
+
               return (
                 <Link
                   key={item.name}
@@ -267,7 +271,9 @@ const Navigation = () => {
                   return (
                     <div key={item.name}>
                       <button
-                        onClick={() => setIsMenuDropdownOpen(!isMenuDropdownOpen)}
+                        onClick={() =>
+                          setIsMenuDropdownOpen(!isMenuDropdownOpen)
+                        }
                         className={cn(
                           "w-full flex items-center justify-between px-4 py-2 text-base font-medium rounded-lg transition-colors",
                           isActive(item.href)
@@ -279,11 +285,11 @@ const Navigation = () => {
                         <ChevronDown
                           className={cn(
                             "w-4 h-4 transition-transform",
-                            isMenuDropdownOpen ? "rotate-180" : ""
+                            isMenuDropdownOpen ? "rotate-180" : "",
                           )}
                         />
                       </button>
-                      
+
                       {/* Mobile Menu Dropdown */}
                       {isMenuDropdownOpen && (
                         <div className="ml-4 mt-2 space-y-1">
@@ -362,7 +368,7 @@ const Navigation = () => {
                     </div>
                   );
                 }
-                
+
                 return (
                   <Link
                     key={item.name}
