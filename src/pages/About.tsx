@@ -30,7 +30,7 @@ const About = () => {
           <div className="absolute inset-0">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F343e8c0287b94fc99b91d9e23a96ee10?format=webp&width=800"
-              alt="About Hummus Bar & Grill"
+              alt="About Hummus Bar & Grill authentic Mediterranean restaurant Los Angeles serving fresh Middle Eastern cuisine"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40" />
