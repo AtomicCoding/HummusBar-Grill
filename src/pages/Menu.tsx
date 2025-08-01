@@ -452,7 +452,7 @@ const Menu = () => {
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden mb-6 flex items-center justify-center p-4">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc9762011f5d147d0b998404e948e63a9?format=webp&width=800"
-                    alt="Iced Matcha"
+                    alt="Iced matcha green tea latte - refreshing drink at Mediterranean restaurant Los Angeles"
                     className="w-full h-full object-contain"
                   />
                 </div>
@@ -470,7 +470,7 @@ const Menu = () => {
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden mb-6 flex items-center justify-center p-4">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc5b06c22feed4c2b96a6e6763b2d926b?format=webp&width=800"
-                    alt="Aperol Spritz"
+                    alt="Aperol spritz cocktail with prosecco and orange - Mediterranean restaurant bar menu"
                     className="w-full h-full object-contain"
                   />
                 </div>
@@ -488,7 +488,7 @@ const Menu = () => {
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden mb-6 flex items-center justify-center p-4">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F7f9cf299bf024416beaca54819e7fa86?format=webp&width=800"
-                    alt="Malibu Sunset"
+                    alt="Malibu sunset tropical cocktail with rum and pineapple juice - restaurant bar specialty"
                     className="w-full object-cover mx-auto"
                     style={{ height: "85%" }}
                   />
@@ -507,7 +507,7 @@ const Menu = () => {
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden mb-6 flex items-center justify-center p-4">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F2c00d0195a484562ba8f93aa7ae7a5ea?format=webp&width=800"
-                    alt="Lemonana"
+                    alt="Lemonana frozen lemonade with fresh mint - traditional Israeli drink Los Angeles"
                     className="w-full h-full object-contain"
                   />
                 </div>
@@ -522,7 +522,7 @@ const Menu = () => {
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden mb-6 flex items-center justify-center p-4">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F3e337c79f7b645d29e35881aa4a34974?format=webp&width=800"
-                    alt="Cappuccino"
+                    alt="Cappuccino with velvety milk foam and latte art - Mediterranean coffee experience"
                     className="w-full object-cover mx-auto"
                     style={{ height: "85%" }}
                   />
@@ -540,7 +540,7 @@ const Menu = () => {
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden mb-6 flex items-center justify-center p-4">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F8c24610e24ca4a219fd6bf7b1430d47a?format=webp&width=800"
-                    alt="Sangria"
+                    alt="Red wine sangria with orange juice and cinnamon - Mediterranean restaurant cocktail"
                     className="w-full object-cover mx-auto"
                     style={{ height: "85%" }}
                   />
@@ -586,7 +586,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fa1a8c95627674001bff3de435d7ab626?format=webp&width=800"
-                    alt="Inside Out Baklava"
+                    alt="Inside out baklava with walnuts, halva, and honey - authentic Mediterranean dessert"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -604,7 +604,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fb596fbde004d4a4da8e1d1bc58a0bd42?format=webp&width=800"
-                    alt="Bavarian Cream"
+                    alt="Bavarian cream dessert with filo dough and sweet syrup - Mediterranean bakery specialty"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -622,7 +622,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc5575aaa05ea477b99a5722a059d8f95?format=webp&width=800"
-                    alt="Chocolate Mousse in a Jar"
+                    alt="Chocolate mousse jar with cookie crumble and ganache - rich Mediterranean dessert"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -640,7 +640,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F851ddc55f878493fa2129b48652a52bb?format=webp&width=800"
-                    alt="Knafe Malabi"
+                    alt="Knafe malabi with crispy base and custard - traditional Middle Eastern dessert Los Angeles"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -657,7 +657,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc0900a8d3b854aec857fdb63b6cb911b?format=webp&width=800"
-                    alt="Classic Malabi"
+                    alt="Classic malabi rose-scented pudding with coconut and pistachio - authentic Israeli dessert"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -674,7 +674,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F7dbfdfb641274edaa576a2c5f47c3356?format=webp&width=800"
-                    alt="Sfinge (Moroccan Donuts)"
+                    alt="Sfinge Moroccan donuts dusted in sugar - traditional Mediterranean sweet treat"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -691,7 +691,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F6af7f1ef8ff4416b864d8f6c8e7140af?format=webp&width=800"
-                    alt="Chocolate Soufflé"
+                    alt="Warm chocolate soufflé with vanilla ice cream - gourmet Mediterranean dessert"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -709,7 +709,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F340f43aef02942919e0b034aab09d9d2?format=webp&width=800"
-                    alt="Pavlova"
+                    alt="Pavlova meringue cake with whipped cream and passion fruit - Mediterranean restaurant dessert"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -739,7 +739,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Feb00405b88a34b27848fb34250c2fa20?format=webp&width=800"
-                    alt="Kids Chicken Nuggets"
+                    alt="Kids chicken nuggets with fries - family-friendly Mediterranean restaurant menu"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -756,7 +756,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fa43b0afe6eea45e6baccb3810ad554f1?format=webp&width=800"
-                    alt="Kids Beef Sliders"
+                    alt="Mini beef sliders for kids with fries - Mediterranean restaurant children's menu"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -773,7 +773,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F225620198c2e4df7a647430557d7c588?format=webp&width=800"
-                    alt="Kids Fried Chicken Sliders"
+                    alt="Kids fried chicken sliders with fries - family dining Mediterranean restaurant Los Angeles"
                     className="w-full h-full object-cover"
                   />
                 </div>
