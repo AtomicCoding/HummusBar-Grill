@@ -1,19 +1,19 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 const AccessibilityProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     // Skip links for keyboard navigation
     const createSkipLinks = () => {
-      const skipLinksContainer = document.createElement('div');
-      skipLinksContainer.className = 'skip-links';
+      const skipLinksContainer = document.createElement("div");
+      skipLinksContainer.className = "skip-links";
       skipLinksContainer.innerHTML = `
         <a href="#main-content" class="skip-link">Skip to main content</a>
         <a href="#navigation" class="skip-link">Skip to navigation</a>
         <a href="#footer" class="skip-link">Skip to footer</a>
       `;
-      
+
       // Add CSS for skip links
-      const skipLinksStyle = document.createElement('style');
+      const skipLinksStyle = document.createElement("style");
       skipLinksStyle.textContent = `
         .skip-links {
           position: absolute;
@@ -37,7 +37,7 @@ const AccessibilityProvider = ({ children }: { children: React.ReactNode }) => {
           top: 0;
         }
       `;
-      
+
       document.head.appendChild(skipLinksStyle);
       document.body.insertBefore(skipLinksContainer, document.body.firstChild);
     };
@@ -45,7 +45,7 @@ const AccessibilityProvider = ({ children }: { children: React.ReactNode }) => {
     // Enhance focus management
     const enhanceFocusManagement = () => {
       // Add focus styles for better visibility
-      const focusStyle = document.createElement('style');
+      const focusStyle = document.createElement("style");
       focusStyle.textContent = `
         *:focus {
           outline: 2px solid #dc2626;
@@ -82,10 +82,10 @@ const AccessibilityProvider = ({ children }: { children: React.ReactNode }) => {
 
     // Announce route changes for screen readers
     const announceRouteChanges = () => {
-      const announcer = document.createElement('div');
-      announcer.setAttribute('aria-live', 'polite');
-      announcer.setAttribute('aria-atomic', 'true');
-      announcer.className = 'sr-only route-announcer';
+      const announcer = document.createElement("div");
+      announcer.setAttribute("aria-live", "polite");
+      announcer.setAttribute("aria-atomic", "true");
+      announcer.className = "sr-only route-announcer";
       announcer.style.cssText = `
         position: absolute;
         left: -10000px;
@@ -101,10 +101,10 @@ const AccessibilityProvider = ({ children }: { children: React.ReactNode }) => {
         announcer.textContent = `Page changed to ${title}`;
       });
 
-      observer.observe(document.querySelector('title') || document.head, {
+      observer.observe(document.querySelector("title") || document.head, {
         childList: true,
         characterData: true,
-        subtree: true
+        subtree: true,
       });
     };
 
@@ -112,27 +112,27 @@ const AccessibilityProvider = ({ children }: { children: React.ReactNode }) => {
     const addARIALandmarks = () => {
       // Wait for elements to be available
       setTimeout(() => {
-        const nav = document.querySelector('nav');
-        if (nav && !nav.getAttribute('aria-label')) {
-          nav.setAttribute('aria-label', 'Main navigation');
+        const nav = document.querySelector("nav");
+        if (nav && !nav.getAttribute("aria-label")) {
+          nav.setAttribute("aria-label", "Main navigation");
         }
 
-        const main = document.querySelector('main');
-        if (main && !main.getAttribute('id')) {
-          main.setAttribute('id', 'main-content');
+        const main = document.querySelector("main");
+        if (main && !main.getAttribute("id")) {
+          main.setAttribute("id", "main-content");
         }
 
-        const footer = document.querySelector('footer');
-        if (footer && !footer.getAttribute('aria-label')) {
-          footer.setAttribute('aria-label', 'Site footer');
-          footer.setAttribute('id', 'footer');
+        const footer = document.querySelector("footer");
+        if (footer && !footer.getAttribute("aria-label")) {
+          footer.setAttribute("aria-label", "Site footer");
+          footer.setAttribute("id", "footer");
         }
       }, 100);
     };
 
     // Color contrast and text scaling support
     const addUserPreferenceSupport = () => {
-      const prefStyle = document.createElement('style');
+      const prefStyle = document.createElement("style");
       prefStyle.textContent = `
         /* Respect user's font size preferences */
         @media (min-resolution: 192dpi) {
@@ -174,12 +174,12 @@ const AccessibilityProvider = ({ children }: { children: React.ReactNode }) => {
 
     // Cleanup function
     return () => {
-      const skipLinks = document.querySelector('.skip-links');
+      const skipLinks = document.querySelector(".skip-links");
       if (skipLinks) {
         skipLinks.remove();
       }
-      
-      const announcer = document.querySelector('.route-announcer');
+
+      const announcer = document.querySelector(".route-announcer");
       if (announcer) {
         announcer.remove();
       }

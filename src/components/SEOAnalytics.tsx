@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 interface SEOAnalyticsProps {
   googleSiteVerification?: string;
@@ -7,25 +7,29 @@ interface SEOAnalyticsProps {
   hotjarId?: string;
 }
 
-const SEOAnalytics = ({ 
+const SEOAnalytics = ({
   googleSiteVerification = "YOUR_GOOGLE_SITE_VERIFICATION_CODE",
-  googleAnalyticsId = "G-XXXXXXXXXX", 
+  googleAnalyticsId = "G-XXXXXXXXXX",
   facebookPixelId,
-  hotjarId
+  hotjarId,
 }: SEOAnalyticsProps) => {
   useEffect(() => {
     // Google Analytics 4
     if (googleAnalyticsId && googleAnalyticsId !== "G-XXXXXXXXXX") {
       // Check if GA script is already loaded
-      if (!document.querySelector(`script[src*="gtag/js?id=${googleAnalyticsId}"]`)) {
+      if (
+        !document.querySelector(
+          `script[src*="gtag/js?id=${googleAnalyticsId}"]`,
+        )
+      ) {
         // Load GA script
-        const gaScript = document.createElement('script');
+        const gaScript = document.createElement("script");
         gaScript.async = true;
         gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`;
         document.head.appendChild(gaScript);
 
         // Initialize GA
-        const gaConfigScript = document.createElement('script');
+        const gaConfigScript = document.createElement("script");
         gaConfigScript.innerHTML = `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -51,22 +55,22 @@ const SEOAnalytics = ({
         const originalPushState = history.pushState;
         const originalReplaceState = history.replaceState;
 
-        history.pushState = function() {
+        history.pushState = function () {
           originalPushState.apply(history, arguments as any);
           setTimeout(() => {
-            gtag('config', googleAnalyticsId, {
+            gtag("config", googleAnalyticsId, {
               page_title: document.title,
-              page_location: window.location.href
+              page_location: window.location.href,
             });
           }, 100);
         };
 
-        history.replaceState = function() {
+        history.replaceState = function () {
           originalReplaceState.apply(history, arguments as any);
           setTimeout(() => {
-            gtag('config', googleAnalyticsId, {
+            gtag("config", googleAnalyticsId, {
               page_title: document.title,
-              page_location: window.location.href
+              page_location: window.location.href,
             });
           }, 100);
         };
@@ -75,7 +79,7 @@ const SEOAnalytics = ({
 
     // Facebook Pixel
     if (facebookPixelId) {
-      const fbScript = document.createElement('script');
+      const fbScript = document.createElement("script");
       fbScript.innerHTML = `
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -91,14 +95,14 @@ const SEOAnalytics = ({
       document.head.appendChild(fbScript);
 
       // Add noscript pixel
-      const noscript = document.createElement('noscript');
+      const noscript = document.createElement("noscript");
       noscript.innerHTML = `<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=${facebookPixelId}&ev=PageView&noscript=1" />`;
       document.body.appendChild(noscript);
     }
 
     // Hotjar
     if (hotjarId) {
-      const hjScript = document.createElement('script');
+      const hjScript = document.createElement("script");
       hjScript.innerHTML = `
         (function(h,o,t,j,a,r){
           h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -113,11 +117,16 @@ const SEOAnalytics = ({
     }
 
     // Add Google Site Verification meta tag
-    if (googleSiteVerification && googleSiteVerification !== "YOUR_GOOGLE_SITE_VERIFICATION_CODE") {
-      const existingVerification = document.querySelector('meta[name="google-site-verification"]');
+    if (
+      googleSiteVerification &&
+      googleSiteVerification !== "YOUR_GOOGLE_SITE_VERIFICATION_CODE"
+    ) {
+      const existingVerification = document.querySelector(
+        'meta[name="google-site-verification"]',
+      );
       if (!existingVerification) {
-        const verificationMeta = document.createElement('meta');
-        verificationMeta.name = 'google-site-verification';
+        const verificationMeta = document.createElement("meta");
+        verificationMeta.name = "google-site-verification";
         verificationMeta.content = googleSiteVerification;
         document.head.appendChild(verificationMeta);
       }
@@ -127,41 +136,43 @@ const SEOAnalytics = ({
     const trackRestaurantEvents = () => {
       // Track menu views
       const menuLinks = document.querySelectorAll('a[href*="/menu"]');
-      menuLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          if (typeof gtag !== 'undefined') {
-            gtag('event', 'view_menu', {
-              event_category: 'engagement',
-              event_label: 'menu_navigation'
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          if (typeof gtag !== "undefined") {
+            gtag("event", "view_menu", {
+              event_category: "engagement",
+              event_label: "menu_navigation",
             });
           }
         });
       });
 
       // Track order button clicks
-      const orderButtons = document.querySelectorAll('a[href*="toasttab.com"], a[href*="order"]');
-      orderButtons.forEach(button => {
-        button.addEventListener('click', () => {
-          if (typeof gtag !== 'undefined') {
-            gtag('event', 'begin_checkout', {
-              event_category: 'ecommerce',
-              event_label: 'online_order'
+      const orderButtons = document.querySelectorAll(
+        'a[href*="toasttab.com"], a[href*="order"]',
+      );
+      orderButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          if (typeof gtag !== "undefined") {
+            gtag("event", "begin_checkout", {
+              event_category: "ecommerce",
+              event_label: "online_order",
             });
           }
-          if (typeof fbq !== 'undefined') {
-            fbq('track', 'InitiateCheckout');
+          if (typeof fbq !== "undefined") {
+            fbq("track", "InitiateCheckout");
           }
         });
       });
 
       // Track phone number clicks
       const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-      phoneLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          if (typeof gtag !== 'undefined') {
-            gtag('event', 'phone_call', {
-              event_category: 'engagement',
-              event_label: 'restaurant_contact'
+      phoneLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          if (typeof gtag !== "undefined") {
+            gtag("event", "phone_call", {
+              event_category: "engagement",
+              event_label: "restaurant_contact",
             });
           }
         });
@@ -169,12 +180,12 @@ const SEOAnalytics = ({
 
       // Track catering inquiries
       const cateringLinks = document.querySelectorAll('a[href*="/catering"]');
-      cateringLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          if (typeof gtag !== 'undefined') {
-            gtag('event', 'view_catering', {
-              event_category: 'engagement',
-              event_label: 'catering_interest'
+      cateringLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          if (typeof gtag !== "undefined") {
+            gtag("event", "view_catering", {
+              event_category: "engagement",
+              event_label: "catering_interest",
             });
           }
         });
@@ -186,10 +197,12 @@ const SEOAnalytics = ({
 
     // Schema.org markup validation
     const validateSchema = () => {
-      const schemas = document.querySelectorAll('script[type="application/ld+json"]');
+      const schemas = document.querySelectorAll(
+        'script[type="application/ld+json"]',
+      );
       schemas.forEach((schema, index) => {
         try {
-          JSON.parse(schema.textContent || '');
+          JSON.parse(schema.textContent || "");
           console.log(`✅ Schema ${index + 1} is valid JSON-LD`);
         } catch (error) {
           console.error(`❌ Schema ${index + 1} has invalid JSON-LD:`, error);
@@ -198,10 +211,9 @@ const SEOAnalytics = ({
     };
 
     // Validate schema in development
-    if (process.env.NODE_ENV === 'development') {
+    if (process.env.NODE_ENV === "development") {
       setTimeout(validateSchema, 2000);
     }
-
   }, [googleSiteVerification, googleAnalyticsId, facebookPixelId, hotjarId]);
 
   return null;
