@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://hummusbarandgrill.com/</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://hummusbarandgrill.com/images/hero-hummus-restaurant.jpg</image:loc>
+      <image:caption>Authentic Mediterranean restaurant in Los Angeles serving fresh hummus and Middle Eastern cuisine</image:caption>
+      <image:title>Hummus Bar & Grill - Mediterranean Restaurant Los Angeles</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://hummusbarandgrill.com/menu</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://hummusbarandgrill.com/images/mediterranean-menu.jpg</image:loc>
+      <image:caption>Complete Mediterranean food menu with authentic Middle Eastern dishes, hummus varieties, and grilled specialties</image:caption>
+      <image:title>Mediterranean Food Menu - Hummus Bar & Grill</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://hummusbarandgrill.com/about</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://hummusbarandgrill.com/catering</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://hummusbarandgrill.com/images/mediterranean-catering.jpg</image:loc>
+      <image:caption>Professional Mediterranean catering services in Los Angeles for events, parties, and corporate gatherings</image:caption>
+      <image:title>Mediterranean Catering Los Angeles - Hummus Bar & Grill</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://hummusbarandgrill.com/contact</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://hummusbarandgrill.com/privacy</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://hummusbarandgrill.com/terms</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://hummusbarandgrill.com/accessibility</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>

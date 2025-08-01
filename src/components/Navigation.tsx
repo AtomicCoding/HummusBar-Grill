@@ -72,7 +72,7 @@ const Navigation = () => {
     { name: "Home", href: "/" },
     { name: "Menu", href: "/menu" },
     { name: "Catering", href: "/catering" },
-    { name: "Contact", href: "/locations" },
+    { name: "Contact", href: "/contact" },
     { name: "About", href: "/about" },
   ];
 

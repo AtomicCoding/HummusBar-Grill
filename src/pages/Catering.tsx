@@ -3,10 +3,18 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Phone, Users, Star } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
+import { PAGE_KEYWORDS } from "@/lib/seo-data";
 
 const Catering = () => {
   return (
     <div className="min-h-screen bg-black">
+      <SEOHead
+        title="Mediterranean Catering Los Angeles - Hummus Bar & Grill | Event Catering Services"
+        description="Professional Mediterranean catering in Los Angeles. Authentic Middle Eastern cuisine for corporate events, parties, and special occasions. Fresh hummus, grilled specialties, and kosher options available."
+        keywords={PAGE_KEYWORDS.catering}
+        canonicalUrl="https://hummusbarandgrill.com/catering"
+      />
       <Navigation />
       <main>
         {/* Header with Hero Image */}
@@ -14,7 +22,7 @@ const Catering = () => {
           <div className="absolute inset-0">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0d64f0aa3e3c4fb687ab93be98fe427d?format=webp&width=800"
-              alt="Mediterranean Catering Menu"
+              alt="Mediterranean catering menu Los Angeles - authentic Middle Eastern food for events and parties"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40" />
@@ -564,7 +572,7 @@ const Catering = () => {
                     size="lg"
                     className="border-red-400 text-red-400 hover:bg-red-600/10"
                   >
-                    <Link to="/locations">Visit Our Location</Link>
+                    <Link to="/contact">Visit Our Location</Link>
                   </Button>
                 </div>
               </div>
