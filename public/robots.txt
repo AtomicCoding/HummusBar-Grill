@@ -12,3 +12,23 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Disallow crawling of admin or private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.well-known/
+
+# Explicitly allow important pages for SEO
+Allow: /menu
+Allow: /about
+Allow: /catering
+Allow: /locations
+Allow: /privacy
+Allow: /terms
+Allow: /accessibility
+
+# Sitemap location
+Sitemap: https://hummusbarandgrill.com/sitemap.xml
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
