@@ -22,7 +22,7 @@ Disallow: /.well-known/
 Allow: /menu
 Allow: /about
 Allow: /catering
-Allow: /locations
+Allow: /contact
 Allow: /privacy
 Allow: /terms
 Allow: /accessibility
