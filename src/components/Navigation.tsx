@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
   Menu,
@@ -19,6 +19,37 @@ const Navigation = () => {
   const [isMenuDropdownOpen, setIsMenuDropdownOpen] = useState(false);
   const [isOrderDropdownOpen, setIsOrderDropdownOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  // Function to scroll to section
+  const scrollToSection = (sectionId: string) => {
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }, 100);
+  };
+
+  // Handle navigation with hash
+  const handleHashNavigation = (to: string) => {
+    const [path, hash] = to.split("#");
+    if (hash) {
+      if (location.pathname === path) {
+        // Same page, just scroll
+        scrollToSection(hash);
+      } else {
+        // Different page, navigate then scroll
+        navigate(to);
+      }
+    } else {
+      navigate(to);
+      window.scrollTo(0, 0);
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,11 +60,19 @@ const Navigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Handle hash on page load and route changes
+  useEffect(() => {
+    const hash = location.hash.substring(1);
+    if (hash) {
+      scrollToSection(hash);
+    }
+  }, [location]);
+
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Menu", href: "/menu" },
     { name: "Catering", href: "/catering" },
-    { name: "Contact", href: "/locations" },
+    { name: "Contact", href: "/contact" },
     { name: "About", href: "/about" },
   ];
 
@@ -126,55 +165,71 @@ const Navigation = () => {
                         {/* Invisible bridge to prevent gap issues */}
                         <div className="absolute top-full left-0 w-56 h-2 -mt-2 z-40"></div>
                         <div className="absolute top-full left-0 w-56 bg-white rounded-lg shadow-xl border border-warm-200 py-2 z-50">
-                          <Link
-                            to="/menu#breakfast-section"
-                            className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
-                            onClick={() => setIsMenuDropdownOpen(false)}
+                          <button
+                            onClick={() => {
+                              setIsMenuDropdownOpen(false);
+                              handleHashNavigation("/menu#breakfast-section");
+                            }}
+                            className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
                           >
                             Breakfast
-                          </Link>
-                          <Link
-                            to="/menu#appetizers-section"
-                            className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
-                            onClick={() => setIsMenuDropdownOpen(false)}
+                          </button>
+                          <button
+                            onClick={() => {
+                              setIsMenuDropdownOpen(false);
+                              handleHashNavigation("/menu#appetizers-section");
+                            }}
+                            className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
                           >
                             Appetizers
-                          </Link>
-                          <Link
-                            to="/menu#lunch-dinner-section"
-                            className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
-                            onClick={() => setIsMenuDropdownOpen(false)}
+                          </button>
+                          <button
+                            onClick={() => {
+                              setIsMenuDropdownOpen(false);
+                              handleHashNavigation(
+                                "/menu#lunch-dinner-section",
+                              );
+                            }}
+                            className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
                           >
                             Lunch & Dinner
-                          </Link>
-                          <Link
-                            to="/menu#drinks-section"
-                            className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
-                            onClick={() => setIsMenuDropdownOpen(false)}
+                          </button>
+                          <button
+                            onClick={() => {
+                              setIsMenuDropdownOpen(false);
+                              handleHashNavigation("/menu#drinks-section");
+                            }}
+                            className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
                           >
                             Drinks
-                          </Link>
-                          <Link
-                            to="/menu#desserts-section"
-                            className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
-                            onClick={() => setIsMenuDropdownOpen(false)}
+                          </button>
+                          <button
+                            onClick={() => {
+                              setIsMenuDropdownOpen(false);
+                              handleHashNavigation("/menu#desserts-section");
+                            }}
+                            className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
                           >
                             Desserts
-                          </Link>
-                          <Link
-                            to="/menu#kids-menu-section"
-                            className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
-                            onClick={() => setIsMenuDropdownOpen(false)}
+                          </button>
+                          <button
+                            onClick={() => {
+                              setIsMenuDropdownOpen(false);
+                              handleHashNavigation("/menu#kids-menu-section");
+                            }}
+                            className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
                           >
                             Kids Menu
-                          </Link>
-                          <Link
-                            to="/#kosher-section"
-                            className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
-                            onClick={() => setIsMenuDropdownOpen(false)}
+                          </button>
+                          <button
+                            onClick={() => {
+                              setIsMenuDropdownOpen(false);
+                              handleHashNavigation("/#kosher-section");
+                            }}
+                            className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
                           >
                             Kosher
-                          </Link>
+                          </button>
                         </div>
                       </>
                     )}
@@ -293,76 +348,78 @@ const Navigation = () => {
                       {/* Mobile Menu Dropdown */}
                       {isMenuDropdownOpen && (
                         <div className="ml-4 mt-2 space-y-1">
-                          <Link
-                            to="/menu#breakfast-section"
+                          <button
                             onClick={() => {
                               setIsOpen(false);
                               setIsMenuDropdownOpen(false);
+                              handleHashNavigation("/menu#breakfast-section");
                             }}
-                            className="block px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                            className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                           >
                             Breakfast
-                          </Link>
-                          <Link
-                            to="/menu#appetizers-section"
+                          </button>
+                          <button
                             onClick={() => {
                               setIsOpen(false);
                               setIsMenuDropdownOpen(false);
+                              handleHashNavigation("/menu#appetizers-section");
                             }}
-                            className="block px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                            className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                           >
                             Appetizers
-                          </Link>
-                          <Link
-                            to="/menu#lunch-dinner-section"
+                          </button>
+                          <button
                             onClick={() => {
                               setIsOpen(false);
                               setIsMenuDropdownOpen(false);
+                              handleHashNavigation(
+                                "/menu#lunch-dinner-section",
+                              );
                             }}
-                            className="block px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                            className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                           >
                             Lunch & Dinner
-                          </Link>
-                          <Link
-                            to="/menu#drinks-section"
+                          </button>
+                          <button
                             onClick={() => {
                               setIsOpen(false);
                               setIsMenuDropdownOpen(false);
+                              handleHashNavigation("/menu#drinks-section");
                             }}
-                            className="block px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                            className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                           >
                             Drinks
-                          </Link>
-                          <Link
-                            to="/menu#desserts-section"
+                          </button>
+                          <button
                             onClick={() => {
                               setIsOpen(false);
                               setIsMenuDropdownOpen(false);
+                              handleHashNavigation("/menu#desserts-section");
                             }}
-                            className="block px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                            className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                           >
                             Desserts
-                          </Link>
-                          <Link
-                            to="/menu#kids-menu-section"
+                          </button>
+                          <button
                             onClick={() => {
                               setIsOpen(false);
                               setIsMenuDropdownOpen(false);
+                              handleHashNavigation("/menu#kids-menu-section");
                             }}
-                            className="block px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                            className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                           >
                             Kids Menu
-                          </Link>
-                          <Link
-                            to="/#kosher-section"
+                          </button>
+                          <button
                             onClick={() => {
                               setIsOpen(false);
                               setIsMenuDropdownOpen(false);
+                              handleHashNavigation("/#kosher-section");
                             }}
-                            className="block px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                            className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                           >
                             Kosher
-                          </Link>
+                          </button>
                         </div>
                       )}
                     </div>

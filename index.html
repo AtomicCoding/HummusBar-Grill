@@ -2,8 +2,125 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello world project</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Hummus Bar & Grill" />
+    <meta name="theme-color" content="#dc2626" />
+    <meta name="color-scheme" content="light" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Hummus Bar & Grill" />
+    <meta name="application-name" content="Hummus Bar & Grill" />
+    <meta name="msapplication-TileColor" content="#dc2626" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+
+    <!-- Default title - will be replaced by SEOHead component -->
+    <title>
+      Hummus Bar & Grill - Authentic Mediterranean Restaurant Los Angeles
+    </title>
+
+    <!-- Default meta description - will be replaced by SEOHead component -->
+    <meta
+      name="description"
+      content="Authentic Mediterranean restaurant in Los Angeles serving fresh hummus, grilled specialties, and traditional Middle Eastern cuisine. Visit our Tarzana location for dine-in, takeout, and catering."
+    />
+
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.builder.io" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
+    <!-- Favicon and app icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dc2626" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Open Graph default meta tags - will be enhanced by SEOHead component -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Hummus Bar & Grill" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:image"
+      content="https://hummusbarandgrill.com/og-image.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Hummus Bar & Grill - Authentic Mediterranean Restaurant"
+    />
+
+    <!-- Twitter Card default meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@hummusbargrill" />
+    <meta name="twitter:creator" content="@hummusbargrill" />
+
+    <!-- Performance optimizations -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://cdn.builder.io/api/v1/image/assets%2Fad5fa173f30f42cb936245efbd928c96%2F26c3a52502154f7c9478b52b4e0b8018?format=webp&width=800"
+    />
+
+    <!-- Google Fonts for performance -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    /></noscript>
+
+    <!-- Critical CSS inline -->
+    <style>
+      /* Critical CSS for Core Web Vitals */
+      body {
+        margin: 0;
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      [loading="lazy"] {
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      [loading="lazy"].loaded {
+        opacity: 1;
+      }
+    </style>
   </head>
 
   <body>
