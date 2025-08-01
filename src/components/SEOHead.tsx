@@ -39,24 +39,50 @@ const SEOHead = ({
 
     // Create meta tags
     const metaTags = [
+      // Basic meta tags
       { name: 'description', content: description },
       { name: 'robots', content: noindex ? 'noindex,nofollow' : 'index,follow' },
-      // Open Graph
+      { name: 'author', content: 'Hummus Bar & Grill' },
+      { name: 'language', content: 'en-US' },
+      { name: 'rating', content: 'general' },
+      { name: 'distribution', content: 'global' },
+      { name: 'revisit-after', content: '7 days' },
+
+      // Open Graph meta tags
       { property: 'og:title', content: title },
       { property: 'og:description', content: description },
       { property: 'og:type', content: 'website' },
       { property: 'og:image', content: ogImage },
+      { property: 'og:image:width', content: '1200' },
+      { property: 'og:image:height', content: '630' },
+      { property: 'og:image:alt', content: 'Hummus Bar & Grill - Authentic Mediterranean Restaurant' },
       { property: 'og:site_name', content: 'Hummus Bar & Grill' },
-      // Twitter
+      { property: 'og:locale', content: 'en_US' },
+
+      // Twitter Card meta tags
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: title },
       { name: 'twitter:description', content: description },
       { name: 'twitter:image', content: ogImage },
-      // Geographic and local SEO
+      { name: 'twitter:image:alt', content: 'Hummus Bar & Grill - Authentic Mediterranean Restaurant' },
+      { name: 'twitter:site', content: '@hummusbargrill' },
+      { name: 'twitter:creator', content: '@hummusbargrill' },
+
+      // Local SEO and geographic meta tags
       { name: 'geo.region', content: 'US-CA' },
       { name: 'geo.placename', content: 'Los Angeles' },
       { name: 'geo.position', content: '34.0522;-118.2437' },
       { name: 'ICBM', content: '34.0522, -118.2437' },
+      { name: 'DC.title', content: title },
+
+      // Mobile and performance
+      { name: 'mobile-web-app-capable', content: 'yes' },
+      { name: 'apple-mobile-web-app-capable', content: 'yes' },
+      { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
+      { name: 'apple-mobile-web-app-title', content: 'Hummus Bar & Grill' },
+      { name: 'application-name', content: 'Hummus Bar & Grill' },
+      { name: 'msapplication-TileColor', content: '#dc2626' },
+      { name: 'theme-color', content: '#dc2626' },
     ];
 
     // Add keywords if provided
