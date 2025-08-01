@@ -62,12 +62,12 @@ const HeroSection = () => {
             </Button>
 
             <Button
-              asChild
               variant="outline"
               size="lg"
+              onClick={handleViewMenu}
               className="px-8 py-4 text-lg font-medium bg-white/95 backdrop-blur-sm hover:bg-white border-white/50 hover:border-white text-gray-900 hover:text-gray-900 shadow-soft"
             >
-              <Link to="/menu">View Menu</Link>
+              View Menu
             </Button>
 
             <Button
