@@ -20,17 +20,24 @@ const PerformanceOptimizer = () => {
       }
     };
 
-    // Load Web Vitals library dynamically
+    // Load Web Vitals library dynamically (optional)
     const loadWebVitals = async () => {
       try {
-        const { getCLS, getFID, getFCP, getLCP, getTTFB } = await import('web-vitals');
-        getCLS(reportWebVitals);
-        getFID(reportWebVitals);
-        getFCP(reportWebVitals);
-        getLCP(reportWebVitals);
-        getTTFB(reportWebVitals);
+        // Only load if web-vitals package is available
+        const webVitals = await import('web-vitals').catch(() => null);
+        if (webVitals) {
+          const { getCLS, getFID, getFCP, getLCP, getTTFB } = webVitals;
+          getCLS(reportWebVitals);
+          getFID(reportWebVitals);
+          getFCP(reportWebVitals);
+          getLCP(reportWebVitals);
+          getTTFB(reportWebVitals);
+          console.log('Web Vitals monitoring enabled');
+        } else {
+          console.info('Web Vitals library not installed - performance monitoring disabled');
+        }
       } catch (error) {
-        console.warn('Web Vitals library not available');
+        console.info('Web Vitals library not available - performance monitoring disabled');
       }
     };
 
