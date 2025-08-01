@@ -82,9 +82,9 @@ const Menu = () => {
         image: "https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F9414166ff15a49e58d5c579b133eeb0b?format=webp&width=800"
       },
       {
-        name: "Mixed Chicken Skewers",
-        description: "Breast, thigh, liver, and heart combination",
-        image: "https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F4be2a0615054461f8c01bda0d94bbe0a?format=webp&width=800"
+        name: "Lamb Skewer",
+        description: "Comes with either one or two skewers and two sides of your choice",
+        image: "https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fa4715c7b4e3a48369c446b7597f942b0?format=webp&width=800"
       },
       {
         name: "Chicken Shawarma",
@@ -227,7 +227,7 @@ const Menu = () => {
     showButton?: boolean;
   }) => (
     <section className="mb-6 md:mb-8">
-      <h2 className="text-2xl font-bold text-black mt-6 mb-3 pb-2 border-b border-gray-200 text-left">
+      <h2 className="menu-section-title text-2xl font-bold text-black mt-6 mb-3 pb-2 border-b border-gray-200 text-left">
         {title}
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 md:gap-4">
