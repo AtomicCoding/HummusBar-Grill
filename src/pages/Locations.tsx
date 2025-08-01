@@ -31,7 +31,7 @@ const Locations = () => {
           <div className="absolute inset-0">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F01e7cbdb34d547768781c49c8e86b408?format=webp&width=800"
-              alt="Hummus Bar & Grill Location"
+              alt="Hummus Bar & Grill location Tarzana Village Shopping Center - Mediterranean restaurant Los Angeles"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40" />
