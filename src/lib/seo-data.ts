@@ -54,67 +54,106 @@ export const LOCAL_BUSINESS_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Restaurant",
   "name": BUSINESS_INFO.name,
+  "alternateName": "Hummus Bar and Grill",
   "description": BUSINESS_INFO.description,
   "url": BUSINESS_INFO.website,
   "telephone": BUSINESS_INFO.phone,
   "email": BUSINESS_INFO.email,
   "priceRange": "$$",
   "currenciesAccepted": "USD",
-  "paymentAccepted": "Cash, Credit Card, Debit Card",
+  "paymentAccepted": ["Cash", "Credit Card", "Debit Card", "Apple Pay", "Google Pay"],
+  "acceptsReservations": true,
   "servesCuisine": [
     "Mediterranean",
-    "Middle Eastern", 
+    "Middle Eastern",
     "Israeli",
     "Lebanese",
-    "Kosher"
+    "Kosher",
+    "Vegetarian",
+    "Vegan"
+  ],
+  "knowsAbout": [
+    "Hummus",
+    "Falafel",
+    "Shawarma",
+    "Grilled meats",
+    "Mediterranean cuisine",
+    "Israeli breakfast",
+    "Kosher food",
+    "Catering services"
   ],
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": BUSINESS_INFO.address.street,
-    "addressLocality": BUSINESS_INFO.address.city,
-    "addressRegion": BUSINESS_INFO.address.state,
-    "postalCode": BUSINESS_INFO.address.zipCode,
-    "addressCountry": BUSINESS_INFO.address.country
+    "streetAddress": "18743 Ventura Blvd",
+    "addressLocality": "Tarzana",
+    "addressRegion": "CA",
+    "postalCode": "91356",
+    "addressCountry": "US"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": BUSINESS_INFO.geo.latitude,
-    "longitude": BUSINESS_INFO.geo.longitude
+    "latitude": 34.1634,
+    "longitude": -118.5449
   },
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
-      "opens": "11:00",
-      "closes": "22:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification", 
-      "dayOfWeek": "Friday",
-      "opens": "11:00",
+      "opens": "09:00",
       "closes": "23:00"
     },
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Saturday", 
-      "opens": "10:00",
+      "dayOfWeek": "Friday",
+      "opens": "09:00",
+      "closes": "23:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
       "closes": "23:00"
     },
     {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": "Sunday",
-      "opens": "10:00", 
+      "opens": "09:00",
       "closes": "22:00"
     }
   ],
   "image": [
     "https://hummusbarandgrill.com/images/restaurant-exterior.jpg",
     "https://hummusbarandgrill.com/images/signature-hummus.jpg",
-    "https://hummusbarandgrill.com/images/grilled-specialties.jpg"
+    "https://hummusbarandgrill.com/images/grilled-specialties.jpg",
+    "https://hummusbarandgrill.com/images/interior-dining.jpg",
+    "https://cdn.builder.io/api/v1/image/assets%2Fad5fa173f30f42cb936245efbd928c96%2F26c3a52502154f7c9478b52b4e0b8018?format=webp&width=800"
   ],
+  "logo": "https://cdn.builder.io/api/v1/image/assets%2Fad5fa173f30f42cb936245efbd928c96%2F26c3a52502154f7c9478b52b4e0b8018?format=webp&width=800",
   "hasMenu": {
     "@type": "Menu",
-    "url": `${BUSINESS_INFO.website}/menu`
+    "url": `${BUSINESS_INFO.website}/menu`,
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Breakfast",
+        "description": "Traditional Mediterranean breakfast dishes"
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Appetizers",
+        "description": "Fresh Mediterranean and Middle Eastern appetizers"
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Main Courses",
+        "description": "Grilled specialties and Mediterranean entrees"
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Desserts",
+        "description": "Traditional Mediterranean and Middle Eastern desserts"
+      }
+    ]
   },
   "aggregateRating": {
     "@type": "AggregateRating",
@@ -122,7 +161,79 @@ export const LOCAL_BUSINESS_SCHEMA = {
     "reviewCount": "156",
     "bestRating": "5",
     "worstRating": "1"
-  }
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Sarah M."
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "reviewBody": "Amazing authentic Mediterranean food! The hummus is incredibly fresh and the grilled lamb chops are perfect."
+    }
+  ],
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Parking Available",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Takeout Available",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Delivery Available",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Catering Services",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Family Friendly",
+      "value": true
+    }
+  ],
+  "potentialAction": [
+    {
+      "@type": "OrderAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.toasttab.com/local/order/hummusbargrill/r-7fc07f7e-2b14-4999-8bd9-8c05a07d8e59",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "deliveryMethod": ["http://schema.org/OnSitePickup", "http://schema.org/DeliveryMethod"]
+    },
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+18183446606"
+      }
+    }
+  ],
+  "founder": {
+    "@type": "Organization",
+    "name": "Hummus Bar & Grill"
+  },
+  "foundingDate": "2008",
+  "sameAs": [
+    "https://www.instagram.com/hummusbarandgrill/",
+    "https://x.com/hummusbargrill",
+    "https://www.facebook.com/hummusbarandgrill"
+  ]
 };
 
 // Menu Structured Data
