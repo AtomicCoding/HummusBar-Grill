@@ -12,10 +12,18 @@ import {
   Utensils,
   Truck,
 } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
+import { PAGE_KEYWORDS } from "@/lib/seo-data";
 
 const Locations = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Hummus Bar & Grill Location - Tarzana Village Shopping Center | Mediterranean Restaurant LA"
+        description="Visit Hummus Bar & Grill at 18743 Ventura Blvd, Tarzana CA. Mediterranean restaurant with ample parking, dine-in, takeout, and delivery. Open daily serving authentic Middle Eastern cuisine."
+        keywords={PAGE_KEYWORDS.locations}
+        canonicalUrl="https://hummusbarandgrill.com/locations"
+      />
       <Navigation />
       <main>
         {/* Header with Hero Image */}
