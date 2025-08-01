@@ -22,7 +22,7 @@ const Locations = () => {
         title="Hummus Bar & Grill Location - Tarzana Village Shopping Center | Mediterranean Restaurant LA"
         description="Visit Hummus Bar & Grill at 18743 Ventura Blvd, Tarzana CA. Mediterranean restaurant with ample parking, dine-in, takeout, and delivery. Open daily serving authentic Middle Eastern cuisine."
         keywords={PAGE_KEYWORDS.locations}
-        canonicalUrl="https://hummusbarandgrill.com/locations"
+        canonicalUrl="https://hummusbarandgrill.com/contact"
       />
       <Navigation />
       <main>
