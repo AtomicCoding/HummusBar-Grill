@@ -3,6 +3,13 @@ import { Link, useNavigate } from "react-router-dom";
 import { ArrowRight, Play, Star, Users, Award } from "lucide-react";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
+  const handleViewMenu = () => {
+    navigate("/menu");
+    window.scrollTo(0, 0);
+  };
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image */}
