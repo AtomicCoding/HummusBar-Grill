@@ -216,11 +216,13 @@ const Menu = () => {
   const MenuSection = ({
     title,
     items,
-    showViewFullMenu = false
+    buttonText,
+    pdfLink
   }: {
     title: string;
     items: Array<{ name: string; description: string; image: string }>;
-    showViewFullMenu?: boolean;
+    buttonText: string;
+    pdfLink: string;
   }) => (
     <section className="mb-8 md:mb-12">
       <h2 className="text-2xl font-bold text-black mt-8 mb-4 pb-2 border-b border-gray-200 text-left">
@@ -231,22 +233,20 @@ const Menu = () => {
           <MenuItem key={index} item={item} />
         ))}
       </div>
-      {showViewFullMenu && (
-        <div className="text-center mt-6">
-          <Button
-            asChild
-            className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-bold rounded-lg shadow-xl"
+      <div className="text-center mt-6">
+        <Button
+          asChild
+          className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-bold rounded-lg shadow-xl transition-all"
+        >
+          <a
+            href={pdfLink}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <a
-              href="https://cdn.builder.io/o/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ff01adf3a54e24c0e9d8e643af3834070?alt=media&token=57943a55-676b-4dcf-93a7-1e3f49e91351&apiKey=f273f29613d947e0adfbbfd1507382bb"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Full Menu
-            </a>
-          </Button>
-        </div>
-      )}
+            {buttonText}
+          </a>
+        </Button>
+      </div>
     </section>
   );
 
@@ -292,12 +292,42 @@ const Menu = () => {
         {/* Menu Content */}
         <section className="py-12 md:py-20 bg-gray-50">
           <div className="container-custom section-padding max-w-6xl">
-            <MenuSection title="BREAKFAST MENU" items={menuData.breakfast} />
-            <MenuSection title="APPETIZERS" items={menuData.appetizers} />
-            <MenuSection title="LUNCH & DINNER MENU" items={menuData.lunchDinner} showViewFullMenu={true} />
-            <MenuSection title="DRINKS" items={menuData.drinks} />
-            <MenuSection title="DESSERTS" items={menuData.desserts} />
-            <MenuSection title="KIDS MENU" items={menuData.kidsMenu} />
+            <MenuSection
+              title="BREAKFAST MENU"
+              items={menuData.breakfast}
+              buttonText="View Full Breakfast Menu"
+              pdfLink="/pdfs/hummus-bar-breakfast-menu.pdf"
+            />
+            <MenuSection
+              title="APPETIZERS"
+              items={menuData.appetizers}
+              buttonText="View Full Appetizers Menu"
+              pdfLink="/pdfs/hummus-bar-appetizers.pdf"
+            />
+            <MenuSection
+              title="LUNCH & DINNER MENU"
+              items={menuData.lunchDinner}
+              buttonText="View Full Lunch & Dinner Menu"
+              pdfLink="https://cdn.builder.io/o/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ff01adf3a54e24c0e9d8e643af3834070?alt=media&token=57943a55-676b-4dcf-93a7-1e3f49e91351&apiKey=f273f29613d947e0adfbbfd1507382bb"
+            />
+            <MenuSection
+              title="DRINKS"
+              items={menuData.drinks}
+              buttonText="View Full Drinks Menu"
+              pdfLink="/pdfs/hummus-bar-drinks.pdf"
+            />
+            <MenuSection
+              title="DESSERTS"
+              items={menuData.desserts}
+              buttonText="View Full Desserts Menu"
+              pdfLink="/pdfs/hummus-bar-desserts.pdf"
+            />
+            <MenuSection
+              title="KIDS MENU"
+              items={menuData.kidsMenu}
+              buttonText="View Full Kids Menu"
+              pdfLink="/pdfs/hummus-bar-kids-menu.pdf"
+            />
           </div>
         </section>
       </main>
