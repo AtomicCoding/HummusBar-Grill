@@ -12,14 +12,16 @@ interface SEOProps {
   googleAnalyticsId?: string;
 }
 
-const SEOHead = ({ 
-  title, 
-  description, 
+const SEOHead = ({
+  title,
+  description,
   keywords,
   canonicalUrl,
   ogImage = "https://hummusbarandgrill.com/og-image.jpg",
   structuredData,
-  noindex = false 
+  noindex = false,
+  googleSiteVerification,
+  googleAnalyticsId = "G-XXXXXXXXXX" // Replace with actual GA4 ID
 }: SEOProps) => {
   useEffect(() => {
     // Set page title
