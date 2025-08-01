@@ -8,6 +8,8 @@ interface SEOProps {
   ogImage?: string;
   structuredData?: object;
   noindex?: boolean;
+  googleSiteVerification?: string;
+  googleAnalyticsId?: string;
 }
 
 const SEOHead = ({ 
