@@ -12,6 +12,7 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Accessibility from "./pages/Accessibility";
 import NotFound from "./pages/NotFound";
+import PerformanceOptimizer from "@/components/PerformanceOptimizer";
 
 const queryClient = new QueryClient();
 
