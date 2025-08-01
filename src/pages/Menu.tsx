@@ -217,36 +217,40 @@ const Menu = () => {
     title,
     items,
     buttonText,
-    pdfLink
+    pdfLink,
+    showButton = false
   }: {
     title: string;
     items: Array<{ name: string; description: string; image: string }>;
-    buttonText: string;
-    pdfLink: string;
+    buttonText?: string;
+    pdfLink?: string;
+    showButton?: boolean;
   }) => (
-    <section className="mb-8 md:mb-12">
-      <h2 className="text-2xl font-bold text-black mt-8 mb-4 pb-2 border-b border-gray-200 text-left">
+    <section className="mb-6 md:mb-8">
+      <h2 className="text-2xl font-bold text-black mt-6 mb-3 pb-2 border-b border-gray-200 text-left">
         {title}
       </h2>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 md:gap-4">
         {items.map((item, index) => (
           <MenuItem key={index} item={item} />
         ))}
       </div>
-      <div className="text-center mt-6">
-        <Button
-          asChild
-          className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-bold rounded-lg shadow-xl transition-all"
-        >
-          <a
-            href={pdfLink}
-            target="_blank"
-            rel="noopener noreferrer"
+      {showButton && buttonText && pdfLink && (
+        <div className="text-center mt-6">
+          <Button
+            asChild
+            className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-bold rounded-lg shadow-xl transition-all"
           >
-            {buttonText}
-          </a>
-        </Button>
-      </div>
+            <a
+              href={pdfLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {buttonText}
+            </a>
+          </Button>
+        </div>
+      )}
     </section>
   );
 
@@ -297,36 +301,33 @@ const Menu = () => {
               items={menuData.breakfast}
               buttonText="View Full Breakfast Menu"
               pdfLink="/pdfs/hummus-bar-breakfast-menu.pdf"
+              showButton={true}
             />
             <MenuSection
               title="APPETIZERS"
               items={menuData.appetizers}
-              buttonText="View Full Appetizers Menu"
-              pdfLink="/pdfs/hummus-bar-appetizers.pdf"
             />
             <MenuSection
               title="LUNCH & DINNER MENU"
               items={menuData.lunchDinner}
               buttonText="View Full Lunch & Dinner Menu"
               pdfLink="https://cdn.builder.io/o/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ff01adf3a54e24c0e9d8e643af3834070?alt=media&token=57943a55-676b-4dcf-93a7-1e3f49e91351&apiKey=f273f29613d947e0adfbbfd1507382bb"
+              showButton={true}
             />
             <MenuSection
               title="DRINKS"
               items={menuData.drinks}
               buttonText="View Full Drinks Menu"
               pdfLink="/pdfs/hummus-bar-drinks.pdf"
+              showButton={true}
             />
             <MenuSection
               title="DESSERTS"
               items={menuData.desserts}
-              buttonText="View Full Desserts Menu"
-              pdfLink="/pdfs/hummus-bar-desserts.pdf"
             />
             <MenuSection
               title="KIDS MENU"
               items={menuData.kidsMenu}
-              buttonText="View Full Kids Menu"
-              pdfLink="/pdfs/hummus-bar-kids-menu.pdf"
             />
           </div>
         </section>
