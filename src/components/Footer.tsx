@@ -37,9 +37,9 @@ const Footer = () => {
   const quickLinks = [
     { name: "About Us", href: "/about" },
     { name: "Menu", href: "/menu" },
-    { name: "Locations", href: "/locations" },
+    { name: "Locations", href: "/contact" },
     { name: "Catering", href: "/catering" },
-    { name: "Contact", href: "/locations" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const socialLinks = [
