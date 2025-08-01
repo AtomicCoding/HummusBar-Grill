@@ -101,6 +101,31 @@ const SEOHead = ({
       canonicalLink.rel = 'canonical';
       canonicalLink.href = canonicalUrl;
       document.head.appendChild(canonicalLink);
+
+      // Add og:url for Open Graph
+      metaTags.push({ property: 'og:url', content: canonicalUrl });
+    }
+
+    // Add Google Analytics
+    if (googleAnalyticsId && !document.querySelector(`script[src*="gtag/js?id=${googleAnalyticsId}"]`)) {
+      // Google Analytics script
+      const gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`;
+      document.head.appendChild(gaScript);
+
+      // Google Analytics configuration
+      const gaConfigScript = document.createElement('script');
+      gaConfigScript.innerHTML = `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${googleAnalyticsId}', {
+          page_title: '${title}',
+          page_location: '${canonicalUrl || window.location.href}'
+        });
+      `;
+      document.head.appendChild(gaConfigScript);
     }
 
     // Create and append meta tags
