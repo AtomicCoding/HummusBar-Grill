@@ -7,11 +7,11 @@ import {
   Mail,
   Clock,
   Instagram,
-  Twitter,
   Apple,
   Smartphone,
   ArrowRight,
   Truck,
+  Music,
 } from "lucide-react";
 
 const Footer = () => {
@@ -37,7 +37,6 @@ const Footer = () => {
   const quickLinks = [
     { name: "About Us", href: "/about" },
     { name: "Menu", href: "/menu" },
-    { name: "Locations", href: "/contact" },
     { name: "Catering", href: "/catering" },
     { name: "Contact", href: "/contact" },
   ];
@@ -48,7 +47,7 @@ const Footer = () => {
       icon: Instagram,
       href: "https://www.instagram.com/hummusbarandgrill/?hl=en",
     },
-    { name: "Twitter", icon: Twitter, href: "https://x.com/hummusbargrill" },
+    { name: "TikTok", icon: Music, href: "https://www.tiktok.com/@hummusbargrill?lang=en" },
   ];
 
   return (
