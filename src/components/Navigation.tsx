@@ -230,6 +230,15 @@ const Navigation = () => {
                           >
                             Kosher
                           </button>
+                          <button
+                            onClick={() => {
+                              setIsMenuDropdownOpen(false);
+                              window.open("https://cdn.builder.io/o/assets%2Fad5fa173f30f42cb936245efbd928c96%2F62e80d2c7f5843b9a20f8432a4164c35?alt=media&token=8d83d462-3b71-4023-8920-27d9a247bb20&apiKey=ad5fa173f30f42cb936245efbd928c96", "_blank");
+                            }}
+                            className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                          >
+                            Takeout Menu (PDF)
+                          </button>
                         </div>
                       </>
                     )}
@@ -419,6 +428,16 @@ const Navigation = () => {
                             className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                           >
                             Kosher
+                          </button>
+                          <button
+                            onClick={() => {
+                              setIsOpen(false);
+                              setIsMenuDropdownOpen(false);
+                              window.open("https://cdn.builder.io/o/assets%2Fad5fa173f30f42cb936245efbd928c96%2F62e80d2c7f5843b9a20f8432a4164c35?alt=media&token=8d83d462-3b71-4023-8920-27d9a247bb20&apiKey=ad5fa173f30f42cb936245efbd928c96", "_blank");
+                            }}
+                            className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                          >
+                            Takeout Menu (PDF)
                           </button>
                         </div>
                       )}
