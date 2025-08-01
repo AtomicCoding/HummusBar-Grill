@@ -213,13 +213,13 @@ const Menu = () => {
     </div>
   );
 
-  const MenuSection = ({ 
-    title, 
-    items, 
-    showViewFullMenu = false 
-  }: { 
-    title: string; 
-    items: Array<{ name: string; description: string; image: string }>; 
+  const MenuSection = ({
+    title,
+    items,
+    showViewFullMenu = false
+  }: {
+    title: string;
+    items: Array<{ name: string; description: string; image: string }>;
     showViewFullMenu?: boolean;
   }) => (
     <section className="mb-8 md:mb-12">
@@ -303,24 +303,7 @@ const Menu = () => {
       </main>
       <Footer />
 
-      <style jsx>{`
-        @media screen and (max-width: 768px) {
-          .menu-card {
-            padding: 12px;
-            margin-bottom: 12px;
-          }
-          .menu-card h3 {
-            font-size: 16px;
-          }
-          .menu-card p {
-            font-size: 13px;
-          }
-          .menu-card img {
-            width: 80px;
-            height: 80px;
-          }
-        }
-      `}</style>
+
     </div>
   );
 };
