@@ -40,7 +40,7 @@ const SEOAnalytics = ({
             custom_map: {'custom_parameter_1': 'restaurant_location'},
             restaurant_location: 'tarzana'
           });
-          
+
           // Enhanced ecommerce for restaurant orders
           gtag('config', '${googleAnalyticsId}', {
             custom_map: {
@@ -58,20 +58,24 @@ const SEOAnalytics = ({
         history.pushState = function () {
           originalPushState.apply(history, arguments as any);
           setTimeout(() => {
-            gtag("config", googleAnalyticsId, {
-              page_title: document.title,
-              page_location: window.location.href,
-            });
+            if (typeof (window as any).gtag === "function") {
+              (window as any).gtag("config", googleAnalyticsId, {
+                page_title: document.title,
+                page_location: window.location.href,
+              });
+            }
           }, 100);
         };
 
         history.replaceState = function () {
           originalReplaceState.apply(history, arguments as any);
           setTimeout(() => {
-            gtag("config", googleAnalyticsId, {
-              page_title: document.title,
-              page_location: window.location.href,
-            });
+            if (typeof (window as any).gtag === "function") {
+              (window as any).gtag("config", googleAnalyticsId, {
+                page_title: document.title,
+                page_location: window.location.href,
+              });
+            }
           }, 100);
         };
       }
@@ -138,8 +142,8 @@ const SEOAnalytics = ({
       const menuLinks = document.querySelectorAll('a[href*="/menu"]');
       menuLinks.forEach((link) => {
         link.addEventListener("click", () => {
-          if (typeof gtag !== "undefined") {
-            gtag("event", "view_menu", {
+          if (typeof (window as any).gtag === "function") {
+            (window as any).gtag("event", "view_menu", {
               event_category: "engagement",
               event_label: "menu_navigation",
             });
@@ -153,14 +157,14 @@ const SEOAnalytics = ({
       );
       orderButtons.forEach((button) => {
         button.addEventListener("click", () => {
-          if (typeof gtag !== "undefined") {
-            gtag("event", "begin_checkout", {
+          if (typeof (window as any).gtag === "function") {
+            (window as any).gtag("event", "begin_checkout", {
               event_category: "ecommerce",
               event_label: "online_order",
             });
           }
-          if (typeof fbq !== "undefined") {
-            fbq("track", "InitiateCheckout");
+          if (typeof (window as any).fbq === "function") {
+            (window as any).fbq("track", "InitiateCheckout");
           }
         });
       });
@@ -169,8 +173,8 @@ const SEOAnalytics = ({
       const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
       phoneLinks.forEach((link) => {
         link.addEventListener("click", () => {
-          if (typeof gtag !== "undefined") {
-            gtag("event", "phone_call", {
+          if (typeof (window as any).gtag === "function") {
+            (window as any).gtag("event", "phone_call", {
               event_category: "engagement",
               event_label: "restaurant_contact",
             });
@@ -182,8 +186,8 @@ const SEOAnalytics = ({
       const cateringLinks = document.querySelectorAll('a[href*="/catering"]');
       cateringLinks.forEach((link) => {
         link.addEventListener("click", () => {
-          if (typeof gtag !== "undefined") {
-            gtag("event", "view_catering", {
+          if (typeof (window as any).gtag === "function") {
+            (window as any).gtag("event", "view_catering", {
               event_category: "engagement",
               event_label: "catering_interest",
             });
