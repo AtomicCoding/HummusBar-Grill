@@ -196,19 +196,19 @@ const Menu = () => {
   };
 
   const MenuItem = ({ item }: { item: { name: string; description: string; image: string } }) => (
-    <div className="menu-card flex items-center justify-between bg-white rounded-xl shadow-sm border border-gray-100 p-4 md:p-4 mb-3 md:mb-4 w-full hover:shadow-md transition-shadow">
-      <div className="flex flex-col justify-center max-w-[65%] md:max-w-[70%]">
-        <h3 className="text-base md:text-lg font-semibold text-black mb-1">
+    <div className="menu-card flex items-center justify-between bg-white rounded-xl shadow-sm border border-gray-100 w-full hover:shadow-md transition-shadow">
+      <div className="flex flex-col justify-center">
+        <h3 className="font-semibold text-black">
           {item.name}
         </h3>
-        <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
+        <p className="text-gray-600 leading-relaxed">
           {item.description}
         </p>
       </div>
       <img
         src={item.image}
         alt={item.name}
-        className="w-20 h-20 md:w-25 md:h-25 lg:w-25 lg:h-25 rounded-xl object-cover ml-4 flex-shrink-0"
+        className="rounded-xl object-cover ml-4 flex-shrink-0"
       />
     </div>
   );
