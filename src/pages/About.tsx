@@ -11,10 +11,18 @@ import {
   ChefHat,
   Utensils,
 } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
+import { PAGE_KEYWORDS } from "@/lib/seo-data";
 
 const About = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="About Hummus Bar & Grill - Authentic Mediterranean Restaurant Since 2008 | Los Angeles"
+        description="Discover the story behind Hummus Bar & Grill, Los Angeles' beloved Mediterranean restaurant. Family-owned since 2008, serving authentic Middle Eastern cuisine with fresh ingredients and traditional recipes."
+        keywords={PAGE_KEYWORDS.about}
+        canonicalUrl="https://hummusbarandgrill.com/about"
+      />
       <Navigation />
       <main>
         {/* Header with Hero Image */}
