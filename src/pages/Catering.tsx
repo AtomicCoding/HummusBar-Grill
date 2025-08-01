@@ -572,7 +572,7 @@ const Catering = () => {
                     size="lg"
                     className="border-red-400 text-red-400 hover:bg-red-600/10"
                   >
-                    <Link to="/locations">Visit Our Location</Link>
+                    <Link to="/contact">Visit Our Location</Link>
                   </Button>
                 </div>
               </div>
