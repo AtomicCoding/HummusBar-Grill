@@ -185,7 +185,7 @@ const PerformanceOptimizer = () => {
     monitorPerformanceBudget();
 
     // Load performance monitoring
-    loadWebVitals();
+    monitorBasicPerformance();
     registerServiceWorker();
 
     // Cleanup function
