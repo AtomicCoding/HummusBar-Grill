@@ -23,7 +23,7 @@ const Menu = () => {
           <div className="absolute inset-0">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0a0eda9784cc438c818cf02b2c391418?format=webp&width=800"
-              alt="Mediterranean Food Menu"
+              alt="Authentic Mediterranean food menu at Hummus Bar & Grill Los Angeles featuring Middle Eastern specialties"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40" />
@@ -69,7 +69,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F9ee7f179f29a40babee4581e1dbe7090?format=webp&width=800"
-                    alt="Shakshuka"
+                    alt="Traditional Israeli shakshuka with eggs poached in spiced tomato sauce - Mediterranean breakfast Los Angeles"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -84,7 +84,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F318420b311734c4d97286f652c36673d?format=webp&width=800"
-                    alt="Pancakes"
+                    alt="Fluffy pancakes with fresh cream and maple syrup - Mediterranean restaurant breakfast menu"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -99,7 +99,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fee96b803297d4a81ab38c2a8878b01fc?format=webp&width=800"
-                    alt="Khachapuri"
+                    alt="Khachapuri cheese-filled flatbread with za'atar spice - authentic Middle Eastern breakfast"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -116,7 +116,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F11ab52ee9bb74c7f98543f700384c066?format=webp&width=800"
-                    alt="Avocado Toast"
+                    alt="Mediterranean avocado toast with za'atar and sunny-side egg - healthy Israeli breakfast"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -134,7 +134,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fbcd1442aeb90459fb2c1447d091b0ea0?format=webp&width=800"
-                    alt="Burekas Platter"
+                    alt="Traditional Israeli burekas platter with tahini and harissa - authentic Mediterranean appetizer"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -152,7 +152,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Ff31f3c717bd1474b9b964d640e05ffa8?format=webp&width=800"
-                    alt="Traditional Israeli Breakfast"
+                    alt="Complete Israeli breakfast with eggs, salad, and Mediterranean spreads - authentic Middle Eastern dining"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -202,7 +202,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fb0abb88f484f4a26800507eee85c6c30?format=webp&width=800"
-                    alt="Moroccan Cigars"
+                    alt="Moroccan cigars with spiced beef in crispy phyllo rolls - Mediterranean appetizer Los Angeles"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -219,7 +219,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F846bb99ee99a4688bfb0ea7c7c36b98d?format=webp&width=800"
-                    alt="Focaccia Sabich"
+                    alt="Focaccia sabich with egg, eggplant, and tahini - Israeli street food specialty"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -237,7 +237,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F3ed201eccdb74e6688fe0cafa96d8949?format=webp&width=800"
-                    alt="Falafel Plate"
+                    alt="Fresh falafel plate with tahini dipping sauce - vegetarian Middle Eastern cuisine"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -254,7 +254,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F54f47b43a17849b29e52845c91582e65?format=webp&width=800"
-                    alt="Fried Cauliflower"
+                    alt="Crispy fried cauliflower with lemon and tahini - Mediterranean vegetarian appetizer"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -271,7 +271,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F4816ceb177b14a5eaf6e2957338676d9?format=webp&width=800"
-                    alt="Laffa Zatar"
+                    alt="Fresh laffa bread with olive oil and za'atar spice - traditional Middle Eastern flatbread"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -288,7 +288,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0b7c0caaee924d419a648dc8314b7941?format=webp&width=800"
-                    alt="Barbarian Mushroom"
+                    alt="Barbarian mushroom dish with asparagus and lime sauce - Mediterranean vegetarian specialty"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -321,7 +321,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fae8b487dfba2438ca15a5f2888458e58?format=webp&width=800"
-                    alt="Lamb Chops"
+                    alt="Grilled herb-marinated lamb chops - premium Mediterranean grill specialty Los Angeles"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -338,7 +338,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F9414166ff15a49e58d5c579b133eeb0b?format=webp&width=800"
-                    alt="Grilled Branzino"
+                    alt="Whole grilled branzino with chimichurri and lemon - fresh Mediterranean seafood"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -355,7 +355,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F4be2a0615054461f8c01bda0d94bbe0a?format=webp&width=800"
-                    alt="Mixed Chicken Skewers"
+                    alt="Mixed chicken skewers with breast, thigh, liver, and heart - authentic Middle Eastern grill"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -372,7 +372,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F42b8382e99ec489b80ee0823c39f1359?format=webp&width=800"
-                    alt="Chicken Shawarma"
+                    alt="Spit-roasted chicken shawarma - traditional Middle Eastern specialty Los Angeles"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -389,7 +389,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F928512a1baea4684a41f4f560a517905?format=webp&width=800"
-                    alt="Mushroom Hummus"
+                    alt="Classic hummus topped with seasoned sautéed mushrooms - Mediterranean vegetarian dish"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -406,7 +406,7 @@ const Menu = () => {
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-6">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F08269cdef40a40c2a4ac88b1144ee55f?format=webp&width=800"
-                    alt="Mega Schnitzel"
+                    alt="Mega crispy schnitzel with two sides - hearty Mediterranean dinner specialty"
                     className="w-full h-full object-cover"
                   />
                 </div>
