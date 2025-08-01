@@ -2,42 +2,29 @@ import { useEffect } from 'react';
 
 const PerformanceOptimizer = () => {
   useEffect(() => {
-    // Core Web Vitals monitoring
-    const reportWebVitals = (metric: any) => {
-      // Report to Google Analytics if available
-      if (typeof gtag !== 'undefined') {
-        gtag('event', metric.name, {
-          event_category: 'Web Vitals',
-          event_label: metric.id,
-          value: Math.round(metric.name === 'CLS' ? metric.value * 1000 : metric.value),
-          non_interaction: true,
+    // Basic performance monitoring using native APIs
+    const monitorBasicPerformance = () => {
+      // Monitor page load time
+      if ('performance' in window) {
+        window.addEventListener('load', () => {
+          setTimeout(() => {
+            const perfData = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming;
+            if (perfData) {
+              const loadTime = perfData.loadEventEnd - perfData.loadEventStart;
+              console.log(`Page load time: ${loadTime}ms`);
+
+              // Report to Google Analytics if available
+              if (typeof gtag !== 'undefined') {
+                gtag('event', 'page_load_time', {
+                  event_category: 'Performance',
+                  event_label: 'load_time',
+                  value: Math.round(loadTime),
+                  non_interaction: true,
+                });
+              }
+            }
+          }, 100);
         });
-      }
-
-      // Log to console in development
-      if (process.env.NODE_ENV === 'development') {
-        console.log(`${metric.name}: ${metric.value}`);
-      }
-    };
-
-    // Load Web Vitals library dynamically (optional)
-    const loadWebVitals = async () => {
-      try {
-        // Only load if web-vitals package is available
-        const webVitals = await import('web-vitals').catch(() => null);
-        if (webVitals) {
-          const { getCLS, getFID, getFCP, getLCP, getTTFB } = webVitals;
-          getCLS(reportWebVitals);
-          getFID(reportWebVitals);
-          getFCP(reportWebVitals);
-          getLCP(reportWebVitals);
-          getTTFB(reportWebVitals);
-          console.log('Web Vitals monitoring enabled');
-        } else {
-          console.info('Web Vitals library not installed - performance monitoring disabled');
-        }
-      } catch (error) {
-        console.info('Web Vitals library not available - performance monitoring disabled');
       }
     };
 
