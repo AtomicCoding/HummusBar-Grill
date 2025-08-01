@@ -13,6 +13,7 @@ import Terms from "./pages/Terms";
 import Accessibility from "./pages/Accessibility";
 import NotFound from "./pages/NotFound";
 import PerformanceOptimizer from "@/components/PerformanceOptimizer";
+import AccessibilityProvider from "@/components/AccessibilityProvider";
 
 const queryClient = new QueryClient();
 
