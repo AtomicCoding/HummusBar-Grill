@@ -16,8 +16,8 @@ const PerformanceOptimizer = () => {
               console.log(`Page load time: ${loadTime}ms`);
 
               // Report to Google Analytics if available
-              if (typeof gtag !== "undefined") {
-                gtag("event", "page_load_time", {
+              if (typeof window !== "undefined" && "gtag" in window && typeof (window as any).gtag === "function") {
+                (window as any).gtag("event", "page_load_time", {
                   event_category: "Performance",
                   event_label: "load_time",
                   value: Math.round(loadTime),
