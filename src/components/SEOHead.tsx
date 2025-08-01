@@ -90,6 +90,11 @@ const SEOHead = ({
       metaTags.push({ name: 'keywords', content: keywords });
     }
 
+    // Add Google site verification if provided
+    if (googleSiteVerification) {
+      metaTags.push({ name: 'google-site-verification', content: googleSiteVerification });
+    }
+
     // Add canonical URL if provided
     if (canonicalUrl) {
       const canonicalLink = document.createElement('link');
