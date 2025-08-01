@@ -9,6 +9,13 @@ import { MENU_SCHEMA, PAGE_KEYWORDS } from "@/lib/seo-data";
 const Menu = () => {
   return (
     <div className="min-h-screen bg-black">
+      <SEOHead
+        title="Mediterranean Food Menu - Hummus Bar & Grill Los Angeles | Authentic Middle Eastern Cuisine"
+        description="Explore our authentic Mediterranean menu featuring fresh hummus varieties, grilled lamb chops, chicken shawarma, Israeli breakfast, falafel, and traditional Middle Eastern desserts in Los Angeles."
+        keywords={PAGE_KEYWORDS.menu}
+        canonicalUrl="https://hummusbarandgrill.com/menu"
+        structuredData={MENU_SCHEMA}
+      />
       <Navigation />
       <main>
         {/* Header with Hero Image */}
