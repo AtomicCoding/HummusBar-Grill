@@ -46,7 +46,7 @@ export const PAGE_KEYWORDS = {
   menu: "Mediterranean menu, Middle Eastern food menu, hummus varieties, grilled kebabs, Israeli breakfast, kosher menu Los Angeles",
   about: "authentic Mediterranean restaurant, family owned Middle Eastern cuisine, traditional recipes, fresh ingredients, kosher dining",
   catering: "Mediterranean catering Los Angeles, Middle Eastern catering, corporate catering, event catering, kosher catering services",
-  locations: "Hummus Bar & Grill location, Mediterranean restaurant near me, Middle Eastern food Los Angeles, kosher restaurant address"
+  contact: "Hummus Bar & Grill contact, Mediterranean restaurant Tarzana, Middle Eastern food Los Angeles, kosher restaurant address, restaurant phone number"
 };
 
 // LocalBusiness Structured Data
