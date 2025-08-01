@@ -22,7 +22,7 @@ const Catering = () => {
           <div className="absolute inset-0">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F0d64f0aa3e3c4fb687ab93be98fe427d?format=webp&width=800"
-              alt="Mediterranean Catering Menu"
+              alt="Mediterranean catering menu Los Angeles - authentic Middle Eastern food for events and parties"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40" />
