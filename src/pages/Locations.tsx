@@ -193,12 +193,12 @@ const Locations = () => {
                 <div className="rounded-2xl overflow-hidden shadow-soft border border-red-200">
                   <iframe
                     width="100%"
-                    height="350"
+                    height="400"
                     style={{ border: 0, borderRadius: "12px" }}
                     loading="lazy"
                     allowFullScreen
                     referrerPolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.492315143625!2d-118.54461562431753!3d34.170520913439845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2978ff4499293%3A0xb6352bdeba86ecb1!2s18743%20Ventura%20Blvd%2C%20Tarzana%2C%20CA%2091356!5e0!3m2!1sen!2sus!4v1691443447282!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.2548658661233!2d-118.53896082413653!3d34.1723990730877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c29c3bb3a0211f%3A0x6c872c7f553c77c!2s18743%20Ventura%20Blvd%2C%20Tarzana%2C%20CA%2091356!5e0!3m2!1sen!2sus!4v1690305094459!5m2!1sen!2sus"
                     title="Hummus Bar & Grill Location"
                     aria-label="Google map showing the location of Hummus Bar & Grill at 18743 Ventura Blvd, Tarzana, CA 91356"
                   />
