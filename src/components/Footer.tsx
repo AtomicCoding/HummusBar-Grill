@@ -11,6 +11,7 @@ import {
   Smartphone,
   ArrowRight,
   Truck,
+  Music,
 } from "lucide-react";
 
 // TikTok icon component
@@ -48,7 +49,6 @@ const Footer = () => {
   const quickLinks = [
     { name: "About Us", href: "/about" },
     { name: "Menu", href: "/menu" },
-    { name: "Locations", href: "/contact" },
     { name: "Catering", href: "/catering" },
     { name: "Contact", href: "/contact" },
   ];
@@ -59,7 +59,7 @@ const Footer = () => {
       icon: Instagram,
       href: "https://www.instagram.com/hummusbarandgrill/?hl=en",
     },
-    { name: "TikTok", icon: TikTokIcon, href: "https://www.tiktok.com/@hummusbargrill" },
+
   ];
 
   return (
