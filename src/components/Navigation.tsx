@@ -233,7 +233,7 @@ const Navigation = () => {
                           <button
                             onClick={() => {
                               setIsMenuDropdownOpen(false);
-                              window.open("https://cdn.builder.io/o/assets%2Fad5fa173f30f42cb936245efbd928c96%2F571285c6388145f3b2a07b7e31832477?alt=media&token=d119c86b-b772-4ed4-96aa-3f1a9efecfeb&apiKey=ad5fa173f30f42cb936245efbd928c96", "_blank");
+                              window.open("https://cdn.builder.io/o/assets%2Fad5fa173f30f42cb936245efbd928c96%2F9f1912d9192648c2a8c51dbe5a32c1b4?alt=media&token=08d85958-fe7c-4dec-bd8f-755bdf616fd7&apiKey=ad5fa173f30f42cb936245efbd928c96", "_blank");
                             }}
                             className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
                           >
@@ -433,7 +433,7 @@ const Navigation = () => {
                             onClick={() => {
                               setIsOpen(false);
                               setIsMenuDropdownOpen(false);
-                              window.open("https://cdn.builder.io/o/assets%2Fad5fa173f30f42cb936245efbd928c96%2F571285c6388145f3b2a07b7e31832477?alt=media&token=d119c86b-b772-4ed4-96aa-3f1a9efecfeb&apiKey=ad5fa173f30f42cb936245efbd928c96", "_blank");
+                              window.open("https://cdn.builder.io/o/assets%2Fad5fa173f30f42cb936245efbd928c96%2F9f1912d9192648c2a8c51dbe5a32c1b4?alt=media&token=08d85958-fe7c-4dec-bd8f-755bdf616fd7&apiKey=ad5fa173f30f42cb936245efbd928c96", "_blank");
                             }}
                             className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                           >
