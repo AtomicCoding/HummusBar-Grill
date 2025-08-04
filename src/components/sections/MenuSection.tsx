@@ -163,7 +163,7 @@ const MenuSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              View Full Menu        View Full Menu    View Full Menu     View Full MenuenuMenuw Full Menu
+              View Full Menu     View Full Menu Full Menu   View Full Menu Menu
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </a>
           </Button>
