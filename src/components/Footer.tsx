@@ -59,7 +59,11 @@ const Footer = () => {
       icon: Instagram,
       href: "https://www.instagram.com/hummusbarandgrill/?hl=en",
     },
-
+    {
+      name: "TikTok",
+      icon: TikTokIcon,
+      href: "https://www.tiktok.com/@hummusbargrill",
+    },
   ];
 
   return (
