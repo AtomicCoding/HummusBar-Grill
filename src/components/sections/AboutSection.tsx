@@ -114,8 +114,8 @@ const AboutSection = () => {
               {/* Bottom Left (4th image) */}
               <div className="aspect-square rounded-2xl overflow-hidden shadow-soft">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F1c5cfe7564924568a1cd430bfa81749d?format=webp&width=800"
-                  alt="Kitchen"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fa3a810e66bcc421ba5a152de79040c16?format=webp&width=800"
+                  alt="Lamb Skewer"
                   className="w-full h-full object-cover"
                 />
               </div>

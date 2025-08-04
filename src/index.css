@@ -179,3 +179,114 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-warm-400;
 }
+
+/* Menu card styles - Kosher section inspired */
+.menu-card {
+  transition: all 0.2s ease;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.menu-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile menu card styles - Uber Eats Starbucks style */
+@media screen and (max-width: 768px) {
+  .menu-card {
+    padding: 16px !important;
+    margin-bottom: 2px !important; /* Tighter spacing */
+  }
+
+  .menu-card div:first-child {
+    max-width: 60% !important; /* More space for larger image */
+  }
+
+  .menu-card h3 {
+    font-size: 16px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 4px !important;
+    font-weight: 600 !important;
+  }
+
+  .menu-card p {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    color: #666 !important;
+  }
+
+  .menu-card img {
+    width: 110px !important; /* Slightly increased size */
+    height: 110px !important;
+    border-radius: 10px !important;
+  }
+}
+
+/* Tablet styles */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .menu-card {
+    padding: 18px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .menu-card h3 {
+    font-size: 18px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 5px !important;
+    font-weight: 600 !important;
+  }
+
+  .menu-card p {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+  }
+
+  .menu-card img {
+    width: 140px !important;
+    height: 140px !important;
+    border-radius: 12px !important;
+  }
+}
+
+/* Desktop menu card styles - Greatly increased sizes */
+@media screen and (min-width: 1024px) {
+  .menu-card {
+    padding: 24px !important; /* Increased padding */
+    margin-bottom: 8px !important; /* Minimal spacing */
+  }
+
+  .menu-card div:first-child {
+    max-width: 65% !important;
+  }
+
+  .menu-card h3 {
+    font-size: 22px !important; /* Greatly increased title size */
+    line-height: 1.3 !important;
+    margin-bottom: 8px !important;
+    font-weight: 600 !important;
+  }
+
+  .menu-card p {
+    font-size: 16px !important; /* Greatly increased description size */
+    line-height: 1.5 !important;
+    color: #555 !important;
+  }
+
+  .menu-card img {
+    width: 180px !important; /* Greatly increased image size */
+    height: 180px !important;
+    border-radius: 14px !important;
+  }
+}
+
+/* Menu section titles - Desktop only */
+@media screen and (min-width: 768px) {
+  .menu-section-title {
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    margin-top: 32px !important;
+    margin-bottom: 16px !important;
+  }
+}
