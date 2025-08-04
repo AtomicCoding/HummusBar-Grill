@@ -358,14 +358,20 @@ const Menu = () => {
         <section className="py-12 md:py-20 bg-gray-50">
           <div className="container-custom section-padding max-w-6xl">
             <MenuSection
+              id="breakfast-section"
               title="BREAKFAST MENU"
               items={menuData.breakfast}
               buttonText="View Full Breakfast Menu"
               pdfLink="/pdfs/hummus-bar-breakfast-menu.pdf"
               showButton={true}
             />
-            <MenuSection title="APPETIZERS" items={menuData.appetizers} />
             <MenuSection
+              id="appetizers-section"
+              title="APPETIZERS"
+              items={menuData.appetizers}
+            />
+            <MenuSection
+              id="lunch-dinner-section"
               title="LUNCH & DINNER MENU"
               items={menuData.lunchDinner}
               buttonText="View Full Lunch & Dinner Menu"
@@ -373,14 +379,23 @@ const Menu = () => {
               showButton={true}
             />
             <MenuSection
+              id="drinks-section"
               title="DRINKS"
               items={menuData.drinks}
               buttonText="View Full Drinks Menu"
               pdfLink="/pdfs/hummus-bar-drinks.pdf"
               showButton={true}
             />
-            <MenuSection title="DESSERTS" items={menuData.desserts} />
-            <MenuSection title="KIDS MENU" items={menuData.kidsMenu} />
+            <MenuSection
+              id="desserts-section"
+              title="DESSERTS"
+              items={menuData.desserts}
+            />
+            <MenuSection
+              id="kids-menu-section"
+              title="KIDS MENU"
+              items={menuData.kidsMenu}
+            />
           </div>
         </section>
       </main>
