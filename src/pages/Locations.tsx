@@ -192,7 +192,7 @@ const Locations = () => {
                 </h3>
                 <div className="rounded-2xl overflow-hidden shadow-soft border border-red-200">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.7698438401133!2d-118.54420508478217!3d34.174774680566984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c29c29834cbdff%3A0xbcb02e3f1b6b6b7!2sHummus%20Bar%20%26%20Grill!5e0!3m2!1sen!2sus!4v1663614589992!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD5H6vZTHUmZr7v7Z8D9LqvU9z8Jk9LKXM&q=18743+Ventura+Blvd,Tarzana,CA+91356&zoom=17"
                     width="100%"
                     height="350"
                     style={{ border: 0, borderRadius: "12px", minHeight: "300px" }}
