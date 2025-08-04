@@ -191,17 +191,33 @@ const Locations = () => {
                   Find Us
                 </h3>
                 <div className="rounded-2xl overflow-hidden shadow-soft border border-red-200">
-                  <iframe
-                    width="100%"
-                    height="400"
-                    style={{ border: 0, borderRadius: "12px" }}
-                    loading="lazy"
-                    allowFullScreen
-                    referrerPolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.2548658661233!2d-118.53896082413653!3d34.1723990730877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c29c3bb3a0211f%3A0x6c872c7f553c77c!2s18743%20Ventura%20Blvd%2C%20Tarzana%2C%20CA%2091356!5e0!3m2!1sen!2sus!4v1690305094459!5m2!1sen!2sus"
-                    title="Hummus Bar & Grill Location"
-                    aria-label="Google map showing the location of Hummus Bar & Grill at 18743 Ventura Blvd, Tarzana, CA 91356"
-                  />
+                  <div className="p-8 text-center bg-gradient-to-br from-red-50 to-red-100">
+                    <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                      <MapPin className="w-8 h-8 text-red-600" />
+                    </div>
+                    <h4 className="text-xl font-semibold text-foreground mb-3">
+                      View Our Location
+                    </h4>
+                    <p className="text-foreground/70 mb-6">
+                      Hummus Bar & Grill<br />
+                      18743 Ventura Blvd<br />
+                      Tarzana, CA 91356
+                    </p>
+                    <Button
+                      asChild
+                      size="lg"
+                      className="bg-red-600 hover:bg-red-700"
+                    >
+                      <a
+                        href="https://www.google.com/maps/place/Hummus+Bar+%26+Grill/@34.1716875,-118.5445237,17z/data=!4m6!3m5!1s0x80c2990e6364baa7:0x185247966478e494!8m2!3d34.1716831!4d-118.5419434!16s%2Fg%2F1tk_pjrw"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Open in Google Maps
+                        <ExternalLink className="w-4 h-4 ml-2" />
+                      </a>
+                    </Button>
+                  </div>
                 </div>
 
                 <div className="bg-red-50 p-6 rounded-2xl border border-red-200">
