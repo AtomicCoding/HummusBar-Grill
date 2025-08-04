@@ -275,14 +275,16 @@ const Menu = () => {
     buttonText,
     pdfLink,
     showButton = false,
+    id,
   }: {
     title: string;
     items: Array<{ name: string; description: string; image: string }>;
     buttonText?: string;
     pdfLink?: string;
     showButton?: boolean;
+    id?: string;
   }) => (
-    <section className="mb-6 md:mb-8">
+    <section id={id} className="mb-6 md:mb-8">
       <h2 className="menu-section-title text-2xl font-bold text-black mt-6 mb-3 pb-2 border-b border-gray-200 text-left">
         {title}
       </h2>
