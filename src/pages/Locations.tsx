@@ -190,16 +190,17 @@ const Locations = () => {
                 <h3 className="text-xl font-semibold text-foreground">
                   Find Us
                 </h3>
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-soft border border-red-200">
+                <div className="rounded-2xl overflow-hidden shadow-soft border border-red-200">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.073528544543!2d-118.54452368255615!3d34.17168751062891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2990e6364baa7%3A0x185247966478e494!2sHummus%20Bar%20%26%20Grill!5e0!3m2!1sen!2sus!4v1735734000000!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.7698438401133!2d-118.54420508478217!3d34.174774680566984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c29c29834cbdff%3A0xbcb02e3f1b6b6b7!2sHummus%20Bar%20%26%20Grill!5e0!3m2!1sen!2sus!4v1663614589992!5m2!1sen!2sus"
                     width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
+                    height="350"
+                    style={{ border: 0, borderRadius: "12px", minHeight: "300px" }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     title="Hummus Bar & Grill Location"
+                    aria-label="Google map showing the location of Hummus Bar & Grill at 18743 Ventura Blvd, Tarzana, CA 91356"
                   />
                 </div>
 
