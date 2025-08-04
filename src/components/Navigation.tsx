@@ -233,7 +233,7 @@ const Navigation = () => {
                           <button
                             onClick={() => {
                               setIsMenuDropdownOpen(false);
-                              window.open("https://cdn.builder.io/o/assets%2Fad5fa173f30f42cb936245efbd928c96%2F62e80d2c7f5843b9a20f8432a4164c35?alt=media&token=8d83d462-3b71-4023-8920-27d9a247bb20&apiKey=ad5fa173f30f42cb936245efbd928c96", "_blank");
+                              window.open("https://cdn.builder.io/o/assets%2Fad5fa173f30f42cb936245efbd928c96%2F571285c6388145f3b2a07b7e31832477?alt=media&token=d119c86b-b772-4ed4-96aa-3f1a9efecfeb&apiKey=ad5fa173f30f42cb936245efbd928c96", "_blank");
                             }}
                             className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
                           >
