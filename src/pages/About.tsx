@@ -27,14 +27,12 @@ const About = () => {
       <main>
         {/* Header with Hero Image */}
         <section className="relative min-h-screen flex items-center">
-          <div className="absolute inset-0">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F343e8c0287b94fc99b91d9e23a96ee10?format=webp&width=800"
-              alt="About Hummus Bar & Grill authentic Mediterranean restaurant Los Angeles serving fresh Middle Eastern cuisine"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40" />
-          </div>
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`
+            }}
+          />
 
           <div className="relative z-10 container-custom section-padding">
             <div className="max-w-3xl">
