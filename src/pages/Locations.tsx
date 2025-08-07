@@ -190,33 +190,19 @@ const Locations = () => {
                 <h3 className="text-xl font-semibold text-foreground">
                   Find Us
                 </h3>
-                <div className="rounded-2xl overflow-hidden shadow-soft border border-red-200 bg-gradient-to-br from-red-50 to-red-100">
-                  <div className="p-8 text-center">
-                    <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                      <MapPin className="w-8 h-8 text-red-600" />
-                    </div>
-                    <h4 className="text-xl font-semibold text-foreground mb-3">
-                      View Our Location
-                    </h4>
-                    <p className="text-foreground/70 mb-6">
-                      Hummus Bar & Grill<br />
-                      18743 Ventura Blvd<br />
-                      Tarzana, CA 91356
-                    </p>
-                    <Button
-                      asChild
-                      size="lg"
-                      className="bg-red-600 hover:bg-red-700"
-                    >
-                      <a
-                        href="https://www.google.com/maps/place/Hummus+Bar+%26+Grill/@34.1716875,-118.5445237,17z/data=!4m6!3m5!1s0x80c2990e6364baa7:0x185247966478e494!8m2!3d34.1716831!4d-118.5419434!16s%2Fg%2F1tk_pjrw"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Open in Google Maps
-                        <ExternalLink className="w-4 h-4 ml-2" />
-                      </a>
-                    </Button>
+                <div className="rounded-2xl overflow-hidden shadow-soft border border-red-200">
+                  <div style={{ width: '100%' }}>
+                    <iframe
+                      width="100%"
+                      height="600"
+                      frameBorder="0"
+                      scrolling="no"
+                      marginHeight="0"
+                      marginWidth="0"
+                      src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=18743%20Ventura%20Blvd,%20Tarzana,%20CA%2091356+(Hummus%20Bar%20%26%20Grill)&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+                      title="Hummus Bar & Grill Location Map"
+                      style={{ border: 0 }}
+                    />
                   </div>
                 </div>
 
