@@ -47,8 +47,8 @@ const About = () => {
               </Link>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-                Our
-                <span className="block text-red-400">Story</span>
+                About
+                <span className="block text-red-400">Us</span>
               </h1>
 
               <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-8">
