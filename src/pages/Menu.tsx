@@ -362,7 +362,7 @@ const Menu = () => {
               title="BREAKFAST MENU"
               items={menuData.breakfast}
               buttonText="View Full Breakfast Menu"
-              pdfLink="https://jumpshare.com/share/TF6seI75IUtinLk8Bz1F"
+              pdfLink="https://cdn.builder.io/api/v1/image/assets%2Fad5fa173f30f42cb936245efbd928c96%2Fc0362184623645d18384e1835cdc5f9e?format=webp&width=800"
               showButton={true}
             />
             <MenuSection
