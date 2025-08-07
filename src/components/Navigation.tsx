@@ -164,13 +164,13 @@ const Navigation = () => {
                       <>
                         {/* Invisible bridge to prevent gap issues */}
                         <div className="absolute top-full left-0 w-56 h-2 -mt-2 z-40"></div>
-                        <div className="absolute top-full left-0 w-56 bg-white rounded-lg shadow-xl border border-warm-200 py-2 z-50">
+                        <div className="absolute top-full left-0 w-56 bg-white rounded-lg shadow-[rgba(0,0,0,0.08)_0px_4px_12px] border-[1.5px] border-[#E5E5E5] py-4 px-5 z-[1001]">
                           <button
                             onClick={() => {
                               setIsMenuDropdownOpen(false);
                               handleHashNavigation("/menu#breakfast-section");
                             }}
-                            className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                            className="block w-full text-left py-3 text-base font-medium text-black hover:bg-[#F8F8F8] hover:text-[#B31217] transition-colors cursor-pointer mb-3 last:mb-0"
                           >
                             Breakfast
                           </button>
@@ -179,7 +179,7 @@ const Navigation = () => {
                               setIsMenuDropdownOpen(false);
                               handleHashNavigation("/menu#appetizers-section");
                             }}
-                            className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                            className="block w-full text-left py-3 text-base font-medium text-black hover:bg-[#F8F8F8] hover:text-[#B31217] transition-colors cursor-pointer mb-3 last:mb-0"
                           >
                             Appetizers
                           </button>
@@ -190,7 +190,7 @@ const Navigation = () => {
                                 "/menu#lunch-dinner-section",
                               );
                             }}
-                            className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                            className="block w-full text-left py-3 text-base font-medium text-black hover:bg-[#F8F8F8] hover:text-[#B31217] transition-colors cursor-pointer mb-3 last:mb-0"
                           >
                             Lunch & Dinner
                           </button>
@@ -199,7 +199,7 @@ const Navigation = () => {
                               setIsMenuDropdownOpen(false);
                               handleHashNavigation("/menu#drinks-section");
                             }}
-                            className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                            className="block w-full text-left py-3 text-base font-medium text-black hover:bg-[#F8F8F8] hover:text-[#B31217] transition-colors cursor-pointer mb-3 last:mb-0"
                           >
                             Drinks
                           </button>
@@ -208,7 +208,7 @@ const Navigation = () => {
                               setIsMenuDropdownOpen(false);
                               handleHashNavigation("/menu#desserts-section");
                             }}
-                            className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                            className="block w-full text-left py-3 text-base font-medium text-black hover:bg-[#F8F8F8] hover:text-[#B31217] transition-colors cursor-pointer mb-3 last:mb-0"
                           >
                             Desserts
                           </button>
@@ -217,7 +217,7 @@ const Navigation = () => {
                               setIsMenuDropdownOpen(false);
                               handleHashNavigation("/menu#kids-menu-section");
                             }}
-                            className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                            className="block w-full text-left py-3 text-base font-medium text-black hover:bg-[#F8F8F8] hover:text-[#B31217] transition-colors cursor-pointer mb-3 last:mb-0"
                           >
                             Kids Menu
                           </button>
@@ -226,7 +226,7 @@ const Navigation = () => {
                               setIsMenuDropdownOpen(false);
                               handleHashNavigation("/#kosher-section");
                             }}
-                            className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                            className="block w-full text-left py-3 text-base font-medium text-black hover:bg-[#F8F8F8] hover:text-[#B31217] transition-colors cursor-pointer mb-3 last:mb-0"
                           >
                             Kosher
                           </button>
@@ -238,7 +238,7 @@ const Navigation = () => {
                                 "_blank",
                               );
                             }}
-                            className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors"
+                            className="block w-full text-left py-3 text-base font-medium text-black hover:bg-[#F8F8F8] hover:text-[#B31217] transition-colors cursor-pointer mb-3 last:mb-0"
                           >
                             Takeout Menu (PDF)
                           </button>
