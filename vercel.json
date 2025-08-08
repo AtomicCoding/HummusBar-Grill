@@ -16,6 +16,16 @@
       "permanent": true
     },
     {
+      "source": "/wine",
+      "destination": "/menu",
+      "permanent": true
+    },
+    {
+      "source": "/desserts",
+      "destination": "/menu",
+      "permanent": true
+    },
+    {
       "source": "/gallery",
       "destination": "/about",
       "permanent": true
@@ -41,6 +51,21 @@
       "permanent": true
     },
     {
+      "source": "/new-page-1",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/blog/post/westways",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/social-posts",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
       "source": "/press",
       "destination": "/about",
       "permanent": true
@@ -48,6 +73,11 @@
     {
       "source": "/jobs",
       "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/our-reviews",
+      "destination": "/",
       "permanent": true
     }
   ],
