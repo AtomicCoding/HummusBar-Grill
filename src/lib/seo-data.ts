@@ -4,8 +4,8 @@ export const BUSINESS_INFO = {
   name: "Hummus Bar & Grill",
   description:
     "Authentic Mediterranean restaurant in Los Angeles serving fresh hummus, grilled specialties, and traditional Middle Eastern cuisine. Kosher-friendly dining with Israeli and Lebanese influences.",
-  phone: "+1-310-555-0123", // Replace with actual phone
-  email: "info@hummusbarandgrill.com", // Replace with actual email
+  phone: "+1-818-344-6606",
+  email: "manager@hummusbargrill.com",
   website: "https://hummusbarandgrill.com",
   address: {
     street: "18743 Ventura Blvd",
@@ -15,8 +15,8 @@ export const BUSINESS_INFO = {
     country: "US",
   },
   geo: {
-    latitude: 34.0522,
-    longitude: -118.2437,
+    latitude: 34.1634,
+    longitude: -118.5449,
   },
   hours: {
     monday: "11:00-22:00",
