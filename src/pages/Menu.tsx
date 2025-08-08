@@ -362,7 +362,7 @@ const Menu = () => {
               title="BREAKFAST MENU"
               items={menuData.breakfast}
               buttonText="View Full Breakfast Menu"
-              pdfLink="/pdfs/hummus-bar-breakfast-menu.pdf"
+              pdfLink="https://ibb.co/zWy2Xt5t"
               showButton={true}
             />
             <MenuSection
@@ -383,7 +383,7 @@ const Menu = () => {
               title="DRINKS"
               items={menuData.drinks}
               buttonText="View Full Drinks Menu"
-              pdfLink="/pdfs/hummus-bar-drinks.pdf"
+              pdfLink="https://cdn.builder.io/api/v1/image/assets%2Fad5fa173f30f42cb936245efbd928c96%2F1a2df841e8a24b298027f67974b1cedd?format=webp&width=800"
               showButton={true}
             />
             <MenuSection

@@ -190,17 +190,20 @@ const Locations = () => {
                 <h3 className="text-xl font-semibold text-foreground">
                   Find Us
                 </h3>
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-soft border border-red-200">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.2158!2d-118.5449!3d34.1634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2964f2b1b6f5d%3A0x8a8e1b8b6b8b8b8b!2s18743%20Ventura%20Blvd%2C%20Tarzana%2C%20CA%2091356!5e0!3m2!1sen!2sus!4v1"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Hummus Bar & Grill Location"
-                  />
+                <div className="rounded-2xl overflow-hidden shadow-soft border border-red-200">
+                  <div style={{ width: '100%' }}>
+                    <iframe
+                      width="100%"
+                      height="600"
+                      frameBorder="0"
+                      scrolling="no"
+                      marginHeight="0"
+                      marginWidth="0"
+                      src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=18743%20Ventura%20Blvd,%20Tarzana,%20CA%2091356+(Hummus%20Bar%20%26%20Grill)&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+                      title="Hummus Bar & Grill Location Map"
+                      style={{ border: 0 }}
+                    />
+                  </div>
                 </div>
 
                 <div className="bg-red-50 p-6 rounded-2xl border border-red-200">
