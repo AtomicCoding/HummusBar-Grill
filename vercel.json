@@ -1,3 +1,55 @@
 {
+  "redirects": [
+    {
+      "source": "/takeout-catering",
+      "destination": "/catering",
+      "permanent": true
+    },
+    {
+      "source": "/dine-in",
+      "destination": "/menu",
+      "permanent": true
+    },
+    {
+      "source": "/delivery-menu",
+      "destination": "/menu",
+      "permanent": true
+    },
+    {
+      "source": "/gallery",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/membership",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/shop",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/checkout",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/social-post-details",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/press",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/jobs",
+      "destination": "/about",
+      "permanent": true
+    }
+  ],
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
