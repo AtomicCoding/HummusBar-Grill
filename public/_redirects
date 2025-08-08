@@ -1,7 +1,4 @@
-# Custom redirects
 /dine-in /menu 301
 /takeout-catering /catering 301
 /social /contact 301
-
-# SPA fallback - this must be last
-/*    /index.html   200
+/* /index.html 200
