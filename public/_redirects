@@ -1,1 +1,12 @@
+/takeout-catering /catering 301
+/dine-in /menu 301
+/delivery-menu /menu 301
+/gallery /about 301
+/membership /about 301
+/shop /about 301
+/checkout /about 301
+/social-post-details /about 301
+/press /about 301
+/jobs /about 301
+
 /* /index.html 200
