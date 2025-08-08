@@ -8,10 +8,10 @@ export const BUSINESS_INFO = {
   email: "info@hummusbarandgrill.com", // Replace with actual email
   website: "https://hummusbarandgrill.com",
   address: {
-    street: "123 Main Street", // Replace with actual address
-    city: "Los Angeles",
+    street: "18743 Ventura Blvd",
+    city: "Tarzana",
     state: "CA",
-    zipCode: "90210", // Replace with actual zip
+    zipCode: "91356",
     country: "US",
   },
   geo: {
