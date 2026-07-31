@@ -36,12 +36,11 @@ const Terms = () => {
               </p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>
-                  Restaurant Hours: Monday-Saturday 9:00 AM - 11:00 PM, Sunday
-                  9:00 AM - 10:00 PM
+                  Restaurant Hours: Sunday-Thursday 9:00 AM - 10:00 PM,
+                  Friday & Saturday 9:00 AM - 11:00 PM
                 </li>
                 <li>
-                  Delivery Hours: Monday-Saturday 10:30 AM - 9:30 PM, Sunday
-                  10:30 AM - 8:30 PM
+                  Delivery Hours: Sunday-Saturday 10:30 AM - 9:15 PM
                 </li>
               </ul>
 
