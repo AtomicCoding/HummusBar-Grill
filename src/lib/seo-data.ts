@@ -110,7 +110,7 @@ export const LOCAL_BUSINESS_SCHEMA = {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
       opens: "09:00",
-      closes: "23:00",
+      closes: "22:00",
     },
     {
       "@type": "OpeningHoursSpecification",
