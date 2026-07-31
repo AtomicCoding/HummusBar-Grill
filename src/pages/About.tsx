@@ -104,10 +104,9 @@ const About = () => {
                   </p>
 
                   <p className="text-lg text-foreground/80 leading-relaxed">
-                    We're open Monday through Saturday from 9 AM to 11 PM and
-                    Sunday from 9 AM to 10 PM. Delivery is available every day
-                    starting at 10:30 AM and ending at 9:30 PM on weekdays and
-                    8:30 PM on Sundays.
+                    We're open Sunday through Thursday from 9 AM to 10 PM and
+                    Friday & Saturday from 9 AM to 11 PM. Delivery is available every day
+                    starting at 10:30 AM and ending at 9:15 PM.
                   </p>
 
                   <p className="text-lg text-foreground/80 leading-relaxed">
