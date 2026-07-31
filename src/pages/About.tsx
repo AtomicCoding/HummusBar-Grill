@@ -177,18 +177,17 @@ const About = () => {
                   <div className="space-y-2">
                     <div className="text-foreground/80 space-y-1">
                       <p>
-                        <strong>Monday – Saturday:</strong> 9:00 AM – 11:00 PM
+                        <strong>Sunday – Thursday:</strong> 9:00 AM – 10:00 PM
                       </p>
                       <p>
-                        <strong>Sunday:</strong> 9:00 AM – 10:00 PM
+                        <strong>Friday & Saturday:</strong> 9:00 AM – 11:00 PM
                       </p>
                     </div>
                     <div className="text-foreground/80 space-y-1">
                       <p>
                         <strong>Delivery Hours:</strong>
                       </p>
-                      <p>Monday – Saturday: 10:30 AM – 9:30 PM</p>
-                      <p>Sunday: 10:30 AM – 8:30 PM</p>
+                      <p>Sunday – Saturday: 10:30 AM – 9:15 PM</p>
                     </div>
                   </div>
                 </div>

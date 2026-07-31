@@ -19,13 +19,13 @@ export const BUSINESS_INFO = {
     longitude: -118.5449,
   },
   hours: {
-    monday: "11:00-22:00",
-    tuesday: "11:00-22:00",
-    wednesday: "11:00-22:00",
-    thursday: "11:00-22:00",
-    friday: "11:00-23:00",
-    saturday: "10:00-23:00",
-    sunday: "10:00-22:00",
+    monday: "09:00-22:00",
+    tuesday: "09:00-22:00",
+    wednesday: "09:00-22:00",
+    thursday: "09:00-22:00",
+    friday: "09:00-23:00",
+    saturday: "09:00-23:00",
+    sunday: "09:00-22:00",
   },
 };
 
