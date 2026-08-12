@@ -46,10 +46,10 @@ const Footer = () => {
   ];
 
   const quickLinks = [
-    { name: "About Us", href: "/about" },
-    { name: "Menu", href: "/menu" },
-    { name: "Catering", href: "/catering" },
-    { name: "Contact", href: "/contact" },
+    { name: "About Us", href: "/about/" },
+    { name: "Menu", href: "/menu/" },
+    { name: "Catering", href: "/catering/" },
+    { name: "Contact", href: "/contact/" },
   ];
 
   const socialLinks = [
@@ -219,19 +219,19 @@ const Footer = () => {
             </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link
-                to="/privacy"
+                to="/privacy/"
                 className="hover:text-sage-400 transition-colors"
               >
                 Privacy Policy
               </Link>
               <Link
-                to="/terms"
+                to="/terms/"
                 className="hover:text-sage-400 transition-colors"
               >
                 Terms of Service
               </Link>
               <Link
-                to="/accessibility"
+                to="/accessibility/"
                 className="hover:text-sage-400 transition-colors"
               >
                 Accessibility

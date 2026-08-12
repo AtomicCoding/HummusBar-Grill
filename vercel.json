@@ -1,84 +1,199 @@
 {
   "redirects": [
     {
+      "source": "/menu",
+      "destination": "/menu/",
+      "statusCode": 301
+    },
+    {
+      "source": "/catering",
+      "destination": "/catering/",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact/",
+      "statusCode": 301
+    },
+    {
+      "source": "/about",
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy/",
+      "statusCode": 301
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms/",
+      "statusCode": 301
+    },
+    {
+      "source": "/accessibility",
+      "destination": "/accessibility/",
+      "statusCode": 301
+    },
+    {
       "source": "/takeout-catering",
-      "destination": "/catering",
-      "permanent": true
+      "destination": "/catering/",
+      "statusCode": 301
+    },
+    {
+      "source": "/takeout-catering/",
+      "destination": "/catering/",
+      "statusCode": 301
     },
     {
       "source": "/dine-in",
-      "destination": "/menu",
-      "permanent": true
+      "destination": "/menu/",
+      "statusCode": 301
+    },
+    {
+      "source": "/dine-in/",
+      "destination": "/menu/",
+      "statusCode": 301
     },
     {
       "source": "/delivery-menu",
-      "destination": "/menu",
-      "permanent": true
+      "destination": "/menu/",
+      "statusCode": 301
+    },
+    {
+      "source": "/delivery-menu/",
+      "destination": "/menu/",
+      "statusCode": 301
     },
     {
       "source": "/wine",
-      "destination": "/menu",
-      "permanent": true
+      "destination": "/menu/",
+      "statusCode": 301
+    },
+    {
+      "source": "/wine/",
+      "destination": "/menu/",
+      "statusCode": 301
     },
     {
       "source": "/desserts",
-      "destination": "/menu",
-      "permanent": true
+      "destination": "/menu/",
+      "statusCode": 301
+    },
+    {
+      "source": "/desserts/",
+      "destination": "/menu/",
+      "statusCode": 301
     },
     {
       "source": "/gallery",
-      "destination": "/about",
-      "permanent": true
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gallery/",
+      "destination": "/about/",
+      "statusCode": 301
     },
     {
       "source": "/membership",
-      "destination": "/about",
-      "permanent": true
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/membership/",
+      "destination": "/about/",
+      "statusCode": 301
     },
     {
       "source": "/shop",
-      "destination": "/about",
-      "permanent": true
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/shop/",
+      "destination": "/about/",
+      "statusCode": 301
     },
     {
       "source": "/checkout",
-      "destination": "/about",
-      "permanent": true
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/checkout/",
+      "destination": "/about/",
+      "statusCode": 301
     },
     {
       "source": "/social-post-details",
-      "destination": "/about",
-      "permanent": true
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/social-post-details/",
+      "destination": "/about/",
+      "statusCode": 301
     },
     {
       "source": "/new-page-1",
-      "destination": "/about",
-      "permanent": true
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/new-page-1/",
+      "destination": "/about/",
+      "statusCode": 301
     },
     {
       "source": "/blog/post/westways",
-      "destination": "/about",
-      "permanent": true
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/post/westways/",
+      "destination": "/about/",
+      "statusCode": 301
     },
     {
       "source": "/social-posts",
-      "destination": "/about",
-      "permanent": true
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/social-posts/",
+      "destination": "/about/",
+      "statusCode": 301
     },
     {
       "source": "/press",
-      "destination": "/about",
-      "permanent": true
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/press/",
+      "destination": "/about/",
+      "statusCode": 301
     },
     {
       "source": "/jobs",
-      "destination": "/about",
-      "permanent": true
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/jobs/",
+      "destination": "/about/",
+      "statusCode": 301
     },
     {
       "source": "/our-reviews",
       "destination": "/",
-      "permanent": true
+      "statusCode": 301
+    },
+    {
+      "source": "/our-reviews/",
+      "destination": "/",
+      "statusCode": 301
     }
   ],
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]

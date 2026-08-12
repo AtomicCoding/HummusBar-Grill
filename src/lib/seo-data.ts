@@ -6,7 +6,7 @@ export const BUSINESS_INFO = {
     "Authentic Mediterranean restaurant in Los Angeles serving fresh hummus, grilled specialties, and traditional Middle Eastern cuisine. Kosher-friendly dining with Israeli and Lebanese influences.",
   phone: "+1-818-344-6606",
   email: "manager@hummusbargrill.com",
-  website: "https://hummusbarandgrill.com",
+  website: "https://hummusbarandgrill.com/",
   address: {
     street: "18743 Ventura Blvd",
     city: "Tarzana",
