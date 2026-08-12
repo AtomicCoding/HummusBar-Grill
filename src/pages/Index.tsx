@@ -14,7 +14,7 @@ const Index = () => {
         title="Hummus Bar & Grill - Authentic Mediterranean Restaurant in Los Angeles | Fresh Hummus & Middle Eastern Cuisine"
         description="Experience authentic Mediterranean cuisine at Hummus Bar & Grill in Los Angeles. Fresh hummus, grilled specialties, Israeli breakfast, and traditional Middle Eastern dishes. Kosher-friendly dining with catering available."
         keywords={PAGE_KEYWORDS.home}
-        canonicalUrl="https://hummusbarandgrill.com"
+        canonicalUrl="https://www.hummusbarandgrill.com/"
         structuredData={LOCAL_BUSINESS_SCHEMA}
       />
       <Navigation />

@@ -70,10 +70,10 @@ const Navigation = () => {
 
   const navigation = [
     { name: "Home", href: "/" },
-    { name: "Menu", href: "/menu" },
-    { name: "Catering", href: "/catering" },
-    { name: "Contact", href: "/contact" },
-    { name: "About", href: "/about" },
+    { name: "Menu", href: "/menu/" },
+    { name: "Catering", href: "/catering/" },
+    { name: "Contact", href: "/contact/" },
+    { name: "About", href: "/about/" },
   ];
 
   const isActive = (href: string) => {
@@ -168,7 +168,7 @@ const Navigation = () => {
                           <button
                             onClick={() => {
                               setIsMenuDropdownOpen(false);
-                              handleHashNavigation("/menu#breakfast-section");
+                              handleHashNavigation("/menu/#breakfast-section");
                             }}
                             className="block w-full text-left py-3 text-base font-medium text-black hover:bg-[#F8F8F8] hover:text-[#B31217] transition-colors cursor-pointer mb-3 last:mb-0"
                           >
@@ -177,7 +177,7 @@ const Navigation = () => {
                           <button
                             onClick={() => {
                               setIsMenuDropdownOpen(false);
-                              handleHashNavigation("/menu#appetizers-section");
+                              handleHashNavigation("/menu/#appetizers-section");
                             }}
                             className="block w-full text-left py-3 text-base font-medium text-black hover:bg-[#F8F8F8] hover:text-[#B31217] transition-colors cursor-pointer mb-3 last:mb-0"
                           >
@@ -187,7 +187,7 @@ const Navigation = () => {
                             onClick={() => {
                               setIsMenuDropdownOpen(false);
                               handleHashNavigation(
-                                "/menu#lunch-dinner-section",
+                                "/menu/#lunch-dinner-section",
                               );
                             }}
                             className="block w-full text-left py-3 text-base font-medium text-black hover:bg-[#F8F8F8] hover:text-[#B31217] transition-colors cursor-pointer mb-3 last:mb-0"
@@ -197,7 +197,7 @@ const Navigation = () => {
                           <button
                             onClick={() => {
                               setIsMenuDropdownOpen(false);
-                              handleHashNavigation("/menu#drinks-section");
+                              handleHashNavigation("/menu/#drinks-section");
                             }}
                             className="block w-full text-left py-3 text-base font-medium text-black hover:bg-[#F8F8F8] hover:text-[#B31217] transition-colors cursor-pointer mb-3 last:mb-0"
                           >
@@ -206,7 +206,7 @@ const Navigation = () => {
                           <button
                             onClick={() => {
                               setIsMenuDropdownOpen(false);
-                              handleHashNavigation("/menu#desserts-section");
+                              handleHashNavigation("/menu/#desserts-section");
                             }}
                             className="block w-full text-left py-3 text-base font-medium text-black hover:bg-[#F8F8F8] hover:text-[#B31217] transition-colors cursor-pointer mb-3 last:mb-0"
                           >
@@ -215,7 +215,7 @@ const Navigation = () => {
                           <button
                             onClick={() => {
                               setIsMenuDropdownOpen(false);
-                              handleHashNavigation("/menu#kids-menu-section");
+                              handleHashNavigation("/menu/#kids-menu-section");
                             }}
                             className="block w-full text-left py-3 text-base font-medium text-black hover:bg-[#F8F8F8] hover:text-[#B31217] transition-colors cursor-pointer mb-3 last:mb-0"
                           >
@@ -364,7 +364,7 @@ const Navigation = () => {
                             onClick={() => {
                               setIsOpen(false);
                               setIsMenuDropdownOpen(false);
-                              handleHashNavigation("/menu#breakfast-section");
+                              handleHashNavigation("/menu/#breakfast-section");
                             }}
                             className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                           >
@@ -374,7 +374,7 @@ const Navigation = () => {
                             onClick={() => {
                               setIsOpen(false);
                               setIsMenuDropdownOpen(false);
-                              handleHashNavigation("/menu#appetizers-section");
+                              handleHashNavigation("/menu/#appetizers-section");
                             }}
                             className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                           >
@@ -385,7 +385,7 @@ const Navigation = () => {
                               setIsOpen(false);
                               setIsMenuDropdownOpen(false);
                               handleHashNavigation(
-                                "/menu#lunch-dinner-section",
+                                "/menu/#lunch-dinner-section",
                               );
                             }}
                             className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
@@ -396,7 +396,7 @@ const Navigation = () => {
                             onClick={() => {
                               setIsOpen(false);
                               setIsMenuDropdownOpen(false);
-                              handleHashNavigation("/menu#drinks-section");
+                              handleHashNavigation("/menu/#drinks-section");
                             }}
                             className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                           >
@@ -406,7 +406,7 @@ const Navigation = () => {
                             onClick={() => {
                               setIsOpen(false);
                               setIsMenuDropdownOpen(false);
-                              handleHashNavigation("/menu#desserts-section");
+                              handleHashNavigation("/menu/#desserts-section");
                             }}
                             className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                           >
@@ -416,7 +416,7 @@ const Navigation = () => {
                             onClick={() => {
                               setIsOpen(false);
                               setIsMenuDropdownOpen(false);
-                              handleHashNavigation("/menu#kids-menu-section");
+                              handleHashNavigation("/menu/#kids-menu-section");
                             }}
                             className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                           >

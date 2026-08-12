@@ -18,7 +18,166 @@ services:
       - path: /*
         name: Permissions-Policy
         value: camera=(), microphone=(), geolocation=()
+      - path: /sw.js
+        name: Cache-Control
+        value: no-cache, no-store, must-revalidate
     routes:
+      - type: redirect
+        source: /menu
+        destination: /menu/
+        statusCode: 301
+      - type: redirect
+        source: /catering
+        destination: /catering/
+        statusCode: 301
+      - type: redirect
+        source: /contact
+        destination: /contact/
+        statusCode: 301
+      - type: redirect
+        source: /about
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /privacy
+        destination: /privacy/
+        statusCode: 301
+      - type: redirect
+        source: /terms
+        destination: /terms/
+        statusCode: 301
+      - type: redirect
+        source: /accessibility
+        destination: /accessibility/
+        statusCode: 301
+      - type: redirect
+        source: /takeout-catering
+        destination: /catering/
+        statusCode: 301
+      - type: redirect
+        source: /takeout-catering/
+        destination: /catering/
+        statusCode: 301
+      - type: redirect
+        source: /dine-in
+        destination: /menu/
+        statusCode: 301
+      - type: redirect
+        source: /dine-in/
+        destination: /menu/
+        statusCode: 301
+      - type: redirect
+        source: /delivery-menu
+        destination: /menu/
+        statusCode: 301
+      - type: redirect
+        source: /delivery-menu/
+        destination: /menu/
+        statusCode: 301
+      - type: redirect
+        source: /wine
+        destination: /menu/
+        statusCode: 301
+      - type: redirect
+        source: /wine/
+        destination: /menu/
+        statusCode: 301
+      - type: redirect
+        source: /desserts
+        destination: /menu/
+        statusCode: 301
+      - type: redirect
+        source: /desserts/
+        destination: /menu/
+        statusCode: 301
+      - type: redirect
+        source: /gallery
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /gallery/
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /membership
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /membership/
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /shop
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /shop/
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /checkout
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /checkout/
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /social-post-details
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /social-post-details/
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /new-page-1
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /new-page-1/
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /blog/post/westways
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /blog/post/westways/
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /social-posts
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /social-posts/
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /press
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /press/
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /jobs
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /jobs/
+        destination: /about/
+        statusCode: 301
+      - type: redirect
+        source: /our-reviews
+        destination: /
+        statusCode: 301
+      - type: redirect
+        source: /our-reviews/
+        destination: /
+        statusCode: 301
       - type: rewrite
         source: /*
         destination: /index.html
