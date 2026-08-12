@@ -28,7 +28,7 @@ Allow: /terms
 Allow: /accessibility
 
 # Sitemap location
-Sitemap: https://hummusbarandgrill.com/sitemap.xml
+Sitemap: https://www.hummusbarandgrill.com/sitemap.xml
 
 # Crawl delay for respectful crawling
 Crawl-delay: 1

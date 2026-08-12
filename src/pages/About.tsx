@@ -21,7 +21,7 @@ const About = () => {
         title="About Hummus Bar & Grill - Authentic Mediterranean Restaurant Since 2008 | Los Angeles"
         description="Discover the story behind Hummus Bar & Grill, Los Angeles' beloved Mediterranean restaurant. Family-owned since 2008, serving authentic Middle Eastern cuisine with fresh ingredients and traditional recipes."
         keywords={PAGE_KEYWORDS.about}
-        canonicalUrl="https://hummusbarandgrill.com/about/"
+        canonicalUrl="https://www.hummusbarandgrill.com/about/"
       />
       <Navigation />
       <main>

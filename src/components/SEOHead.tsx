@@ -17,7 +17,7 @@ const SEOHead = ({
   description,
   keywords,
   canonicalUrl,
-  ogImage = "https://hummusbarandgrill.com/og-image.jpg",
+  ogImage = "https://www.hummusbarandgrill.com/og-image.jpg",
   structuredData,
   noindex = false,
   googleSiteVerification,

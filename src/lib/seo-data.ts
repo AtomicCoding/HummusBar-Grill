@@ -6,7 +6,7 @@ export const BUSINESS_INFO = {
     "Authentic Mediterranean restaurant in Los Angeles serving fresh hummus, grilled specialties, and traditional Middle Eastern cuisine. Kosher-friendly dining with Israeli and Lebanese influences.",
   phone: "+1-818-344-6606",
   email: "manager@hummusbargrill.com",
-  website: "https://hummusbarandgrill.com/",
+  website: "https://www.hummusbarandgrill.com/",
   address: {
     street: "18743 Ventura Blvd",
     city: "Tarzana",
@@ -132,16 +132,16 @@ export const LOCAL_BUSINESS_SCHEMA = {
     },
   ],
   image: [
-    "https://hummusbarandgrill.com/images/restaurant-exterior.jpg",
-    "https://hummusbarandgrill.com/images/signature-hummus.jpg",
-    "https://hummusbarandgrill.com/images/grilled-specialties.jpg",
-    "https://hummusbarandgrill.com/images/interior-dining.jpg",
+    "https://www.hummusbarandgrill.com/images/restaurant-exterior.jpg",
+    "https://www.hummusbarandgrill.com/images/signature-hummus.jpg",
+    "https://www.hummusbarandgrill.com/images/grilled-specialties.jpg",
+    "https://www.hummusbarandgrill.com/images/interior-dining.jpg",
     "https://cdn.builder.io/api/v1/image/assets%2Fad5fa173f30f42cb936245efbd928c96%2F26c3a52502154f7c9478b52b4e0b8018?format=webp&width=800",
   ],
   logo: "https://cdn.builder.io/api/v1/image/assets%2Fad5fa173f30f42cb936245efbd928c96%2F26c3a52502154f7c9478b52b4e0b8018?format=webp&width=800",
   hasMenu: {
     "@type": "Menu",
-    url: `${BUSINESS_INFO.website}/menu`,
+    url: `${BUSINESS_INFO.website}menu/`,
     hasMenuSection: [
       {
         "@type": "MenuSection",
