@@ -132,21 +132,6 @@ const PerformanceOptimizer = () => {
       });
     };
 
-    // Service Worker registration for caching
-    const registerServiceWorker = async () => {
-      if (
-        "serviceWorker" in navigator &&
-        process.env.NODE_ENV === "production"
-      ) {
-        try {
-          await navigator.serviceWorker.register("/sw.js");
-          console.log("Service Worker registered successfully");
-        } catch (error) {
-          console.warn("Service Worker registration failed:", error);
-        }
-      }
-    };
-
     // Critical CSS inlining (applied via className)
     const applyCriticalCSS = () => {
       document.documentElement.style.setProperty("--critical-path-loaded", "1");
@@ -204,7 +189,6 @@ const PerformanceOptimizer = () => {
 
     // Load performance monitoring
     monitorBasicPerformance();
-    registerServiceWorker();
 
     // Cleanup function
     return () => {
