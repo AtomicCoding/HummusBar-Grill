@@ -254,7 +254,22 @@ const Catering = () => {
           <div className="container-custom section-padding">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-                🥗 <span className="text-emerald-400">Bento Box</span>
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 40 40"
+                  className="inline-block w-9 h-9 align-middle mr-2"
+                >
+                  <path d="M4 20 H36 C36 31 29 37 20 37 C11 37 4 31 4 20 Z" fill="#f5f5f4" />
+                  <rect x="3" y="18" width="34" height="3.5" rx="1.75" fill="#d6d3d1" />
+                  <ellipse cx="11" cy="16" rx="6" ry="4" fill="#16a34a" />
+                  <ellipse cx="21" cy="14" rx="6" ry="4" fill="#22c55e" />
+                  <ellipse cx="30" cy="17" rx="5" ry="3.5" fill="#4ade80" />
+                  <circle cx="16" cy="18" r="2.4" fill="#ef4444" />
+                  <circle cx="27" cy="17" r="2.2" fill="#dc2626" />
+                  <rect x="9" y="23" width="14" height="4" rx="2" fill="#7c2d12" transform="rotate(-12 16 25)" />
+                  <rect x="18" y="26" width="14" height="4" rx="2" fill="#92400e" transform="rotate(10 25 28)" />
+                </svg>
+                <span className="text-emerald-400">Bento Box</span>
               </h2>
               <div className="w-24 h-1 bg-emerald-400 mx-auto rounded-full"></div>
               <p className="text-gray-300 mt-4">Two sides of your choice</p>
