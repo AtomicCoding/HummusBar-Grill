@@ -40,6 +40,7 @@ const HeroSection = () => {
               src="https://cdn.builder.io/api/v1/image/assets%2Fad5fa173f30f42cb936245efbd928c96%2F510a776c8b9e451899f3e3c2fddf6230?format=webp&width=800"
               alt=""
               aria-hidden="true"
+              style={{ aspectRatio: "auto" }}
               className="block w-full max-w-[36rem] h-auto object-contain"
             />
           </h1>
