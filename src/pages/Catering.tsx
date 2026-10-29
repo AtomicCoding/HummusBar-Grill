@@ -479,7 +479,7 @@ const Catering = () => {
                 <span className="text-blue-400 font-bold">$15</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">Kalabonim (K)</span>
+                <span className="text-white font-medium">Kababonim (K)</span>
                 <span className="text-blue-400 font-bold">$27.50</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
