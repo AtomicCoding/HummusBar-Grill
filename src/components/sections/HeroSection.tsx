@@ -37,7 +37,7 @@ const HeroSection = () => {
           <h1 className="mb-6 animate-slide-up">
             <span className="sr-only">Hummus Bar & Grill</span>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fad5fa173f30f42cb936245efbd928c96%2F510a776c8b9e451899f3e3c2fddf6230?format=webp&width=800"
+              src="/hummus-logo-transparent.png"
               alt=""
               aria-hidden="true"
               style={{ aspectRatio: "auto" }}
