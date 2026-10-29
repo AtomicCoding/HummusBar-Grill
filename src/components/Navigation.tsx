@@ -96,9 +96,10 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fef5c5c4add29486f8f779aaf4b6e1457?format=webp&width=800"
+              src={isScrolled ? "/hbg-mark-dark.png" : "/hbg-mark.png"}
               alt="Hummus Bar & Grill Logo"
-              className="w-12 h-12 rounded-xl shadow-soft group-hover:shadow-md transition-shadow object-cover"
+              style={{ aspectRatio: "auto" }}
+              className="block w-16 lg:w-20 h-auto object-contain"
             />
             <div className="hidden sm:block">
               <h1 className="font-display font-semibold text-foreground">
