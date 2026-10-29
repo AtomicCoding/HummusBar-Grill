@@ -82,7 +82,7 @@ const Catering = () => {
                 🥗 <span className="text-yellow-400">Mediterranean Salads</span>
               </h2>
               <div className="w-24 h-1 bg-yellow-400 mx-auto rounded-full"></div>
-              <p className="text-gray-300 mt-4">Tray</p>
+              <p className="text-gray-300 mt-4">Bowl</p>
             </div>
 
             <div className="max-w-4xl mx-auto">
