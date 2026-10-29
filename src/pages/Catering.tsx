@@ -274,6 +274,19 @@ const Catering = () => {
               <div className="w-24 h-1 bg-emerald-400 mx-auto rounded-full"></div>
             </div>
 
+            <div className="max-w-3xl mx-auto mb-8">
+              <p className="text-gray-300 text-center mb-6">Comes with two sides</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">French Fries <span className="text-gray-400 text-sm">(VG)</span></div>
+                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">Grilled Vegetables <span className="text-gray-400 text-sm">(VG)</span></div>
+                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">White Basmati Rice <span className="text-gray-400 text-sm">(VG)</span></div>
+                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">Mashed Potatoes <span className="text-gray-400 text-sm">(VG)</span></div>
+                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">Vegetables Rice <span className="text-gray-400 text-sm">(VG)</span></div>
+                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">White or Red Cabbage <span className="text-gray-400 text-sm">(VG)</span></div>
+                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">Israeli Salad <span className="text-gray-400 text-sm">(VG)</span></div>
+              </div>
+            </div>
+
             <div className="max-w-3xl mx-auto space-y-4">
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <span className="text-white font-medium">Chicken Thigh Skewer</span>
@@ -325,19 +338,6 @@ const Catering = () => {
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <span className="text-white font-medium">Ribeye Skewer</span>
                 <span className="text-emerald-400 font-bold">$42.50</span>
-              </div>
-            </div>
-
-            <div className="max-w-3xl mx-auto mt-12">
-              <p className="text-gray-300 text-center mb-6">Comes with two sides</p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">French Fries <span className="text-gray-400 text-sm">(VG)</span></div>
-                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">Grilled Vegetables <span className="text-gray-400 text-sm">(VG)</span></div>
-                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">White Basmati Rice <span className="text-gray-400 text-sm">(VG)</span></div>
-                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">Mashed Potatoes <span className="text-gray-400 text-sm">(VG)</span></div>
-                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">Vegetables Rice <span className="text-gray-400 text-sm">(VG)</span></div>
-                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">White or Red Cabbage <span className="text-gray-400 text-sm">(VG)</span></div>
-                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">Israeli Salad <span className="text-gray-400 text-sm">(VG)</span></div>
               </div>
             </div>
           </div>
