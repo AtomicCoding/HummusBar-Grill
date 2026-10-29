@@ -79,12 +79,6 @@ const Footer = () => {
                 style={{ aspectRatio: "auto" }}
                 className="block w-16 h-auto object-contain"
               />
-              <div>
-                <h3 className="text-xl font-display font-semibold text-white">
-                  Hummus Bar & Grill
-                </h3>
-                <p className="text-warm-400 text-sm">Authentic Mediterranean</p>
-              </div>
             </Link>
 
             <p className="text-warm-300 leading-relaxed mb-6">
