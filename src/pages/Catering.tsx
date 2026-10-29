@@ -348,6 +348,10 @@ const Catering = () => {
               </h2>
               <div className="w-24 h-1 bg-amber-400 mx-auto rounded-full"></div>
               <p className="text-gray-300 mt-4">Served with home fries</p>
+              <div className="mt-6">
+                <p className="text-white font-semibold">Choose what goes inside your sandwich</p>
+                <p className="text-gray-300 mt-1">Tahini, hummus, Israeli salad, and hot sauce. Choose any combination.</p>
+              </div>
             </div>
 
             <div className="max-w-3xl mx-auto space-y-4">
