@@ -96,7 +96,7 @@ const HeroSection = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-6 max-w-lg animate-fade-in">
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-red-400 mb-1 whitespace-nowrap">
+              <div className="text-2xl md:text-3xl font-bold text-white mb-1 whitespace-nowrap">
                 EST. 2008
               </div>
             </div>
