@@ -34,9 +34,13 @@ const HeroSection = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-white mb-6 animate-slide-up text-balance">
-            Hummus Bar
-            <span className="block text-red-400">& Grill</span>
+          <h1 className="inline-block max-w-full bg-white/95 backdrop-blur-sm rounded-2xl px-4 py-3 md:px-6 md:py-4 shadow-soft mb-6 animate-slide-up">
+            <span className="sr-only">Hummus Bar & Grill</span>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fad5fa173f30f42cb936245efbd928c96%2F812a5077448f441980162c8647be372f?format=webp&width=800&height=1200"
+              alt="Hummus Bar & Grill logo"
+              className="block w-full max-w-[36rem] h-auto object-contain"
+            />
           </h1>
 
           {/* Subtitle */}
