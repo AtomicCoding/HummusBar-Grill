@@ -71,7 +71,7 @@ const Catering = () => {
           <div className="container-custom section-padding">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-                🥗 <span className="text-yellow-400">Mediterranean Salads</span>
+                <span className="text-yellow-400">Mediterranean Salads</span>
               </h2>
               <div className="w-24 h-1 bg-yellow-400 mx-auto rounded-full"></div>
               <p className="text-gray-300 mt-4">Bowl</p>
@@ -163,7 +163,7 @@ const Catering = () => {
           <div className="container-custom section-padding">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-                🍢 <span className="text-red-400">First Bites</span>
+                <span className="text-red-400">First Bites</span>
               </h2>
               <div className="w-24 h-1 bg-red-400 mx-auto rounded-full"></div>
             </div>
@@ -200,7 +200,7 @@ const Catering = () => {
           <div className="container-custom section-padding">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-                🥒 <span className="text-green-400">Salads</span>
+                <span className="text-green-400">Salads</span>
               </h2>
               <div className="w-24 h-1 bg-green-400 mx-auto rounded-full"></div>
               <p className="text-gray-300 mt-4">Tray</p>
@@ -336,7 +336,7 @@ const Catering = () => {
           <div className="container-custom section-padding">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-                🥙 <span className="text-amber-400">Sandwiches</span>
+                <span className="text-amber-400">Sandwiches</span>
               </h2>
               <div className="w-24 h-1 bg-amber-400 mx-auto rounded-full"></div>
               <p className="text-gray-300 mt-4">Served with home fries</p>
@@ -387,7 +387,7 @@ const Catering = () => {
           <div className="container-custom section-padding">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-                🍽️ <span className="text-orange-400">Specialty Plates</span>
+                <span className="text-orange-400">Specialty Plates</span>
               </h2>
               <div className="w-24 h-1 bg-orange-400 mx-auto rounded-full"></div>
               <p className="text-gray-300 mt-4">A La Carte Tray</p>
@@ -430,7 +430,7 @@ const Catering = () => {
           <div className="container-custom section-padding">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-                🥩 <span className="text-red-500">Butcher Shop</span>
+                <span className="text-red-500">Butcher Shop</span>
               </h2>
               <div className="w-24 h-1 bg-red-500 mx-auto rounded-full"></div>
               <p className="text-gray-300 mt-4">
@@ -478,7 +478,7 @@ const Catering = () => {
           <div className="container-custom section-padding">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-                ✡️ <span className="text-blue-400">Kosher Dishes</span>
+                <span className="text-blue-400">Kosher Dishes</span>
               </h2>
               <div className="w-24 h-1 bg-blue-400 mx-auto rounded-full"></div>
               <p className="text-gray-300 mt-4">
@@ -528,7 +528,7 @@ const Catering = () => {
           <div className="container-custom section-padding">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-                🍚 <span className="text-purple-400">On the Side</span>
+                <span className="text-purple-400">On the Side</span>
               </h2>
               <div className="w-24 h-1 bg-purple-400 mx-auto rounded-full"></div>
               <p className="text-gray-300 mt-4">
@@ -574,7 +574,7 @@ const Catering = () => {
           <div className="container-custom section-padding">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-                🥤 <span className="text-cyan-400">Drinks</span>
+                <span className="text-cyan-400">Drinks</span>
               </h2>
               <div className="w-24 h-1 bg-cyan-400 mx-auto rounded-full"></div>
             </div>
@@ -617,7 +617,7 @@ const Catering = () => {
           <div className="container-custom section-padding">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-                📘 <span className="text-gray-400">Legend</span>
+                <span className="text-gray-400">Legend</span>
               </h2>
               <div className="w-16 h-1 bg-gray-400 mx-auto rounded-full"></div>
             </div>
