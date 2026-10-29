@@ -241,6 +241,10 @@ const Catering = () => {
                 <span className="text-white font-medium">Greek Salad (VG)</span>
                 <span className="text-green-400 font-bold">$60</span>
               </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Arugula Avocado Tray</span>
+                <span className="text-green-400 font-bold">$106.25</span>
+              </div>
             </div>
           </div>
         </section>
@@ -266,8 +270,15 @@ const Catering = () => {
                 <span className="text-orange-400 font-bold">$95</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">Shawarma</span>
-                <span className="text-orange-400 font-bold">$95</span>
+                <span className="text-white font-medium">Chicken Shawarma</span>
+                <span className="text-orange-400 font-bold">$118.75</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <div>
+                  <span className="text-white font-medium block">Beef Shawarma</span>
+                  <span className="text-gray-400 text-sm">Available Wednesdays only</span>
+                </div>
+                <span className="text-orange-400 font-bold">$143.75</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <span className="text-white font-medium">
@@ -286,6 +297,10 @@ const Catering = () => {
                   Chef's Shakshuka (V)
                 </span>
                 <span className="text-orange-400 font-bold">$100</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Mega Schnitzel</span>
+                <span className="text-orange-400 font-bold">$17.50</span>
               </div>
             </div>
           </div>
@@ -311,19 +326,19 @@ const Catering = () => {
                     <span className="text-white font-medium">
                       Chicken Thigh Skewer
                     </span>
-                    <span className="text-red-500 font-bold">$22.50</span>
+                    <span className="text-red-500 font-bold">$32.50</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                     <span className="text-white font-medium">
                       Marinated Chicken Breast Skewer
                     </span>
-                    <span className="text-red-500 font-bold">$22.50</span>
+                    <span className="text-red-500 font-bold">$32.50</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                     <span className="text-white font-medium">
                       Middle Eastern Kabab
                     </span>
-                    <span className="text-red-500 font-bold">$22.50</span>
+                    <span className="text-red-500 font-bold">$32.50</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                     <span className="text-white font-medium">
@@ -335,7 +350,7 @@ const Catering = () => {
                     <span className="text-white font-medium">
                       Rib Eye Skewer
                     </span>
-                    <span className="text-red-500 font-bold">$23</span>
+                    <span className="text-red-500 font-bold">$42.50</span>
                   </div>
                 </div>
                 <div className="space-y-4">
@@ -413,7 +428,11 @@ const Catering = () => {
                 <span className="text-white font-medium">
                   Schnitzelonim (K)
                 </span>
-                <span className="text-blue-400 font-bold">$22</span>
+                <span className="text-blue-400 font-bold">$27.50</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Pita Arais Half</span>
+                <span className="text-blue-400 font-bold">$12.50</span>
               </div>
             </div>
           </div>
@@ -467,6 +486,10 @@ const Catering = () => {
                 <span className="text-white font-medium">Israeli Salad</span>
                 <span className="text-purple-400 font-bold">$45</span>
               </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">White Pita (5 pieces)</span>
+                <span className="text-purple-400 font-bold">$7.50</span>
+              </div>
             </div>
           </div>
         </section>
@@ -498,6 +521,53 @@ const Catering = () => {
                   Inside Out Baklava (P)
                 </span>
                 <span className="text-pink-400 font-bold">$80</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Sandwiches */}
+        <section className="py-20 bg-gradient-to-b from-black to-gray-900">
+          <div className="container-custom section-padding">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+                🥙 <span className="text-amber-400">Sandwiches</span>
+              </h2>
+              <div className="w-24 h-1 bg-amber-400 mx-auto rounded-full"></div>
+              <p className="text-gray-300 mt-4">Served with home fries</p>
+            </div>
+
+            <div className="max-w-3xl mx-auto space-y-4">
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Chicken Tender (K) Pita</span>
+                <span className="text-amber-400 font-bold">$28.75</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <div>
+                  <span className="text-white font-medium block">Beef Shawarma Pita</span>
+                  <span className="text-gray-400 text-sm">Available Wednesdays only</span>
+                </div>
+                <span className="text-amber-400 font-bold">$27.50</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Chicken Shawarma Pita</span>
+                <span className="text-amber-400 font-bold">$27.50</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Chicken Thigh Pita</span>
+                <span className="text-amber-400 font-bold">$27.50</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Kababonim (K) Pita</span>
+                <span className="text-amber-400 font-bold">$28.75</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Marinated Chicken Breast Pita</span>
+                <span className="text-amber-400 font-bold">$27.50</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Middle Eastern Kabab Pita</span>
+                <span className="text-amber-400 font-bold">$27.50</span>
               </div>
             </div>
           </div>
