@@ -61,14 +61,6 @@ const Catering = () => {
                     Call to Order
                   </a>
                 </Button>
-                <Button
-                  asChild
-                  variant="outline"
-                  size="lg"
-                  className="border-white/30 text-black bg-white/90 hover:bg-white hover:text-black catering-hero-button"
-                >
-                  <Link to="/menu/">View Regular Menu</Link>
-                </Button>
               </div>
             </div>
           </div>
