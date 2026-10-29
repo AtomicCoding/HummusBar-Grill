@@ -101,30 +101,6 @@ const Navigation = () => {
               style={{ aspectRatio: "auto" }}
               className="block w-16 lg:w-20 h-auto object-contain"
             />
-            <div className="hidden sm:block">
-              <h1 className="font-display font-semibold text-foreground">
-                <span className="sr-only">Hummus Bar & Grill</span>
-                <img
-                  src={
-                    isScrolled
-                      ? "/hummus-logo-dark.png"
-                      : "/hummus-logo-transparent.png"
-                  }
-                  alt=""
-                  aria-hidden="true"
-                  style={{ aspectRatio: "auto" }}
-                  className="block w-[15rem] sm:w-[17rem] h-auto object-contain"
-                />
-              </h1>
-              <p
-                className={cn(
-                  "text-xs -mt-0.5",
-                  isScrolled ? "text-gray-600" : "text-gray-300",
-                )}
-              >
-                Authentic Mediterranean
-              </p>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
