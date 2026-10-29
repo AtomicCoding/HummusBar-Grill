@@ -404,6 +404,10 @@ const Catering = () => {
                 <span className="text-white font-medium">Mega Schnitzel</span>
                 <span className="text-orange-400 font-bold">$17.50</span>
               </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">6 PC Kids Nuggets</span>
+                <span className="text-orange-400 font-bold">$17.50</span>
+              </div>
             </div>
           </div>
         </section>
