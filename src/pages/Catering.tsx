@@ -463,12 +463,6 @@ const Catering = () => {
                     </span>
                     <span className="text-red-500 font-bold">$32.50</span>
                   </div>
-                  <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                    <span className="text-white font-medium">
-                      Rib Eye Skewer
-                    </span>
-                    <span className="text-red-500 font-bold">$42.50</span>
-                  </div>
                 </div>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
