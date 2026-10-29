@@ -249,6 +249,132 @@ const Catering = () => {
           </div>
         </section>
 
+        {/* Bento Box */}
+        <section className="py-20 bg-gradient-to-b from-gray-900 to-black">
+          <div className="container-custom section-padding">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+                🍱 <span className="text-emerald-400">Bento Box</span>
+              </h2>
+              <div className="w-24 h-1 bg-emerald-400 mx-auto rounded-full"></div>
+              <p className="text-gray-300 mt-4">Two sides of your choice</p>
+            </div>
+
+            <div className="max-w-3xl mx-auto mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">French Fries <span className="text-gray-400 text-sm">(VG)</span></div>
+                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">Grilled Vegetables <span className="text-gray-400 text-sm">(VG)</span></div>
+                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">White Basmati Rice <span className="text-gray-400 text-sm">(VG)</span></div>
+                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">Mashed Potatoes <span className="text-gray-400 text-sm">(VG)</span></div>
+                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">Vegetables Rice <span className="text-gray-400 text-sm">(VG)</span></div>
+                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">White or Red Cabbage <span className="text-gray-400 text-sm">(VG)</span></div>
+                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">Israeli Salad <span className="text-gray-400 text-sm">(VG)</span></div>
+              </div>
+            </div>
+
+            <div className="max-w-3xl mx-auto space-y-4">
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Chicken Thigh Skewer</span>
+                <span className="text-emerald-400 font-bold">$32.50</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Chicken Tender Skewer (K)</span>
+                <span className="text-emerald-400 font-bold">$35.00</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Fried Cauliflower</span>
+                <span className="text-emerald-400 font-bold">$30.00</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Grilled Salmon</span>
+                <span className="text-emerald-400 font-bold">$45.00</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Kababonim Skewer (K)</span>
+                <span className="text-emerald-400 font-bold">$35.00</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Mega Schnitzel</span>
+                <span className="text-emerald-400 font-bold">$32.50</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Middle Eastern Kabab</span>
+                <span className="text-emerald-400 font-bold">$32.50</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Marinated Chicken Breast Skewer</span>
+                <span className="text-emerald-400 font-bold">$32.50</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Falafel Balls</span>
+                <span className="text-emerald-400 font-bold">$30.00</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Chicken Shawarma</span>
+                <span className="text-emerald-400 font-bold">$32.50</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <div>
+                  <span className="text-white font-medium block">Beef Shawarma</span>
+                  <span className="text-gray-400 text-sm">Available Wednesdays only</span>
+                </div>
+                <span className="text-emerald-400 font-bold">$33.50</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Ribeye Skewer</span>
+                <span className="text-emerald-400 font-bold">$42.50</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Sandwiches */}
+        <section className="py-20 bg-gradient-to-b from-black to-gray-900">
+          <div className="container-custom section-padding">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+                🥙 <span className="text-amber-400">Sandwiches</span>
+              </h2>
+              <div className="w-24 h-1 bg-amber-400 mx-auto rounded-full"></div>
+              <p className="text-gray-300 mt-4">Served with home fries</p>
+            </div>
+
+            <div className="max-w-3xl mx-auto space-y-4">
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Chicken Tender (K) Pita</span>
+                <span className="text-amber-400 font-bold">$28.75</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <div>
+                  <span className="text-white font-medium block">Beef Shawarma Pita</span>
+                  <span className="text-gray-400 text-sm">Available Wednesdays only</span>
+                </div>
+                <span className="text-amber-400 font-bold">$27.50</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Chicken Shawarma Pita</span>
+                <span className="text-amber-400 font-bold">$27.50</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Chicken Thigh Pita</span>
+                <span className="text-amber-400 font-bold">$27.50</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Kababonim (K) Pita</span>
+                <span className="text-amber-400 font-bold">$28.75</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Marinated Chicken Breast Pita</span>
+                <span className="text-amber-400 font-bold">$27.50</span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
+                <span className="text-white font-medium">Middle Eastern Kabab Pita</span>
+                <span className="text-amber-400 font-bold">$27.50</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Specialty Plates */}
         <section className="py-20 bg-gradient-to-b from-gray-900 to-black">
           <div className="container-custom section-padding">
@@ -521,132 +647,6 @@ const Catering = () => {
                   Inside Out Baklava (P)
                 </span>
                 <span className="text-pink-400 font-bold">$80</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Bento Box */}
-        <section className="py-20 bg-gradient-to-b from-gray-900 to-black">
-          <div className="container-custom section-padding">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-                🍱 <span className="text-emerald-400">Bento Box</span>
-              </h2>
-              <div className="w-24 h-1 bg-emerald-400 mx-auto rounded-full"></div>
-              <p className="text-gray-300 mt-4">Two sides of your choice</p>
-            </div>
-
-            <div className="max-w-3xl mx-auto mb-8">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">French Fries <span className="text-gray-400 text-sm">(VG)</span></div>
-                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">Grilled Vegetables <span className="text-gray-400 text-sm">(VG)</span></div>
-                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">White Basmati Rice <span className="text-gray-400 text-sm">(VG)</span></div>
-                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">Mashed Potatoes <span className="text-gray-400 text-sm">(VG)</span></div>
-                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">Vegetables Rice <span className="text-gray-400 text-sm">(VG)</span></div>
-                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">White or Red Cabbage <span className="text-gray-400 text-sm">(VG)</span></div>
-                <div className="p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm text-white font-medium">Israeli Salad <span className="text-gray-400 text-sm">(VG)</span></div>
-              </div>
-            </div>
-
-            <div className="max-w-3xl mx-auto space-y-4">
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">Chicken Thigh Skewer</span>
-                <span className="text-emerald-400 font-bold">$32.50</span>
-              </div>
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">Chicken Tender Skewer (K)</span>
-                <span className="text-emerald-400 font-bold">$35.00</span>
-              </div>
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">Fried Cauliflower</span>
-                <span className="text-emerald-400 font-bold">$30.00</span>
-              </div>
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">Grilled Salmon</span>
-                <span className="text-emerald-400 font-bold">$45.00</span>
-              </div>
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">Kababonim Skewer (K)</span>
-                <span className="text-emerald-400 font-bold">$35.00</span>
-              </div>
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">Mega Schnitzel</span>
-                <span className="text-emerald-400 font-bold">$32.50</span>
-              </div>
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">Middle Eastern Kabab</span>
-                <span className="text-emerald-400 font-bold">$32.50</span>
-              </div>
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">Marinated Chicken Breast Skewer</span>
-                <span className="text-emerald-400 font-bold">$32.50</span>
-              </div>
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">Falafel Balls</span>
-                <span className="text-emerald-400 font-bold">$30.00</span>
-              </div>
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">Chicken Shawarma</span>
-                <span className="text-emerald-400 font-bold">$32.50</span>
-              </div>
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <div>
-                  <span className="text-white font-medium block">Beef Shawarma</span>
-                  <span className="text-gray-400 text-sm">Available Wednesdays only</span>
-                </div>
-                <span className="text-emerald-400 font-bold">$33.50</span>
-              </div>
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">Ribeye Skewer</span>
-                <span className="text-emerald-400 font-bold">$42.50</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Sandwiches */}
-        <section className="py-20 bg-gradient-to-b from-black to-gray-900">
-          <div className="container-custom section-padding">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-                🥙 <span className="text-amber-400">Sandwiches</span>
-              </h2>
-              <div className="w-24 h-1 bg-amber-400 mx-auto rounded-full"></div>
-              <p className="text-gray-300 mt-4">Served with home fries</p>
-            </div>
-
-            <div className="max-w-3xl mx-auto space-y-4">
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">Chicken Tender (K) Pita</span>
-                <span className="text-amber-400 font-bold">$28.75</span>
-              </div>
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <div>
-                  <span className="text-white font-medium block">Beef Shawarma Pita</span>
-                  <span className="text-gray-400 text-sm">Available Wednesdays only</span>
-                </div>
-                <span className="text-amber-400 font-bold">$27.50</span>
-              </div>
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">Chicken Shawarma Pita</span>
-                <span className="text-amber-400 font-bold">$27.50</span>
-              </div>
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">Chicken Thigh Pita</span>
-                <span className="text-amber-400 font-bold">$27.50</span>
-              </div>
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">Kababonim (K) Pita</span>
-                <span className="text-amber-400 font-bold">$28.75</span>
-              </div>
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">Marinated Chicken Breast Pita</span>
-                <span className="text-amber-400 font-bold">$27.50</span>
-              </div>
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">Middle Eastern Kabab Pita</span>
-                <span className="text-amber-400 font-bold">$27.50</span>
               </div>
             </div>
           </div>
