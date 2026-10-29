@@ -184,7 +184,7 @@ const Catering = () => {
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <span className="text-white font-medium">French Fries (V)</span>
                 <span className="text-red-400 font-bold">
-                  Small $56.25 / Large $65
+                  $56.25
                 </span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
@@ -211,7 +211,7 @@ const Catering = () => {
                 🥒 <span className="text-green-400">Salads</span>
               </h2>
               <div className="w-24 h-1 bg-green-400 mx-auto rounded-full"></div>
-              <p className="text-gray-300 mt-4">Small Tray / Large Tray</p>
+              <p className="text-gray-300 mt-4">Tray</p>
             </div>
 
             <div className="max-w-3xl mx-auto space-y-4">
@@ -219,27 +219,27 @@ const Catering = () => {
                 <span className="text-white font-medium">
                   Chopped Israeli Salad (VG)
                 </span>
-                <span className="text-green-400 font-bold">$75 / $80</span>
+                <span className="text-green-400 font-bold">$75</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <span className="text-white font-medium">Kale Salad (VG)</span>
-                <span className="text-green-400 font-bold">$75 / $80</span>
+                <span className="text-green-400 font-bold">$75</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <span className="text-white font-medium">
                   Root Vegetable Salad (VG)
                 </span>
-                <span className="text-green-400 font-bold">$93.75 / $95</span>
+                <span className="text-green-400 font-bold">$93.75</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <span className="text-white font-medium">
                   "Just Beet It" Salad (VG)
                 </span>
-                <span className="text-green-400 font-bold">$75 / $80</span>
+                <span className="text-green-400 font-bold">$75</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <span className="text-white font-medium">Greek Salad (VG)</span>
-                <span className="text-green-400 font-bold">$60 / $80</span>
+                <span className="text-green-400 font-bold">$60</span>
               </div>
             </div>
           </div>
@@ -428,44 +428,44 @@ const Catering = () => {
               </h2>
               <div className="w-24 h-1 bg-purple-400 mx-auto rounded-full"></div>
               <p className="text-gray-300 mt-4">
-                Small Tray – $45–$56.25 / Large Tray – $60
+                Tray
               </p>
             </div>
 
             <div className="max-w-3xl mx-auto space-y-4">
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <span className="text-white font-medium">French Fries</span>
-                <span className="text-purple-400 font-bold">$56.25 / $60</span>
+                <span className="text-purple-400 font-bold">$56.25</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <span className="text-white font-medium">
                   White Basmati Rice
                 </span>
-                <span className="text-purple-400 font-bold">$56.25 / $60</span>
+                <span className="text-purple-400 font-bold">$56.25</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <span className="text-white font-medium">Mashed Potatoes</span>
-                <span className="text-purple-400 font-bold">$56.25 / $60</span>
+                <span className="text-purple-400 font-bold">$56.25</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <span className="text-white font-medium">
                   White or Red Cabbage
                 </span>
-                <span className="text-purple-400 font-bold">$45 / $60</span>
+                <span className="text-purple-400 font-bold">$45</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <span className="text-white font-medium">
                   Grilled Vegetables
                 </span>
-                <span className="text-purple-400 font-bold">$56.25 / $60</span>
+                <span className="text-purple-400 font-bold">$56.25</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <span className="text-white font-medium">Vegetables Rice</span>
-                <span className="text-purple-400 font-bold">$56.25 / $60</span>
+                <span className="text-purple-400 font-bold">$56.25</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <span className="text-white font-medium">Israeli Salad</span>
-                <span className="text-purple-400 font-bold">$45 / $60</span>
+                <span className="text-purple-400 font-bold">$45</span>
               </div>
             </div>
           </div>
@@ -535,7 +535,7 @@ const Catering = () => {
                 <span className="text-cyan-400 font-bold">$5.00</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">S. Pelegrino Small</span>
+                <span className="text-white font-medium">S. Pellegrino Small</span>
                 <span className="text-cyan-400 font-bold">$4.00</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
