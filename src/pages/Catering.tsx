@@ -254,7 +254,7 @@ const Catering = () => {
           <div className="container-custom section-padding">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-                🍱 <span className="text-emerald-400">Bento Box</span>
+                🥗 <span className="text-emerald-400">Bento Box</span>
               </h2>
               <div className="w-24 h-1 bg-emerald-400 mx-auto rounded-full"></div>
               <p className="text-gray-300 mt-4">Two sides of your choice</p>
