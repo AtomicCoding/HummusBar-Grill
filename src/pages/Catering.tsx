@@ -175,9 +175,7 @@ const Catering = () => {
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <span className="text-white font-medium">French Fries (V)</span>
-                <span className="text-red-400 font-bold">
-                  $56.25
-                </span>
+                <span className="text-red-400 font-bold">$56.25 Tray</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <span className="text-white font-medium">
@@ -501,7 +499,7 @@ const Catering = () => {
                 <span className="text-blue-400 font-bold">$27.50</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">Pita Arais Half</span>
+                <span className="text-white font-medium">Pita Arais Half (K)</span>
                 <span className="text-blue-400 font-bold">$12.50</span>
               </div>
             </div>
