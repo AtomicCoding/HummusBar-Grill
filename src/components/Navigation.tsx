@@ -101,12 +101,15 @@ const Navigation = () => {
               className="w-12 h-12 rounded-xl shadow-soft group-hover:shadow-md transition-shadow object-cover"
             />
             <div className="hidden sm:block">
-              <h1 className="text-xl font-display font-semibold text-foreground">
-                <span
-                  className={cn(isScrolled ? "text-gray-900" : "text-white")}
-                >
-                  Hummus Bar & Grill
-                </span>
+              <h1 className="font-display font-semibold text-foreground">
+                <span className="sr-only">Hummus Bar & Grill</span>
+                <img
+                  src="/hummus-logo-transparent.png"
+                  alt=""
+                  aria-hidden="true"
+                  style={{ aspectRatio: "auto" }}
+                  className="block w-[15rem] sm:w-[17rem] h-auto object-contain"
+                />
               </h1>
               <p
                 className={cn(
