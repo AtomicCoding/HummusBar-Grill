@@ -41,7 +41,7 @@ const HeroSection = () => {
               alt=""
               aria-hidden="true"
               style={{ aspectRatio: "auto" }}
-              className="block w-full max-w-[36rem] h-auto object-contain"
+              className="block w-full max-w-[42rem] h-auto object-contain drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]"
             />
           </h1>
 
