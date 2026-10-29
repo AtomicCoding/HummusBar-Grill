@@ -174,10 +174,6 @@ const Catering = () => {
                 <span className="text-red-400 font-bold">$1.25 each</span>
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">French Fries (V)</span>
-                <span className="text-red-400 font-bold">$56.25 Tray</span>
-              </div>
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <span className="text-white font-medium">
                   Unique Moroccan Cigar
                 </span>
@@ -367,7 +363,6 @@ const Catering = () => {
                 <span className="text-orange-400">Specialty Plates</span>
               </h2>
               <div className="w-24 h-1 bg-orange-400 mx-auto rounded-full"></div>
-              <p className="text-gray-300 mt-4">A La Carte Tray</p>
             </div>
 
             <div className="max-w-3xl mx-auto space-y-4">
