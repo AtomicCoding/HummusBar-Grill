@@ -90,39 +90,39 @@ const Catering = () => {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                     <span className="text-white font-medium">Hummus (VG)</span>
-                    <span className="text-yellow-400 font-bold">$75</span>
+                    <span className="text-yellow-400 font-bold">$80</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                     <span className="text-white font-medium">Tahini (VG)</span>
-                    <span className="text-yellow-400 font-bold">$75</span>
+                    <span className="text-yellow-400 font-bold">$80</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                     <span className="text-white font-medium">
                       Egg Salad (V)
                     </span>
-                    <span className="text-yellow-400 font-bold">$75</span>
+                    <span className="text-yellow-400 font-bold">$80</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                     <span className="text-white font-medium">
                       Chopped Liver
                     </span>
-                    <span className="text-yellow-400 font-bold">$75</span>
+                    <span className="text-yellow-400 font-bold">$80</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                     <span className="text-white font-medium">
                       Spicy Eggplant (VG)
                     </span>
-                    <span className="text-yellow-400 font-bold">$75</span>
+                    <span className="text-yellow-400 font-bold">$80</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                     <span className="text-white font-medium">
                       Babaganush (V)
                     </span>
-                    <span className="text-yellow-400 font-bold">$75</span>
+                    <span className="text-yellow-400 font-bold">$80</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                     <span className="text-white font-medium">Tabuli (VG)</span>
-                    <span className="text-yellow-400 font-bold">$75</span>
+                    <span className="text-yellow-400 font-bold">$80</span>
                   </div>
                 </div>
                 <div className="space-y-4">
@@ -130,35 +130,35 @@ const Catering = () => {
                     <span className="text-white font-medium">
                       Carrot Salad (VG)
                     </span>
-                    <span className="text-yellow-400 font-bold">$75</span>
+                    <span className="text-yellow-400 font-bold">$80</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                     <span className="text-white font-medium">
                       Turkish Salad (VG)
                     </span>
-                    <span className="text-yellow-400 font-bold">$75</span>
+                    <span className="text-yellow-400 font-bold">$80</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                     <span className="text-white font-medium">
                       Corn Salad (V)
                     </span>
-                    <span className="text-yellow-400 font-bold">$75</span>
+                    <span className="text-yellow-400 font-bold">$80</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                     <span className="text-white font-medium">
                       Moroccan Beet (VG)
                     </span>
-                    <span className="text-yellow-400 font-bold">$75</span>
+                    <span className="text-yellow-400 font-bold">$80</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                     <span className="text-white font-medium">
                       Avram Pickles (VG)
                     </span>
-                    <span className="text-yellow-400 font-bold">$65</span>
+                    <span className="text-yellow-400 font-bold">$80</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                     <span className="text-white font-medium">Pickles (VG)</span>
-                    <span className="text-yellow-400 font-bold">$65</span>
+                    <span className="text-yellow-400 font-bold">$80</span>
                   </div>
                 </div>
               </div>
