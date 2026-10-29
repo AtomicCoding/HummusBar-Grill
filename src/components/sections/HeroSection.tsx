@@ -34,11 +34,12 @@ const HeroSection = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="inline-block max-w-full bg-white/95 backdrop-blur-sm rounded-2xl px-4 py-3 md:px-6 md:py-4 shadow-soft mb-6 animate-slide-up">
+          <h1 className="mb-6 animate-slide-up">
             <span className="sr-only">Hummus Bar & Grill</span>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fad5fa173f30f42cb936245efbd928c96%2F812a5077448f441980162c8647be372f?format=webp&width=800&height=1200"
-              alt="Hummus Bar & Grill logo"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fad5fa173f30f42cb936245efbd928c96%2F510a776c8b9e451899f3e3c2fddf6230?format=webp&width=800"
+              alt=""
+              aria-hidden="true"
               className="block w-full max-w-[36rem] h-auto object-contain"
             />
           </h1>
