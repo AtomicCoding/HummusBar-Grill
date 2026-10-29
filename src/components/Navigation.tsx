@@ -104,7 +104,11 @@ const Navigation = () => {
               <h1 className="font-display font-semibold text-foreground">
                 <span className="sr-only">Hummus Bar & Grill</span>
                 <img
-                  src="/hummus-logo-transparent.png"
+                  src={
+                    isScrolled
+                      ? "/hummus-logo-dark.png"
+                      : "/hummus-logo-transparent.png"
+                  }
                   alt=""
                   aria-hidden="true"
                   style={{ aspectRatio: "auto" }}
