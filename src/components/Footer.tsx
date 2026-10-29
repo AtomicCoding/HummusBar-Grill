@@ -42,7 +42,7 @@ const Footer = () => {
   ];
 
   const deliveryHours = [
-    { day: "Sunday - Saturday", hours: "10:30 AM - 9:15 PM" },
+    { day: "Sunday - Saturday", hours: "10:30 AM - 8:30 PM" },
   ];
 
   const quickLinks = [

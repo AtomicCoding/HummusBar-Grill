@@ -40,7 +40,7 @@ const Terms = () => {
                   Friday & Saturday 9:00 AM - 11:00 PM
                 </li>
                 <li>
-                  Delivery Hours: Sunday-Saturday 10:30 AM - 9:15 PM
+                  Delivery Hours: Sunday-Saturday 10:30 AM - 8:30 PM
                 </li>
               </ul>
 
