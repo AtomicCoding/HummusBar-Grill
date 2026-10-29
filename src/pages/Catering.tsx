@@ -179,12 +179,6 @@ const Catering = () => {
               </div>
               <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <span className="text-white font-medium">
-                  Fried Cauliflower (V)
-                </span>
-                <span className="text-red-400 font-bold">$60 Tray</span>
-              </div>
-              <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <span className="text-white font-medium">
                   Unique Moroccan Cigar
                 </span>
                 <span className="text-red-400 font-bold">$3.15 each</span>
@@ -432,19 +426,19 @@ const Catering = () => {
                     <span className="text-white font-medium">
                       Chicken Thigh Skewer
                     </span>
-                    <span className="text-red-500 font-bold">$32.50</span>
+                    <span className="text-red-500 font-bold">$22.50 each</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                     <span className="text-white font-medium">
                       Marinated Chicken Breast Skewer
                     </span>
-                    <span className="text-red-500 font-bold">$32.50</span>
+                    <span className="text-red-500 font-bold">$22.50 each</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                     <span className="text-white font-medium">
                       Middle Eastern Kabab
                     </span>
-                    <span className="text-red-500 font-bold">$32.50</span>
+                    <span className="text-red-500 font-bold">$22.50 each</span>
                   </div>
                 </div>
                 <div className="space-y-4">
