@@ -221,13 +221,6 @@ const Menu = () => {
         image:
           "https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F6af7f1ef8ff4416b864d8f6c8e7140af?format=webp&width=800",
       },
-      {
-        name: "Pavlova",
-        description:
-          "A meringue cake topped with whipped cream and filled with a refreshing passion fruit sauce",
-        image:
-          "https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F340f43aef02942919e0b034aab09d9d2?format=webp&width=800",
-      },
     ],
     kidsMenu: [
       {
