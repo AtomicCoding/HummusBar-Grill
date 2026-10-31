@@ -42,7 +42,7 @@ const Footer = () => {
   ];
 
   const deliveryHours = [
-    { day: "Sunday - Saturday", hours: "10:30 AM - 9:15 PM" },
+    { day: "Monday - Sunday", hours: "10:30 AM - 8:30 PM" },
   ];
 
   const quickLinks = [
@@ -74,16 +74,11 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center space-x-3 mb-6">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fef5c5c4add29486f8f779aaf4b6e1457?format=webp&width=800"
+                src="/hbg-mark.png"
                 alt="Hummus Bar & Grill Logo"
-                className="w-12 h-12 rounded-xl object-cover"
+                style={{ aspectRatio: "auto" }}
+                className="block w-16 h-auto object-contain"
               />
-              <div>
-                <h3 className="text-xl font-display font-semibold text-white">
-                  Hummus Bar & Grill
-                </h3>
-                <p className="text-warm-400 text-sm">Authentic Mediterranean</p>
-              </div>
             </Link>
 
             <p className="text-warm-300 leading-relaxed mb-6">

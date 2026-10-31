@@ -96,27 +96,11 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fef5c5c4add29486f8f779aaf4b6e1457?format=webp&width=800"
+              src={isScrolled ? "/hbg-mark-dark.png" : "/hbg-mark.png"}
               alt="Hummus Bar & Grill Logo"
-              className="w-12 h-12 rounded-xl shadow-soft group-hover:shadow-md transition-shadow object-cover"
+              style={{ aspectRatio: "auto" }}
+              className="block w-16 lg:w-20 h-auto object-contain"
             />
-            <div className="hidden sm:block">
-              <h1 className="text-xl font-display font-semibold text-foreground">
-                <span
-                  className={cn(isScrolled ? "text-gray-900" : "text-white")}
-                >
-                  Hummus Bar & Grill
-                </span>
-              </h1>
-              <p
-                className={cn(
-                  "text-xs -mt-0.5",
-                  isScrolled ? "text-gray-600" : "text-gray-300",
-                )}
-              >
-                Authentic Mediterranean
-              </p>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -229,18 +213,6 @@ const Navigation = () => {
                             className="block w-full text-left py-3 text-base font-medium text-black hover:bg-[#F8F8F8] hover:text-[#B31217] transition-colors cursor-pointer mb-3 last:mb-0"
                           >
                             Kosher
-                          </button>
-                          <button
-                            onClick={() => {
-                              setIsMenuDropdownOpen(false);
-                              window.open(
-                                "https://cdn.builder.io/o/assets%2Fad5fa173f30f42cb936245efbd928c96%2F9f1912d9192648c2a8c51dbe5a32c1b4?alt=media&token=08d85958-fe7c-4dec-bd8f-755bdf616fd7&apiKey=ad5fa173f30f42cb936245efbd928c96",
-                                "_blank",
-                              );
-                            }}
-                            className="block w-full text-left py-3 text-base font-medium text-black hover:bg-[#F8F8F8] hover:text-[#B31217] transition-colors cursor-pointer mb-3 last:mb-0"
-                          >
-                            Takeout Menu (PDF)
                           </button>
                         </div>
                       </>
@@ -431,19 +403,6 @@ const Navigation = () => {
                             className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                           >
                             Kosher
-                          </button>
-                          <button
-                            onClick={() => {
-                              setIsOpen(false);
-                              setIsMenuDropdownOpen(false);
-                              window.open(
-                                "https://cdn.builder.io/o/assets%2Fad5fa173f30f42cb936245efbd928c96%2F9f1912d9192648c2a8c51dbe5a32c1b4?alt=media&token=08d85958-fe7c-4dec-bd8f-755bdf616fd7&apiKey=ad5fa173f30f42cb936245efbd928c96",
-                                "_blank",
-                              );
-                            }}
-                            className="block w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
-                          >
-                            Takeout Menu (PDF)
                           </button>
                         </div>
                       )}
